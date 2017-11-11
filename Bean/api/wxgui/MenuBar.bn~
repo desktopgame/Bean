@@ -1,0 +1,30 @@
+/**
+ * ユーザが選択可能な項目の一覧を表示するメニューバーです.
+ * これはコンテナとしての機能を持ちますが、使用する際は Frame#setMenuBar で明示的に追加する必要があります。
+ */
+class MenuBar : Container {
+	[public|native]
+	def new() : super(null);
+
+	/**
+	 * 内部にアクションを実行可能なメニューアイテムを含むことのできるメニューを追加します.
+	 * メニューはそれ自体が処理を行うことは出来ません。
+	 * @param text
+	 * @return 追加されたメニュー
+	 */
+	[public|native]
+	def addMenu(text);
+	
+	/**
+	 * 指定位置のメニューを削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removeMenuAt(index);
+	
+	/**
+	 * 全てのメニューの数を返します.
+	 */
+	[public|native]
+	def getMenuCount();
+}

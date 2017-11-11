@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * ユーザープログラムによって終了されなかったスレッドを停止するためにスローされる例外です.
+ */
+class ThreadExitException : RuntimeException {
+}

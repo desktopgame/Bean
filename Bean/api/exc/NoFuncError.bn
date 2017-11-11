@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * ŒÄ‚Ño‚³‚ê‚½ŠÖ”‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚ÉƒXƒ[‚³‚ê‚Ü‚·.
+ */
+class NoFuncError : RuntimeException {
+}

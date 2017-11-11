@@ -1,0 +1,59 @@
+/**
+ * 画像の形式を表す列挙型.
+ */
+enum ImageFormat {
+	Png,
+	Jpeg,
+	Gif
+}
+
+/**
+ * 画像情報をカプセル化します.
+ */
+class Image {
+	[private]
+	def new() { }
+	
+	/**
+	 * 指定のファイルを読み込んで Imageクラスインスタンスで返します.
+	 * @param filePath
+	 * @param imageFormat
+	 * @return
+	 */
+	[public|static|native]
+	def load(filePath, imageFormat);
+	
+	/**
+	 * 現在の画像を保存します.
+	 * @param filePath
+	 * @param imageFormat
+	 */
+	def save(filePath, imageFormat);
+	
+	/**
+	 * 指定の画像を回転変換して新しいインスタンスで返します.
+	 * @param angle
+	 */
+	def rotate(angle);
+	
+	/**
+	 * 現在の画像をスケール変換して新しいインスタンスで返します.
+	 * @param width
+	 * @param height
+	 */
+	def scale(width, height);
+	
+	/**
+	 * 画像の横幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getWidth();
+	
+	/**
+	 * 画像の縦幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getHeight();
+}

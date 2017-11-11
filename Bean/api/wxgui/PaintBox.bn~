@@ -1,0 +1,45 @@
+use api.wxgui.Component;
+/**
+ * 自由に描画可能なボックス
+ */
+class PaintBox : Component {
+	/**
+	 * @param parent 親コンテナ
+	 */
+	[public|native]
+	def new(parent) : super(parent);
+
+	/**
+	 * アニメーションを開始します.
+	 * 既に開始している場合には何も行いません。
+	 */
+	[public|native]
+	def start();
+	
+	/**
+	 * アニメーションを一時停止します.
+	 */
+	[public|native]
+	def stop();
+	
+	/**
+	 * 描画を監視するリスナーを追加します.
+	 * @param paint
+	 */
+	[public|native]
+	def addPaintListener(paint);
+	
+	/**
+	 * 描画を監視するリスナーを削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removePaintListenerAt(index);
+	
+	/**
+	 * 描画を監視するリスナーの数を返します.
+	 * @return
+	 */
+	[public|native]
+	def getPaintListenerCount();
+}

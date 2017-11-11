@@ -1,0 +1,2 @@
+use api.test.WXTest;
+class WXTest2 : WXTest { }

@@ -1,0 +1,19 @@
+use api.Console;
+use api.Array;
+use api.coll.List;
+
+def print() {
+	Console.writeLine("short: " + shortV);
+	Console.writeLine("int: " + intV);
+	Console.writeLine("long: " + longV);
+	Console.writeLine("float: " + floV);
+	Console.writeLine("double: " + floV);
+}
+
+var shortV = 10s;
+var intV = 10i;
+var longV = 10L;
+var floV = 10f;
+var douV = 10d;
+
+print();

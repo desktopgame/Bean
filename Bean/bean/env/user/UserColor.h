@@ -1,0 +1,29 @@
+#pragma once
+#ifndef BEAN_ENV_USER_USERCOLOR_H
+#define BEAN_ENV_USER_USERCOLOR_H
+#include <wx/wx.h>
+#include "../Object_.h"
+/**
+ * wxColorÇÃÉâÉbÉpÅ[.
+ */
+class UserColor : public Object_ {
+public:
+	UserColor(float r, float g, float b, float a);
+	UserColor(float r, float g, float b);
+	UserColor(wxColor color);
+	~UserColor();
+
+	// Object_ ÇâÓÇµÇƒåpè≥Ç≥ÇÍÇ‹ÇµÇΩ
+	virtual Object_ * clone() override;
+	virtual Object_ * equals(Object_ * right) override;
+	/**
+	 * wxwidgetÇÃå^Ç≈ï‘ÇµÇ‹Ç∑.
+	 * @return
+	 */
+	wxColor getWXColor();
+protected:
+	void lazyLoading() override;
+private:
+	wxColor color;
+};
+#endif // !BEAN_ENV_USER_USERCOLOR_H

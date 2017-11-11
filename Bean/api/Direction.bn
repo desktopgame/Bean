@@ -1,0 +1,9 @@
+/**
+ * •ûŠp‚ð•\‚·—ñ‹“‚Å‚·.
+ */
+enum Direction {
+	Top,
+	Left,
+	Bottom,
+	Right
+}

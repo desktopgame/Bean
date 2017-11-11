@@ -1,0 +1,10 @@
+use api.exc.RuntimeException;
+/**
+ * if/for/whileの中にBoolean型でない値が含まれるときスローされます.
+ */
+class NotBooleanError : RuntimeException {
+	[public]
+	def new() {
+		super.new(null, "値は Boolean型 ではありません。");
+	}
+}

@@ -1,0 +1,4 @@
+use api.Console;
+
+alias CLS = api.Console;
+CLS.writeLine("Hello");

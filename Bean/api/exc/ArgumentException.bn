@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * 引数の不正や範囲外による例外の基底クラスです.
+ */
+class ArgumentException : RuntimeException {
+}

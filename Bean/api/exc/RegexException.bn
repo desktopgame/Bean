@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * 不正な正規表現がコンパイルされたときにスローされます。
+ */
+class RegexException : RuntimeException {
+}

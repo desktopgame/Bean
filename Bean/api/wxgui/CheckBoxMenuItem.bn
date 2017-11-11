@@ -1,0 +1,18 @@
+use api.wxgui.MenuItem;
+class CheckBoxMenuItem : MenuItem {
+	[private]
+	def new() { }
+	
+	/**
+	 * チェックボックスの選択状態を設定します.
+	 * @param isSelected
+	 */
+	[public|native]
+	def setSelected(isSelected);
+	
+	/**
+	 * チェックボックスの選択状態を返します.
+	 */
+	[public|native]
+	def isSelected();
+}

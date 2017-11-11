@@ -1,0 +1,68 @@
+use api.File;
+use api.Console;
+
+var curPath = File.getCurrentPath();
+var pc = File.getPathSeparatorChar();
+var runtimeDir = File.getParent(curPath) + pc + "Runtime";
+Console.writeLine(runtimeDir);
+//まずはクリア
+if(File.exists(runtimeDir)) {
+	deleteDir(runtimeDir);
+}
+//再び作成
+makeDir(runtimeDir);
+//実行環境をコピー
+copyDir(curPath + pc + "api", runtimeDir);
+copyDir(curPath + pc + "TestCode", runtimeDir);
+copyDir(curPath + pc + "SampleCode", runtimeDir);
+copyDir(curPath + pc + "License", runtimeDir);
+copyDir(curPath + pc + "Docclass.bat", runtimeDir);
+copyDir(curPath + pc + "Dumpmain.bat", runtimeDir);
+copyDir(curPath + pc + "REPL.bat", runtimeDir);
+copyDir(curPath + pc + "Runmain.bat", runtimeDir);
+copyDir(curPath + pc + "icudt58.dll", runtimeDir);
+copyDir(curPath + pc + "icuin58d.dll", runtimeDir);
+copyDir(curPath + pc + "icuio58d.dll", runtimeDir);
+copyDir(curPath + pc + "icutest58d.dll", runtimeDir);
+copyDir(curPath + pc + "icutu58d.dll", runtimeDir);
+copyDir(curPath + pc + "icuuc58d.dll", runtimeDir);
+copyDir(File.getParent(curPath) + pc + "Debug" + pc + "Bean.exe", runtimeDir);
+File.createNewFile(runtimeDir + pc + "main.bn");
+File.writeText(runtimeDir + pc + "main.bn", "use api.Console;\nConsole.writeLine(\"HelloWorld\")");
+
+def deleteDir(dir) {
+	Console.writeLine("delete... " + dir);
+	if(File.isDirectory(dir)) {
+		var files = File.getChildren(dir, false);
+		for(var i=0; i<files.length(); i++) {
+			deleteDir(dir + pc + files.get(i));
+		}
+		File.delete(dir);
+	} else {
+		File.delete(dir);
+	}
+}
+
+def makeDir(dir) {
+	Console.writeLine("make dir..." + dir);
+	File.mkdir(dir);
+}
+
+def copyDir(from, to) {
+	if(File.isDirectory(from)) {
+		var fromFiles = File.getChildren(from, false);
+		var toNewDir = to + pc + File.getName(from);
+		Console.writeLine(toNewDir);
+		makeDir(toNewDir);
+		for(var i=0; i<fromFiles.length(); i++) {
+			copyDir(from + pc + fromFiles.get(i), toNewDir);
+		}
+	} else {
+		copyFile(from, to + pc + File.getName(from));
+	}
+}
+
+def copyFile(from, to) {
+	Console.writeLine("copy file..." + to);
+	File.copy(from, to, File.COPY_OVERWRITE);
+}

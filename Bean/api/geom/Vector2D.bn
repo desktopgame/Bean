@@ -1,0 +1,80 @@
+use api.geom.Point2D;
+/**
+ * 2D空間の方向と量を表すクラスです.
+ */
+class Vector2D : Point2D {
+	[public]
+	def new(x, y) : super(x, y){	
+	}
+	
+	[public]
+	def new(vector) : super(vector) {
+	}
+	
+	[public]
+	def new() : super() {
+	}
+	
+	/** 
+	 * ベクトルの大きさを返します.
+	 * @return
+	 */
+	[public]
+	def length() {
+		var D = (getX() * getX()) + (getY() * getY());
+		return Math.sqrt(D);
+	}
+
+	/**
+	 * ベクトルを正規化して返します.
+	 * @return
+	 */
+	[public]
+	def normalize() {
+		var len = length();
+		if(len == 0) {
+			return Vector2D.new(0, 0);
+		}
+		return Vector2D.new(getX() / len, getY() / len);
+	}
+	
+	/**
+	 * 別のベクトルとの内積を返します.
+	 * @param other
+	 * @return
+	 */
+	[public]
+	def dot(other) {
+		return (getX() * other.getX()) + (getY() * other.getY());
+	}
+	
+	/**
+	 * 別のベクトルとの外積を返します.
+	 * @param other
+	 * @return
+	 */
+	[public]
+	def cross(other) {
+		return (getX() * other.getY()) - (getY() * other.getX());
+	}
+
+	[public]
+	def op_add(o) {
+		return Vector2D.new(getX() + o.getX(), getY() + o.getY());
+	}
+	
+	[public]
+	def op_sub(o) {
+		return Vector2D.new(getX() - o.getX(), getY() - o.getY());
+	}
+	
+	[public]
+	def op_mul(o) {
+		return Vector2D.new(getX() * o.getX(), getY() * o.getY());
+	}
+	
+	[public]
+	def op_div(o) {
+		return Vector2D.new(getX() / o.getX(), getY() / o.getY());
+	}
+}

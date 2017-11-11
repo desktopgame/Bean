@@ -1,0 +1,64 @@
+use api.Console;
+use api.coll.List;
+use api.Array;
+
+/*
+var arr = Array.new(1);
+arr.set(0, "Value");
+
+var copy = arr.sub(0, 1);
+copy.forEach((elem) -> { Console.writeLine(elem); });
+*/
+
+//*
+var list = List.new();
+list.add("A");
+list.add("B");
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.add("C");
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.add("D");
+list.add("E");
+list.add("F");
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.removeAt(0);
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.removeAt(list.length() - 1);
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.removeAt(2);
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+list.set(0, "NEW ITEM");
+list.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+//*/

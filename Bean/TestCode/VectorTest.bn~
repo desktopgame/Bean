@@ -1,0 +1,38 @@
+use api.Console;
+use api.geom.Vector2D;
+
+def dump(a, b, c) {    
+//*
+	Console.writeLine(a);
+	Console.writeLine(b);
+	Console.writeLine(c);
+	Console.writeLine("");
+//*/
+}
+
+var a = Vector2D.new(10, 20);
+var b = Vector2D.new(10, 10);
+
+var c = a + b;
+dump(a, b, c);
+
+c = a - b;  
+dump(a, b, c);
+
+c = a * b;
+dump(a, b, c);
+
+c = a / b;
+dump(a, b, c);
+
+//Console.readLine();
+var d = a == b;
+Console.writeLine(d);
+
+d = a == a;
+Console.writeLine(d);
+
+b.setX(a.getX());
+b.setY(a.getY());
+d = a == b;
+Console.writeLine(d);

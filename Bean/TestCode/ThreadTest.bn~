@@ -1,0 +1,29 @@
+use api.Range;
+use api.Console;
+use api.File;
+use api.Thread;
+
+var th = Thread.new("sub-thread");
+var b = true;
+var count = 0;
+th.start(def() -> {
+	while(b) {
+		count += 1;
+		Console.writeLine("Hoge");
+		Thread.sleep(200);
+		if(count == 10) {
+			break;
+		}
+	}
+});
+/*
+while(true) {
+	var line = Console.readLine();
+	if(line == "exit") {
+		b = false;
+		break;
+	}
+}
+*/
+th.join();
+Console.writeLine("-- finish ---");

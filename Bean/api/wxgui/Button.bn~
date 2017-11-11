@@ -1,0 +1,46 @@
+use api.wxgui.Component;
+/**
+ * 押し込み可能なボタン.
+ */
+class Button : Component {
+	/**
+	 * @param parent 親コンテナ
+	 * @param label 表示する文字列
+	 */
+	[public|native]
+	def new(parent, label) : super(parent);
+	
+	/**
+	 * ボタンが押されたときに処理を実行するデリゲートを追加します.
+	 */
+	[public|native]
+	def addPushListener(listener);
+	
+	/**
+	 * ボタンが押されたときに処理を実行するデリゲートを削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removePushListenerAt(index);
+	
+	/**
+	 * ボタンが押されたときに処理を実行するデリゲートの数を返します.
+	 * @return
+	 */
+	[public|native]
+	def getPushListenerCount();
+	
+	/** 
+	 * ボタンに表示される文字列を設定します.
+	 * @param label
+	 */
+	[public|native]
+	def setText(label);
+	
+	/**
+	 * ボタンに表示される文字列を返します.
+	 * @return
+	 */
+	[public|native]
+	def getText();
+}

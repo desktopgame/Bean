@@ -1,0 +1,7 @@
+class MultiA {
+	[public] @name = "MultiA";
+}
+
+class MultiB {
+	[public] @name = "MultiB";
+}

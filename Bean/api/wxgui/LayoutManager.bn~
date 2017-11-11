@@ -1,0 +1,66 @@
+/**
+ * コンポーネントの配置法則を定義するクラス.
+ */
+class LayoutManager {
+	[private]
+	def new() { }
+
+	/**
+	 * コンポーネントを追加します.
+	 * @param component
+	 * @param params
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def addComponent(component, params);
+	
+	/**
+	 * 伸縮しない余白を追加します.
+	 * @param size
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def addSpace(size);
+
+	/**
+	 * 伸縮する余白を追加します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def addStretch();
+	
+	/**
+	 * コンポーネントを削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removeComponentAt(index);
+	
+	/**
+	 * 全てのコンポーネントの数を返します.
+	 * @return
+	 */
+	[public|native]
+	def getComponentCount();
+	
+	/**
+	 * 強制的に再レイアウトを実行します.
+	 */
+	[public|native]
+	def doLayout();
+
+	/**
+	 * 最小サイズを設定します.
+	 * @param size
+	 */
+	[public|native]
+	def setMinSize(size);
+	
+	/**
+	 * 最小サイズを返します.
+	 * @return
+	 */
+	[public|native]
+	def getMinSize();
+	
+}

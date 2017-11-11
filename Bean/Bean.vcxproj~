@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89D08D81-09B6-4E19-91B9-2CAE3173CD50}</ProjectGuid>
+    <RootNamespace>Bean</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\..\..\..\..\..\..\..\..\FlexYACC\win_flex_bison-latest\custom_build_rules\win_flex_bison_custom_build.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(WX_VC_INCLUDE);$(WX_INCLUDE);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\GnuWin32\include;$(WX_INCLUDE);$(ICU_INCLUDE);$(WX_VC_INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\GnuWin32\lib;$(WX_LIB);$(ICU_LIB);$(WX_VC_DYN_LIB);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ExecutablePath>$(WX_VC_INCLUDE);$(WX_INCLUDE);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\GnuWin32\include;$(WX_INCLUDE);$(ICU_INCLUDE);$(WX_VC_INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\GnuWin32\lib;$(WX_LIB);$(ICU_LIB);$(WX_VC_DYN_LIB);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>$(ExecutablePath);$(ICU_LIB)</ExecutablePath>
+    <IncludePath>$(IncludePath);$(ICU_INCLUDE)</IncludePath>
+    <LibraryPath>$(LibraryPath);$(ICU_LIB)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ExecutablePath>$(ExecutablePath);$(ICU_LIB)</ExecutablePath>
+    <IncludePath>$(IncludePath);$(ICU_INCLUDE)</IncludePath>
+    <LibraryPath>$(LibraryPath);$(ICU_LIB)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(WX_VC_INCLUDE);$(BOOST_ROOT);$(ICU_INCLUDE);$(WX_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;DEBUG;__WXMSW__;__WXDEBUG__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(WX_LIB);$(WX_VC_DYN_LIB);$(BOOST_LIB);$(ICU_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ICU_ADD_FILE);$(WX_ADD_CORE);$(WX_ADD_BASE);$(WX_ADD_JPG);$(WX_ADD_PNG);$(WX_ADD_TIFF);$(WX_ADD_REGEX);$(WX_ADD_EXPAD);$(WX_ADD_ZLIB);$(WX_ADD_STC);$(WX_ADD_ADV);$(WX_ADD_AUI);$(WX_ADD_XRC);$(WX_ADD_SCI);$(WX_ADD_HTM);$(WX_ADD_PROPGRID);$(WX_ADD_WEBVIEW);$(WX_ADD_RIBBON);$(WX_ADD_RICHTEXT);$(WX_ADD_QA);$(WX_ADD_GL);kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(QT_INCLUDE);$(ICU_INCLUDE);$(BOOST_ROOT)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(ICU_ADD_FILE);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(ICU_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(WX_VC_INCLUDE);$(BOOST_ROOT);$(ICU_INCLUDE);$(WX_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;DEBUG;__WXMSW__;__WXDEBUG__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(WX_LIB);$(WX_VC_DYN_LIB);$(BOOST_LIB);$(ICU_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ICU_ADD_FILE);$(WX_ADD_CORE);$(WX_ADD_BASE);$(WX_ADD_JPG);$(WX_ADD_PNG);$(WX_ADD_TIFF);$(WX_ADD_REGEX);$(WX_ADD_EXPAD);$(WX_ADD_ZLIB);$(WX_ADD_STC);$(WX_ADD_ADV);$(WX_ADD_AUI);$(WX_ADD_XRC);$(WX_ADD_SCI);$(WX_ADD_HTM);$(WX_ADD_PROPGRID);$(WX_ADD_WEBVIEW);$(WX_ADD_RIBBON);$(WX_ADD_RICHTEXT);$(WX_ADD_QA);$(WX_ADD_GL);kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(QT_INCLUDE);$(ICU_INCLUDE);$(BOOST_ROOT)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(ICU_ADD_FILE);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(ICU_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\FlexYACC\bin\BisonTest.tab.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\FlexYACC\bin\lex.yy.c" />
+    <ClCompile Include="bean\ast\ASTNegativeOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTPositiveOperator.cpp" />
+    <ClCompile Include="bean\Base.cpp" />
+    <ClCompile Include="bean\parser\bison\bean.tab.c" />
+    <ClCompile Include="bean\parser\bison\BisonTest.tab.c" />
+    <ClCompile Include="bean\parser\bison\lex.yy.c" />
+    <ClCompile Include="bean\parser\turbo\BeanParserManagerImpl.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTFunctionVisitor.cpp" />
+    <ClCompile Include="bean\env\gc\IncrementalGCPhase.cpp" />
+    <ClCompile Include="bean\launch\BeanLineRunner.cpp" />
+    <ClCompile Include="bean\launch\BeanListenerProxy.cpp" />
+    <ClCompile Include="bean\launch\BeanAdapter.cpp" />
+    <ClCompile Include="bean\launch\BeanListener.cpp" />
+    <ClCompile Include="bean\ast\ASTBranch.cpp" />
+    <ClCompile Include="bean\ast\ASTSyncOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSyncFactor.cpp" />
+    <ClCompile Include="bean\env\gc\GCProgress.cpp" />
+    <ClCompile Include="bean\parser\ASTExceptionLayer.cpp" />
+    <ClCompile Include="bean\parser\ASTParserLayer.cpp" />
+    <ClCompile Include="bean\ast\ASTEnumItemDeclaration.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTEnumBuilder.cpp" />
+    <ClCompile Include="bean\ast\ASTEnumDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTCamma.cpp" />
+    <ClCompile Include="bean\ast\ASTScheduledFactor.cpp" />
+    <ClCompile Include="bean\ast\ASTDecrement.cpp" />
+    <ClCompile Include="bean\ast\ASTIncrement.cpp" />
+    <ClCompile Include="bean\ast\ASTEOF.cpp" />
+    <ClCompile Include="bean\ast\ASTNodeType.cpp" />
+    <ClCompile Include="bean\ast\iterator\ASTComparator.cpp" />
+    <ClCompile Include="bean\ast\iterator\ASTPredicate.cpp" />
+    <ClCompile Include="bean\ast\iterator\ASTIterator.cpp" />
+    <ClCompile Include="bean\ast\iterator\ASTPredicateType.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTFilteredVisitor.cpp" />
+    <ClCompile Include="bean\parser\turbo\FilterAction.cpp" />
+    <ClCompile Include="bean\threads\ThreadState.cpp" />
+    <ClCompile Include="bean\ast\ASTCharacter.cpp" />
+    <ClCompile Include="bean\launch\Bean.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTTypeBuilder.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTClassBuilder.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTNullVisitor.cpp" />
+    <ClCompile Include="bean\ast\ASTThrow.cpp" />
+    <ClCompile Include="bean\ast\ASTCatchStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTTryStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTUnaryOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTBoolean.cpp" />
+    <ClCompile Include="bean\ast\ASTNotEqualsOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTNotOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTArrayInitializer.cpp" />
+    <ClCompile Include="bean\ast\ASTMethodReference.cpp" />
+    <ClCompile Include="bean\ast\ASTNullFactor.cpp" />
+    <ClCompile Include="bean\ast\OperatorLinkDir.cpp" />
+    <ClCompile Include="bean\env\native\array\ArrayLengthExecutor.cpp" />
+    <ClCompile Include="bean\env\native\array\ArrayNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\array\ArrayGetExecutor.cpp" />
+    <ClCompile Include="bean\env\native\array\ArraySetExecutor.cpp" />
+    <ClCompile Include="bean\ast\ASTLambdaDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTSuperFactor.cpp" />
+    <ClCompile Include="bean\ast\ASTFieldAccess.cpp" />
+    <ClCompile Include="bean\ast\ASTPointer.cpp" />
+    <ClCompile Include="bean\ast\ASTAddAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTDivAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTMulAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSubAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSurAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTIfCauseStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTString.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTIncludeVisitor.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTInterpretVisitor.cpp" />
+    <ClCompile Include="bean\ast\ASTThisFactor.cpp" />
+    <ClCompile Include="bean\ast\ASTMemberDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTAssignOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTFieldDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTLCurlyBracket.cpp" />
+    <ClCompile Include="bean\ast\ASTRCurlyBracket.cpp" />
+    <ClCompile Include="bean\ast\ASTMethodInvocation.cpp" />
+    <ClCompile Include="bean\ast\ASTMethodInvocationByMessage.cpp" />
+    <ClCompile Include="bean\ast\ASTMethodInvocationBySelf.cpp" />
+    <ClCompile Include="bean\ast\ASTEmptyFactor.cpp" />
+    <ClCompile Include="bean\ast\ASTEmptyBody.cpp" />
+    <ClCompile Include="bean\ast\ASTContext.cpp" />
+    <ClCompile Include="bean\ast\ASTContextKind.cpp" />
+    <ClCompile Include="bean\ast\ASTVariable.cpp" />
+    <ClCompile Include="bean\ast\ASTBiggestOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTEBiggestOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTEqualOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTESmallestOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSmallestOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTBreakStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTContinueStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTForStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTReturnStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTWhileStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTNewStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTNumeric.cpp" />
+    <ClCompile Include="bean\ast\ASTLRoundBracket.cpp" />
+    <ClCompile Include="bean\ast\ASTRRoundBracket.cpp" />
+    <ClCompile Include="bean\ast\ASTAddOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTAndAndOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTAndOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTDivOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTMulOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTOrOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTOrOrOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSubOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTSurOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTVariableDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTFactor.cpp" />
+    <ClCompile Include="bean\ast\ASTBinaryOperator.cpp" />
+    <ClCompile Include="bean\ast\ASTElseIfStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTElseStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTIfStatement.cpp" />
+    <ClCompile Include="bean\ast\ASTBody.cpp" />
+    <ClCompile Include="bean\ast\ASTIncludeStatement.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTPrintVisitor.cpp" />
+    <ClCompile Include="bean\ast\ASTModifier.cpp" />
+    <ClCompile Include="bean\ast\ASTParameter.cpp" />
+    <ClCompile Include="bean\ast\ASTMethodDeclaration.cpp" />
+    <ClCompile Include="bean\ast\ASTName.cpp" />
+    <ClCompile Include="bean\ast\ASTClassDeclaration.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTVisitor.cpp" />
+    <ClCompile Include="bean\parser\ASTParserTable.cpp" />
+    <ClCompile Include="bean\parser\ASTParser.cpp" />
+    <ClCompile Include="bean\ast\ASTNode.cpp" />
+    <ClCompile Include="bean\env\FindOption.cpp" />
+    <ClCompile Include="bean\main.cpp" />
+    <ClCompile Include="bean\scanner\Tag.cpp" />
+    <ClCompile Include="bean\util\IO.cpp" />
+    <ClCompile Include="bean\scanner\Sequence.cpp" />
+    <ClCompile Include="bean\util\STLImpl.cpp" />
+    <ClCompile Include="bean\util\Text.cpp" />
+    <ClCompile Include="bean\env\Runtime.cpp" />
+    <ClCompile Include="bean\scanner\Scanner.cpp" />
+    <ClCompile Include="bean\scanner\Token.cpp" />
+    <ClCompile Include="bean\scanner\TokenList.cpp" />
+    <ClCompile Include="bean\parser\pattern\ClassParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\UseParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\PeriodParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\IdentParser.cpp" />
+    <ClCompile Include="bean\env\Modifier.cpp" />
+    <ClCompile Include="bean\parser\pattern\MethodParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\IfParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\VarParser.cpp" />
+    <ClCompile Include="bean\env\Object_.cpp" />
+    <ClCompile Include="bean\parser\pattern\DelegateParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\NewParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\WhileParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ForParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\BreakParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ContinueParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ReturnParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\FieldParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\LSquareBracketParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ThisParser.cpp" />
+    <ClCompile Include="bean\env\Class.cpp" />
+    <ClCompile Include="bean\env\ClassLoader.cpp" />
+    <ClCompile Include="bean\env\Field.cpp" />
+    <ClCompile Include="bean\env\Method.cpp" />
+    <ClCompile Include="bean\env\Package.cpp" />
+    <ClCompile Include="bean\env\gc\Heap.cpp" />
+    <ClCompile Include="bean\env\Member.cpp" />
+    <ClCompile Include="bean\env\Parameter.cpp" />
+    <ClCompile Include="bean\env\Constructor_.cpp" />
+    <ClCompile Include="bean\env\Null.cpp" />
+    <ClCompile Include="bean\env\Numeric.cpp" />
+    <ClCompile Include="bean\env\TNumeric.cpp" />
+    <ClCompile Include="bean\env\Boolean.cpp" />
+    <ClCompile Include="bean\env\Character.cpp" />
+    <ClCompile Include="bean\env\String.cpp" />
+    <ClCompile Include="bean\env\native\NativeMethodExecutor.cpp" />
+    <ClCompile Include="bean\env\native\NativeMethodRegistry.cpp" />
+    <ClCompile Include="bean\env\NativeMethod.cpp" />
+    <ClCompile Include="bean\parser\pattern\StringParser.cpp" />
+    <ClCompile Include="bean\env\CodeBlock.cpp" />
+    <ClCompile Include="bean\env\Function.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectHashCodeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectToStringExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericToStringExecutor.cpp" />
+    <ClCompile Include="bean\env\IncludeManager.cpp" />
+    <ClCompile Include="bean\env\native\console\ConsoleWriteExecutor.cpp" />
+    <ClCompile Include="bean\env\native\console\ConsoleWriteLineExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringToStringExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserObject.cpp" />
+    <ClCompile Include="bean\env\ScriptMethod.cpp" />
+    <ClCompile Include="bean\ast\visitor\ASTMethodVisitor.cpp" />
+    <ClCompile Include="bean\env\native\boolean\BooleanToString.cpp" />
+    <ClCompile Include="bean\env\FunctionManager.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpAddExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpDivExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpMulExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpSubExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpSurExecutor.cpp" />
+    <ClCompile Include="bean\env\native\object\ObjectOpEqualsExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpAddExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpDivExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpEqualsExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpMulExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpSubExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericOpSurExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringOpAddExecutor.cpp" />
+    <ClCompile Include="bean\parser\pattern\SuperParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\LRoundBracketParser.cpp" />
+    <ClCompile Include="bean\env\Delegate.cpp" />
+    <ClCompile Include="bean\env\LambdaDelegate.cpp" />
+    <ClCompile Include="bean\env\user\UserDelegate.cpp" />
+    <ClCompile Include="bean\env\native\delegate\DelegateCallExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserArray.cpp" />
+    <ClCompile Include="bean\parser\pattern\LCurlyBracketParser.cpp" />
+    <ClCompile Include="bean\env\MethodDelegate.cpp" />
+    <ClCompile Include="bean\env\native\delegate\DelegateNewInstanceExecutor.cpp" />
+    <ClCompile Include="bean\parser\pattern\TryParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ThrowParser.cpp" />
+    <ClCompile Include="bean\env\native\TypedNativeMethodExecutor.cpp" />
+    <ClCompile Include="bean\util\Memory.cpp" />
+    <ClCompile Include="bean\util\STL.cpp" />
+    <ClCompile Include="bean\scanner\SequenceOutOfRangeException.cpp" />
+    <ClCompile Include="bean\ast\CodeSyntaxException.cpp" />
+    <ClCompile Include="bean\env\ClassFormatException.cpp" />
+    <ClCompile Include="bean\ast\InterpretExitException.cpp" />
+    <ClCompile Include="bean\env\NewMethod.cpp" />
+    <ClCompile Include="bean\env\native\NativeCastException.cpp" />
+    <ClCompile Include="bean\env\GetMethod.cpp" />
+    <ClCompile Include="bean\env\SetMethod.cpp" />
+    <ClCompile Include="bean\env\native\string\StringEndsWithExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringIndexOf2Executor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringIndexOfExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringLastIndexOf2Executor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringLastIndexOfExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringStartsWithExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringSubstringExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringInsertExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringRemoveExecutor.cpp" />
+    <ClCompile Include="bean\parser\pattern\CharacterParser.cpp" />
+    <ClCompile Include="bean\env\native\character\CharacterOpAddExecutor.cpp" />
+    <ClCompile Include="bean\env\native\character\CharacterToStringExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringLengthExecutor.cpp" />
+    <ClCompile Include="bean\env\native\string\StringEncodeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileGetCurrentPathExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileGetPathSeparatorCharExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileExistsExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileReadTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileWriteTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileCreateNewFileExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileDeleteExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileIsDirectoryExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileIsFileExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileMkdirExecutor.cpp" />
+    <ClCompile Include="bean\env\native\console\ConsoleReadExecutor.cpp" />
+    <ClCompile Include="bean\env\native\console\ConsoleReadLineExecutor.cpp" />
+    <ClCompile Include="bean\ast\iterator\predicate\TagPredicateBlack.cpp" />
+    <ClCompile Include="bean\ast\iterator\predicate\TagPredicateWhite.cpp" />
+    <ClCompile Include="bean\ast\iterator\predicate\NodeTypePredicateBlack.cpp" />
+    <ClCompile Include="bean\ast\iterator\predicate\NodeTypePredicateWhite.cpp" />
+    <ClCompile Include="bean\env\native\file\FileCopyExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileMoveExecutor.cpp" />
+    <ClCompile Include="bean\env\native\file\FileGetParentExecutor.cpp" />
+    <ClCompile Include="bean\env\Exception.cpp" />
+    <ClCompile Include="bean\env\native\file\FileGetChildrenExecutor.cpp" />
+    <ClCompile Include="bean\env\MessageQueue.cpp" />
+    <ClCompile Include="bean\env\MessageInfo.cpp" />
+    <ClCompile Include="bean\threads\Thread.cpp" />
+    <ClCompile Include="bean\ast\visitor\ExceptionHandle.cpp" />
+    <ClCompile Include="bean\env\user\UserThread.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadStartExecutor.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadSleepExecutor.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadJoinExecutor.cpp" />
+    <ClCompile Include="bean\Debug.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadGetCurrentOwner.cpp" />
+    <ClCompile Include="bean\env\native\thread\ThreadGetNameExecutor.cpp" />
+    <ClCompile Include="bean\util\BitFlags.cpp" />
+    <ClCompile Include="bean\scanner\DocumentPosition.cpp" />
+    <ClCompile Include="bean\parser\pattern\DecrementParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\IncrementParser.cpp" />
+    <ClCompile Include="bean\parser\pattern\ScheduledFactorParser.cpp" />
+    <ClCompile Include="bean\env\user\UserFilePtr.cpp" />
+    <ClCompile Include="bean\env\native\fileptr\FilePtrCloseExecutor.cpp" />
+    <ClCompile Include="bean\env\native\fileptr\FilePtrOpenExecutor.cpp" />
+    <ClCompile Include="bean\env\native\fileptr\FilePtrReadExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsDoubleExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsFloatExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsIntegerExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsLongExecutor.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsShortExecutor.cpp" />
+    <ClCompile Include="bean\util\Number.cpp" />
+    <ClCompile Include="bean\env\NaN.cpp" />
+    <ClCompile Include="bean\env\native\numeric\NumericAsCharacterExecutor.cpp" />
+    <ClCompile Include="bean\env\native\character\CharacterAsInteger.cpp" />
+    <ClCompile Include="bean\env\Enum.cpp" />
+    <ClCompile Include="bean\parser\pattern\EnumParser.cpp" />
+    <ClCompile Include="bean\env\native\enumitem\EnumItemToStringExecutor.cpp" />
+    <ClCompile Include="bean\env\native\enum\EnumValueOfExecutor.cpp" />
+    <ClCompile Include="bean\env\native\enum\EnumValuesExecutor.cpp" />
+    <ClCompile Include="bean\env\EnumItem.cpp" />
+    <ClCompile Include="bean\env\native\enumitem\EnumItemGetIndexExecutor.cpp" />
+    <ClCompile Include="bean\util\Console.cpp" />
+    <ClCompile Include="bean\env\native\math\MathAbsExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathMaxExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathMinExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathPowExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathCeilExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathCosExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathFloorExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathRoundExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathSinExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathSqrtExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathTanExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathToDegreeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\math\MathToRadianExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserSystem.cpp" />
+    <ClCompile Include="bean\env\native\mutex\MutexLockExecutor.cpp" />
+    <ClCompile Include="bean\env\native\mutex\MutexNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\mutex\MutexUnlockExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserMutex.cpp" />
+    <ClCompile Include="bean\wxgui\ApplicationContext.cpp" />
+    <ClCompile Include="bean\wxgui\Frame.cpp" />
+    <ClCompile Include="bean\wxgui\FramePeer.cpp" />
+    <ClCompile Include="bean\wxgui\WxFrameEx.cpp" />
+    <ClCompile Include="bean\wxgui\Button.cpp" />
+    <ClCompile Include="bean\wxgui\ButtonPeer.cpp" />
+    <ClCompile Include="bean\env\native\enumitem\EnumItemGetValueExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserComponent.cpp" />
+    <ClCompile Include="bean\env\user\UserContainer.cpp" />
+    <ClCompile Include="bean\env\user\UserWindow.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetXExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetYExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetXExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetYExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\ComponentInterface.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetHeightExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetWidthExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetHeightExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetWidthExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\ContainerInterface.cpp" />
+    <ClCompile Include="bean\wxgui\WindowInterface.cpp" />
+    <ClCompile Include="bean\wxgui\FrameInterface.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameMainLoopExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameNewExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserFrame.cpp" />
+    <ClCompile Include="bean\wxgui\WxButtonEx.cpp" />
+    <ClCompile Include="bean\wxgui\ButtonInterface.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonGetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonSetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserButton.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonAddPushListenerExecutor.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonRemovePushListenerAtExecutor.cpp" />
+    <ClCompile Include="bean\env\native\button\ButtonGetPushListenerCountExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\Label.cpp" />
+    <ClCompile Include="bean\wxgui\LabelInterface.cpp" />
+    <ClCompile Include="bean\wxgui\LabelPeer.cpp" />
+    <ClCompile Include="bean\wxgui\WxLabelEx.cpp" />
+    <ClCompile Include="bean\env\native\label\LabelGetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\label\LabelNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\label\LabelSetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserLabel.cpp" />
+    <ClCompile Include="bean\wxgui\Panel.cpp" />
+    <ClCompile Include="bean\wxgui\PanelInterface.cpp" />
+    <ClCompile Include="bean\wxgui\PanelPeer.cpp" />
+    <ClCompile Include="bean\wxgui\WxPanelEx.cpp" />
+    <ClCompile Include="bean\env\user\UserPanel.cpp" />
+    <ClCompile Include="bean\env\native\panel\PanelNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\color\ColorNewAExecutor.cpp" />
+    <ClCompile Include="bean\env\native\color\ColorNewExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserColor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetBackgroundExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetForegroundExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetBackgroundExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetForegroundExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\TextField.cpp" />
+    <ClCompile Include="bean\wxgui\TextFieldInterface.cpp" />
+    <ClCompile Include="bean\wxgui\TextFieldPeer.cpp" />
+    <ClCompile Include="bean\wxgui\WxTextFieldEx.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldCanRedoExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldCanUndoExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldCopyExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldCutExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldDiscardsAllEditsExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldGetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldPasteExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldRedoExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldSelectAllExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldSelectExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldSetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldUndoExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldGetCaretPositionExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldInsertExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldRemoveExecutor.cpp" />
+    <ClCompile Include="bean\env\native\textfield\TextFieldSetCaretPositionExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserTextField.cpp" />
+    <ClCompile Include="bean\wxgui\ScrollPane.cpp" />
+    <ClCompile Include="bean\wxgui\ScrollPaneInterface.cpp" />
+    <ClCompile Include="bean\wxgui\ScrollPanePeer.cpp" />
+    <ClCompile Include="bean\wxgui\WxScrollPaneEx.cpp" />
+    <ClCompile Include="bean\env\user\UserScrollPane.cpp" />
+    <ClCompile Include="bean\env\native\scrollpane\ScrollPaneNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetFitSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetMaxSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentGetMinSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetFitSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetMaxSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentSetMinSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\container\ContainerGetLayoutExecutor.cpp" />
+    <ClCompile Include="bean\env\native\container\ContainerSetLayoutExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerAddComponentExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerDoLayoutExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerGetFitSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerGetMaxSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerGetMinSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerRemoveComponentAtExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerSetFitSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerSetMaxSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerSetMinSizeExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\LayoutManagerImpl.h" />
+    <ClCompile Include="bean\wxgui\LayoutManagerInterface.cpp" />
+    <ClCompile Include="bean\env\user\UserLayoutManager.cpp" />
+    <ClCompile Include="bean\env\user\UserLayoutParams.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsBorderExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsBottomExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsLeftExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsRightExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsTopExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerGetComponentCountExecutor.cpp" />
+    <ClCompile Include="bean\env\native\flowlayout\FlowLayoutNewHorizontalExecutor.cpp" />
+    <ClCompile Include="bean\env\native\flowlayout\FlowLayoutNewVerticalExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsFillExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerAddSpaceExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutmanager\LayoutManagerAddStretchExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\MenuBar.cpp" />
+    <ClCompile Include="bean\env\native\menubar\MenuBarAddMenuExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menubar\MenuBarGetMenuCountExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\MenuBarInterface.cpp" />
+    <ClCompile Include="bean\wxgui\MenuBarPeer.cpp" />
+    <ClCompile Include="bean\env\native\menubar\MenuBarRemoveMenuAtExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\WxMenuBarEx.cpp" />
+    <ClCompile Include="bean\env\user\UserMenuBar.cpp" />
+    <ClCompile Include="bean\env\native\menubar\MenuBarNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameSetMenuBarExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameGetMenuBarExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuAddMenuItemExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuGetSubElementCountExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuRemoveSubElementAtExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserMenu.cpp" />
+    <ClCompile Include="bean\env\user\UserMenuElement.cpp" />
+    <ClCompile Include="bean\env\user\UserMenuItem.cpp" />
+    <ClCompile Include="bean\env\native\menuitem\MenuItemGetTextExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menuitem\MenuItemNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menuitem\MenuItemSetTextExecutor.cpp" />
+    <ClCompile Include="bean\util\NotImplException.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuAddMenuExecutor.cpp" />
+    <ClCompile Include="bean\env\native\checkboxmenuitem\CheckBoxMenuItemIsSelectedExecutor.cpp" />
+    <ClCompile Include="bean\env\native\checkboxmenuitem\CheckBoxMenuItemSetSelectedExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuAddCheckBoxMenuItemExecutor.cpp" />
+    <ClCompile Include="bean\env\native\menu\MenuAddSeparatorExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameCreateStatusBarExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FramePrintStatusExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FramePackExecutor.cpp" />
+    <ClCompile Include="bean\env\native\layoutparams\LayoutParamsCenterExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameGetTitleExecutor.cpp" />
+    <ClCompile Include="bean\env\native\frame\FrameSetTitleExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\WxPaintBox.cpp" />
+    <ClCompile Include="bean\env\native\component\ComponentRepaintExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\PaintBox.cpp" />
+    <ClCompile Include="bean\wxgui\PaintBoxInterface.cpp" />
+    <ClCompile Include="bean\wxgui\PaintBoxPeer.cpp" />
+    <ClCompile Include="bean\env\user\UserPaintBox.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxAddPaintListenerExecutor.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxGetPaintListenerCountExecutor.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxRemovePaintListenerAtExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserGraphics.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsClearExecutor.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawDotExecutor.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawEllipseExecutor.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawLineExecutor.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxStartExecutor.cpp" />
+    <ClCompile Include="bean\env\native\paintbox\PaintBoxStopExecutor.cpp" />
+    <ClCompile Include="bean\wxgui\EventSystem.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawBitmapExecutor.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawRectExecutor.cpp" />
+    <ClCompile Include="bean\env\native\graphics\GraphicsDrawStringExecutor.cpp" />
+    <ClCompile Include="bean\util\TimeSpan.cpp" />
+    <ClCompile Include="bean\env\gc\GCStrategy.cpp" />
+    <ClCompile Include="bean\parser\function\ParserThen.cpp" />
+    <ClCompile Include="bean\env\ObjectState.cpp" />
+    <ClCompile Include="bean\env\gc\MarkAndSweepGCStrategy.cpp" />
+    <ClCompile Include="bean\env\Reference.cpp" />
+    <ClCompile Include="bean\env\gc\GCLock.cpp" />
+    <ClCompile Include="bean\env\pointer\FieldPointer.cpp" />
+    <ClCompile Include="bean\env\pointer\Pointer.cpp" />
+    <ClCompile Include="bean\env\pointer\VariablePointer.cpp" />
+    <ClCompile Include="bean\env\ClassLoaderTreeLock.cpp" />
+    <ClCompile Include="bean\env\gc\IncrementalGCStrategy.cpp" />
+    <ClCompile Include="bean\env\gc\IncrementalMarker.cpp" />
+    <ClCompile Include="bean\env\gc\Block.cpp" />
+    <ClCompile Include="bean\env\gc\Page.cpp" />
+    <ClCompile Include="bean\env\gc\HeapMutexLock.cpp" />
+    <ClCompile Include="bean\env\WeakReference.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapGetHeightExecutor.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapGetWidthExecutor.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapLoadExecutor.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapRotateExecutor.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapSaveExecutor.cpp" />
+    <ClCompile Include="bean\env\native\bitmap\BitmapScaleExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserBitmap.cpp" />
+    <ClCompile Include="bean\env\native\wxutilities\WxUtilitiesGetKeyStateExecutor.cpp" />
+    <ClCompile Include="bean\env\native\wxutilities\WxUtilitiesGetMousePointExecutor.cpp" />
+    <ClCompile Include="bean\env\native\wxutilities\WxUtilitiesIsLeftClickExecutor.cpp" />
+    <ClCompile Include="bean\env\native\wxutilities\WxUtilitiesIsMiddleClickExecutor.cpp" />
+    <ClCompile Include="bean\env\native\wxutilities\WxUtilitiesIsRightClickExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorAddExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorBackExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorGetExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorNewExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorPopExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorPushExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorSetExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorTopExecutor.cpp" />
+    <ClCompile Include="bean\env\user\UserVector.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorSizeExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorRemoveAtExecutor.cpp" />
+    <ClCompile Include="bean\env\native\vector\VectorRemoveExecutor.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseThen.cpp" />
+    <ClCompile Include="bean\parser\turbo\TParser.cpp" />
+    <ClCompile Include="bean\parser\turbo\TParseFailedException.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseMany.cpp" />
+    <ClCompile Include="bean\parser\turbo\TParseResult.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseOr.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseWith.cpp" />
+    <ClCompile Include="bean\parser\turbo\TParserManager.cpp" />
+    <ClCompile Include="bean\parser\turbo\SemanticAction.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseOptional.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseNotSkip.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseSelf.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseDelegate.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseDelegate2.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseRecursive.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseDoubleQuote.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseSingleQuote.cpp" />
+    <ClCompile Include="bean\parser\turbo\FutureAction.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseRecursiveGuard.cpp" />
+    <ClCompile Include="bean\parser\turbo\ParseCase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bean\ast\ASTNegativeOperator.h" />
+    <ClInclude Include="bean\ast\ASTPositiveOperator.h" />
+    <ClInclude Include="bean\Base.h" />
+    <ClInclude Include="bean\ast\visitor\ASTPrintVisitorSkeleton.h" />
+    <ClInclude Include="bean\parser\bison\bean.tab.h" />
+    <ClInclude Include="bean\parser\bison\string.h" />
+    <ClInclude Include="bean\parser\bison\yyinterface.h" />
+    <ClInclude Include="bean\parser\turbo\BeanParserManagerImpl.h" />
+    <ClInclude Include="bean\ast\visitor\ASTFunctionVisitor.h" />
+    <ClInclude Include="bean\launch\BeanLineRunner.h" />
+    <ClInclude Include="bean\launch\BeanListenerProxy.h" />
+    <ClInclude Include="bean\launch\BeanAdapter.h" />
+    <ClInclude Include="bean\BeanSkeleton.h" />
+    <ClInclude Include="bean\launch\BeanListener.h" />
+    <ClInclude Include="bean\ast\ASTBranch.h" />
+    <ClInclude Include="bean\ast\ASTSyncOperator.h" />
+    <ClInclude Include="bean\ast\ASTSyncFactor.h" />
+    <ClInclude Include="bean\env\ClassLoaderSkeleton.h" />
+    <ClInclude Include="bean\parser\ASTExceptionLayer.h" />
+    <ClInclude Include="bean\parser\ASTParserLayer.h" />
+    <ClInclude Include="bean\ast\ASTEnumItemDeclaration.h" />
+    <ClInclude Include="bean\ast\visitor\ASTEnumBuilder.h" />
+    <ClInclude Include="bean\ast\ASTEnumDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTCamma.h" />
+    <ClInclude Include="bean\ast\ASTScheduledFactor.h" />
+    <ClInclude Include="bean\ast\ASTDecrement.h" />
+    <ClInclude Include="bean\ast\ASTIncrement.h" />
+    <ClInclude Include="bean\ast\ASTEOF.h" />
+    <ClInclude Include="bean\ast\iterator\ASTComparator.h" />
+    <ClInclude Include="bean\ast\iterator\ASTPredicate.h" />
+    <ClInclude Include="bean\ast\iterator\ASTIterator.h" />
+    <ClInclude Include="bean\ast\visitor\ASTFilteredVisitor.h" />
+    <ClInclude Include="bean\env\TNumericDefaults.h" />
+    <ClInclude Include="bean\env\TNumericDouble.h" />
+    <ClInclude Include="bean\env\TNumericFloat.h" />
+    <ClInclude Include="bean\env\TNumericInt.h" />
+    <ClInclude Include="bean\env\TNumericLong.h" />
+    <ClInclude Include="bean\env\TNumericShort.h" />
+    <ClInclude Include="bean\ast\ASTCharacter.h" />
+    <ClInclude Include="bean\launch\Bean.h" />
+    <ClInclude Include="bean\ast\visitor\ASTTypeBuilder.h" />
+    <ClInclude Include="bean\ast\visitor\ASTClassBuilder.h" />
+    <ClInclude Include="bean\ast\visitor\ASTNullVisitor.h" />
+    <ClInclude Include="bean\ast\ASTThrow.h" />
+    <ClInclude Include="bean\ast\ASTCatchStatement.h" />
+    <ClInclude Include="bean\ast\ASTTryStatement.h" />
+    <ClInclude Include="bean\ast\ASTOperator.h" />
+    <ClInclude Include="bean\ast\ASTUnaryOperator.h" />
+    <ClInclude Include="bean\ast\ASTBoolean.h" />
+    <ClInclude Include="bean\ast\ASTNotEqualsOperator.h" />
+    <ClInclude Include="bean\ast\ASTNotOperator.h" />
+    <ClInclude Include="bean\ast\ASTArrayInitializer.h" />
+    <ClInclude Include="bean\ast\ASTMethodReference.h" />
+    <ClInclude Include="bean\ast\ASTNullFactor.h" />
+    <ClInclude Include="bean\env\native\array\ArrayLengthExecutor.h" />
+    <ClInclude Include="bean\env\native\array\ArrayNewExecutor.h" />
+    <ClInclude Include="bean\env\native\array\ArrayGetExecutor.h" />
+    <ClInclude Include="bean\env\native\array\ArraySetExecutor.h" />
+    <ClInclude Include="bean\ast\ASTLambdaDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTSuperFactor.h" />
+    <ClInclude Include="bean\ast\ASTFieldAccess.h" />
+    <ClInclude Include="bean\ast\ASTPointer.h" />
+    <ClInclude Include="bean\ast\ASTAddAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTDivAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTMulAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTSubAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTSurAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTIfCauseStatement.h" />
+    <ClInclude Include="bean\ast\ASTString.h" />
+    <ClInclude Include="bean\ast\visitor\ASTIncludeVisitor.h" />
+    <ClInclude Include="bean\ast\visitor\ASTInterpretVisitor.h" />
+    <ClInclude Include="bean\ast\ASTThisFactor.h" />
+    <ClInclude Include="bean\ast\ASTMemberDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTAssignOperator.h" />
+    <ClInclude Include="bean\ast\ASTFieldDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTLCurlyBracket.h" />
+    <ClInclude Include="bean\ast\ASTRCurlyBracket.h" />
+    <ClInclude Include="bean\ast\ASTMethodInvocation.h" />
+    <ClInclude Include="bean\ast\ASTMethodInvocationByMessage.h" />
+    <ClInclude Include="bean\ast\ASTMethodInvocationBySelf.h" />
+    <ClInclude Include="bean\ast\ASTEmptyFactor.h" />
+    <ClInclude Include="bean\ast\ASTEmptyBody.h" />
+    <ClInclude Include="bean\ast\ASTContext.h" />
+    <ClInclude Include="bean\ast\ASTVariable.h" />
+    <ClInclude Include="bean\ast\ASTBiggestOperator.h" />
+    <ClInclude Include="bean\ast\ASTEBiggestOperator.h" />
+    <ClInclude Include="bean\ast\ASTEqualOperator.h" />
+    <ClInclude Include="bean\ast\ASTESmallestOperator.h" />
+    <ClInclude Include="bean\ast\ASTSmallestOperator.h" />
+    <ClInclude Include="bean\ast\ASTBreakStatement.h" />
+    <ClInclude Include="bean\ast\ASTContinueStatement.h" />
+    <ClInclude Include="bean\ast\ASTForStatement.h" />
+    <ClInclude Include="bean\ast\ASTReturnStatement.h" />
+    <ClInclude Include="bean\ast\ASTWhileStatement.h" />
+    <ClInclude Include="bean\ast\ASTNewStatement.h" />
+    <ClInclude Include="bean\ast\ASTNumeric.h" />
+    <ClInclude Include="bean\ast\ASTLRoundBracket.h" />
+    <ClInclude Include="bean\ast\ASTRRoundBracket.h" />
+    <ClInclude Include="bean\ast\ASTAddOperator.h" />
+    <ClInclude Include="bean\ast\ASTAndAndOperator.h" />
+    <ClInclude Include="bean\ast\ASTAndOperator.h" />
+    <ClInclude Include="bean\ast\ASTDivOperator.h" />
+    <ClInclude Include="bean\ast\ASTMulOperator.h" />
+    <ClInclude Include="bean\ast\ASTOrOperator.h" />
+    <ClInclude Include="bean\ast\ASTOrOrOperator.h" />
+    <ClInclude Include="bean\ast\ASTSubOperator.h" />
+    <ClInclude Include="bean\ast\ASTSurOperator.h" />
+    <ClInclude Include="bean\ast\ASTVariableDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTFactor.h" />
+    <ClInclude Include="bean\ast\ASTBinaryOperator.h" />
+    <ClInclude Include="bean\ast\ASTElseIfStatement.h" />
+    <ClInclude Include="bean\ast\ASTElseStatement.h" />
+    <ClInclude Include="bean\ast\ASTIfStatement.h" />
+    <ClInclude Include="bean\ast\ASTBody.h" />
+    <ClInclude Include="bean\ast\ASTIncludeStatement.h" />
+    <ClInclude Include="bean\ast\visitor\ASTPrintVisitor.h" />
+    <ClInclude Include="bean\ast\ASTModifier.h" />
+    <ClInclude Include="bean\ast\ASTParameter.h" />
+    <ClInclude Include="bean\ast\ASTMethodDeclaration.h" />
+    <ClInclude Include="bean\ast\ASTName.h" />
+    <ClInclude Include="bean\ast\ASTClassDeclaration.h" />
+    <ClInclude Include="bean\ast\visitor\ASTVisitor.h" />
+    <ClInclude Include="bean\parser\ASTParserTable.h" />
+    <ClInclude Include="bean\parser\ASTParser.h" />
+    <ClInclude Include="bean\ast\ASTNode.h" />
+    <ClInclude Include="bean\env\TNumericImpl.h" />
+    <ClInclude Include="bean\parser\turbo\FilterAction.h" />
+    <ClInclude Include="bean\parser\turbo\ParseNull.h" />
+    <ClInclude Include="bean\parser\turbo\SemanticActionImpl.h" />
+    <ClInclude Include="bean\util\IO.h" />
+    <ClInclude Include="bean\scanner\Sequence.h" />
+    <ClInclude Include="bean\util\MemoryImpl.h" />
+    <ClInclude Include="bean\util\Text.h" />
+    <ClInclude Include="bean\env\Runtime.h" />
+    <ClInclude Include="bean\scanner\Scanner.h" />
+    <ClInclude Include="bean\scanner\Token.h" />
+    <ClInclude Include="bean\scanner\TokenList.h" />
+    <ClInclude Include="bean\parser\pattern\ClassParser.h" />
+    <ClInclude Include="bean\parser\pattern\UseParser.h" />
+    <ClInclude Include="bean\parser\pattern\PeriodParser.h" />
+    <ClInclude Include="bean\parser\pattern\IdentParser.h" />
+    <ClInclude Include="bean\env\Modifier.h" />
+    <ClInclude Include="bean\parser\pattern\MethodParser.h" />
+    <ClInclude Include="bean\parser\pattern\IfParser.h" />
+    <ClInclude Include="bean\parser\pattern\VarParser.h" />
+    <ClInclude Include="bean\env\Object_.h" />
+    <ClInclude Include="bean\parser\pattern\DelegateParser.h" />
+    <ClInclude Include="bean\parser\pattern\NewParser.h" />
+    <ClInclude Include="bean\parser\pattern\WhileParser.h" />
+    <ClInclude Include="bean\parser\pattern\ForParser.h" />
+    <ClInclude Include="bean\parser\pattern\BreakParser.h" />
+    <ClInclude Include="bean\parser\pattern\ContinueParser.h" />
+    <ClInclude Include="bean\parser\pattern\ReturnParser.h" />
+    <ClInclude Include="bean\parser\pattern\FieldParser.h" />
+    <ClInclude Include="bean\parser\pattern\LSquareBracketParser.h" />
+    <ClInclude Include="bean\parser\pattern\ThisParser.h" />
+    <ClInclude Include="bean\env\Class.h" />
+    <ClInclude Include="bean\env\ClassLoader.h" />
+    <ClInclude Include="bean\env\Field.h" />
+    <ClInclude Include="bean\env\Method.h" />
+    <ClInclude Include="bean\env\Package.h" />
+    <ClInclude Include="bean\env\gc\Heap.h" />
+    <ClInclude Include="bean\env\Member.h" />
+    <ClInclude Include="bean\env\Parameter.h" />
+    <ClInclude Include="bean\env\Constructor_.h" />
+    <ClInclude Include="bean\env\Null.h" />
+    <ClInclude Include="bean\env\Numeric.h" />
+    <ClInclude Include="bean\env\Boolean.h" />
+    <ClInclude Include="bean\env\Character.h" />
+    <ClInclude Include="bean\env\native\NativeMethodExecutor.h" />
+    <ClInclude Include="bean\env\native\NativeMethodRegistry.h" />
+    <ClInclude Include="bean\env\NativeMethod.h" />
+    <ClInclude Include="bean\env\CodeBlock.h" />
+    <ClInclude Include="bean\env\Function.h" />
+    <ClInclude Include="bean\env\native\object\ObjectHashCodeExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectToStringExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericToStringExecutor.h" />
+    <ClInclude Include="bean\env\IncludeManager.h" />
+    <ClInclude Include="bean\env\native\console\ConsoleWriteExecutor.h" />
+    <ClInclude Include="bean\env\native\console\ConsoleWriteLineExecutor.h" />
+    <ClInclude Include="bean\env\ScriptMethod.h" />
+    <ClInclude Include="bean\ast\visitor\ASTMethodVisitor.h" />
+    <ClInclude Include="bean\env\native\boolean\BooleanToString.h" />
+    <ClInclude Include="bean\env\FunctionManager.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpAddExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpDivExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpMulExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpSubExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpSurExecutor.h" />
+    <ClInclude Include="bean\env\native\object\ObjectOpEqualsExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpAddExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpDivExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpEqualsExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpMulExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpSubExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericOpSurExecutor.h" />
+    <ClInclude Include="bean\parser\pattern\LRoundBracketParser.h" />
+    <ClInclude Include="bean\env\Delegate.h" />
+    <ClInclude Include="bean\env\LambdaDelegate.h" />
+    <ClInclude Include="bean\env\native\delegate\DelegateCallExecutor.h" />
+    <ClInclude Include="bean\env\MethodDelegate.h" />
+    <ClInclude Include="bean\env\native\delegate\DelegateNewInstanceExecutor.h" />
+    <ClInclude Include="bean\util\Memory.h" />
+    <ClInclude Include="bean\ast\CodeSyntaxException.h" />
+    <ClInclude Include="bean\env\ClassFormatException.h" />
+    <ClInclude Include="bean\ast\InterpretExitException.h" />
+    <ClInclude Include="bean\env\NewMethod.h" />
+    <ClInclude Include="bean\env\native\NativeCastException.h" />
+    <ClInclude Include="bean\env\GetMethod.h" />
+    <ClInclude Include="bean\parser\pattern\CharacterParser.h" />
+    <ClInclude Include="bean\env\native\character\CharacterOpAddExecutor.h" />
+    <ClInclude Include="bean\env\native\character\CharacterToStringExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileGetCurrentPathExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileGetPathSeparatorCharExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileExistsExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileReadTextExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileWriteTextExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileCreateNewFileExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileDeleteExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileIsDirectoryExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileIsFileExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileMkdirExecutor.h" />
+    <ClInclude Include="bean\env\native\console\ConsoleReadExecutor.h" />
+    <ClInclude Include="bean\env\native\console\ConsoleReadLineExecutor.h" />
+    <ClInclude Include="bean\ast\iterator\predicate\NodeTypePredicateBlack.h" />
+    <ClInclude Include="bean\ast\iterator\predicate\NodeTypePredicateWhite.h" />
+    <ClInclude Include="bean\env\native\file\FileCopyExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileMoveExecutor.h" />
+    <ClInclude Include="bean\env\native\file\FileGetParentExecutor.h" />
+    <ClInclude Include="bean\env\Exception.h" />
+    <ClInclude Include="bean\env\native\file\FileGetChildrenExecutor.h" />
+    <ClInclude Include="bean\env\MessageQueue.h" />
+    <ClInclude Include="bean\env\MessageInfo.h" />
+    <ClInclude Include="bean\ast\visitor\ExceptionHandle.h" />
+    <ClInclude Include="bean\Debug.h" />
+    <ClInclude Include="bean\util\BitFlags.h" />
+    <ClInclude Include="bean\scanner\DocumentPosition.h" />
+    <ClInclude Include="bean\parser\pattern\DecrementParser.h" />
+    <ClInclude Include="bean\parser\pattern\IncrementParser.h" />
+    <ClInclude Include="bean\env\native\fileptr\FilePtrCloseExecutor.h" />
+    <ClInclude Include="bean\env\native\fileptr\FilePtrOpenExecutor.h" />
+    <ClInclude Include="bean\env\native\fileptr\FilePtrReadExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsDoubleExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsFloatExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsIntegerExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsLongExecutor.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsShortExecutor.h" />
+    <ClInclude Include="bean\util\Number.h" />
+    <ClInclude Include="bean\env\NaN.h" />
+    <ClInclude Include="bean\env\native\numeric\NumericAsCharacterExecutor.h" />
+    <ClInclude Include="bean\env\native\character\CharacterAsInteger.h" />
+    <ClInclude Include="bean\env\Enum.h" />
+    <ClInclude Include="bean\parser\pattern\EnumParser.h" />
+    <ClInclude Include="bean\env\native\enumitem\EnumItemToStringExecutor.h" />
+    <ClInclude Include="bean\env\native\enum\EnumValueOfExecutor.h" />
+    <ClInclude Include="bean\env\native\enum\EnumValuesExecutor.h" />
+    <ClInclude Include="bean\env\EnumItem.h" />
+    <ClInclude Include="bean\env\native\enumitem\EnumItemGetIndexExecutor.h" />
+    <ClInclude Include="bean\util\Console.h" />
+    <ClInclude Include="bean\env\native\math\MathAbsExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathMaxExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathMinExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathPowExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathCeilExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathCosExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathFloorExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathRoundExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathSinExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathSqrtExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathTanExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathToDegreeExecutor.h" />
+    <ClInclude Include="bean\env\native\math\MathToRadianExecutor.h" />
+    <ClInclude Include="bean\env\native\mutex\MutexLockExecutor.h" />
+    <ClInclude Include="bean\env\native\mutex\MutexNewExecutor.h" />
+    <ClInclude Include="bean\env\native\mutex\MutexUnlockExecutor.h" />
+    <ClInclude Include="bean\wxgui\ApplicationContext.h" />
+    <ClInclude Include="bean\wxgui\Component.h" />
+    <ClInclude Include="bean\wxgui\ComponentImpl.h" />
+    <ClInclude Include="bean\wxgui\ComponentPeer.h" />
+    <ClInclude Include="bean\wxgui\ComponentPeerImpl.h" />
+    <ClInclude Include="bean\wxgui\Container.h" />
+    <ClInclude Include="bean\wxgui\ContainerImpl.h" />
+    <ClInclude Include="bean\wxgui\ContainerPeer.h" />
+    <ClInclude Include="bean\wxgui\ContainerPeerImpl.h" />
+    <ClInclude Include="bean\wxgui\Frame.h" />
+    <ClInclude Include="bean\wxgui\FramePeer.h" />
+    <ClInclude Include="bean\wxgui\Window.h" />
+    <ClInclude Include="bean\wxgui\WindowImpl.h" />
+    <ClInclude Include="bean\wxgui\WindowPeer.h" />
+    <ClInclude Include="bean\wxgui\WindowPeerImpl.h" />
+    <ClInclude Include="bean\wxgui\WxFrameEx.h" />
+    <ClInclude Include="bean\wxgui\Button.h" />
+    <ClInclude Include="bean\wxgui\ButtonPeer.h" />
+    <ClInclude Include="bean\env\native\enumitem\EnumItemGetValueExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetXExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetYExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetXExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetYExecutor.h" />
+    <ClInclude Include="bean\wxgui\ComponentInterface.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetHeightExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetWidthExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetHeightExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetWidthExecutor.h" />
+    <ClInclude Include="bean\wxgui\ContainerInterface.h" />
+    <ClInclude Include="bean\wxgui\FrameInterface.h" />
+    <ClInclude Include="bean\env\native\frame\FrameMainLoopExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameNewExecutor.h" />
+    <ClInclude Include="bean\wxgui\ButtonInterface.h" />
+    <ClInclude Include="bean\env\native\button\ButtonGetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\button\ButtonNewExecutor.h" />
+    <ClInclude Include="bean\env\native\button\ButtonSetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\button\ButtonAddPushListenerExecutor.h" />
+    <ClInclude Include="bean\env\native\button\ButtonRemovePushListenerAtExecutor.h" />
+    <ClInclude Include="bean\env\native\button\ButtonGetPushListenerCountExecutor.h" />
+    <ClInclude Include="bean\wxgui\Label.h" />
+    <ClInclude Include="bean\wxgui\LabelInterface.h" />
+    <ClInclude Include="bean\wxgui\LabelPeer.h" />
+    <ClInclude Include="bean\env\native\label\LabelGetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\label\LabelNewExecutor.h" />
+    <ClInclude Include="bean\env\native\label\LabelSetTextExecutor.h" />
+    <ClInclude Include="bean\wxgui\Panel.h" />
+    <ClInclude Include="bean\wxgui\PanelInterface.h" />
+    <ClInclude Include="bean\wxgui\PanelPeer.h" />
+    <ClInclude Include="bean\env\native\panel\PanelNewExecutor.h" />
+    <ClInclude Include="bean\env\native\color\ColorNewAExecutor.h" />
+    <ClInclude Include="bean\env\native\color\ColorNewExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetBackgroundExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetForegroundExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetBackgroundExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetForegroundExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetFitSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetMaxSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentGetMinSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetFitSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetMaxSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentSetMinSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\container\ContainerGetLayoutExecutor.h" />
+    <ClInclude Include="bean\env\native\container\ContainerSetLayoutExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerAddComponentExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerDoLayoutExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerGetFitSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerGetMaxSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerGetMinSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerNewExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerRemoveComponentAtExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerSetFitSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerSetMaxSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerSetMinSizeExecutor.h" />
+    <ClInclude Include="bean\wxgui\LayoutManagerInterface.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsBorderExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsBottomExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsLeftExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsNewExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsRightExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsTopExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerGetComponentCountExecutor.h" />
+    <ClInclude Include="bean\env\native\flowlayout\FlowLayoutNewHorizontalExecutor.h" />
+    <ClInclude Include="bean\env\native\flowlayout\FlowLayoutNewVerticalExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsFillExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerAddSpaceExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutmanager\LayoutManagerAddStretchExecutor.h" />
+    <ClInclude Include="bean\wxgui\MenuBar.h" />
+    <ClInclude Include="bean\env\native\menubar\MenuBarAddMenuExecutor.h" />
+    <ClInclude Include="bean\env\native\menubar\MenuBarGetMenuCountExecutor.h" />
+    <ClInclude Include="bean\wxgui\MenuBarInterface.h" />
+    <ClInclude Include="bean\wxgui\MenuBarPeer.h" />
+    <ClInclude Include="bean\env\native\menubar\MenuBarRemoveMenuAtExecutor.h" />
+    <ClInclude Include="bean\env\native\menubar\MenuBarNewExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameSetMenuBarExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameGetMenuBarExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuAddMenuItemExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuGetSubElementCountExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuNewExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuRemoveSubElementAtExecutor.h" />
+    <ClInclude Include="bean\env\native\menuitem\MenuItemGetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\menuitem\MenuItemNewExecutor.h" />
+    <ClInclude Include="bean\env\native\menuitem\MenuItemSetTextExecutor.h" />
+    <ClInclude Include="bean\util\NotImplException.h" />
+    <ClInclude Include="bean\env\native\menu\MenuAddMenuExecutor.h" />
+    <ClInclude Include="bean\env\native\checkboxmenuitem\CheckBoxMenuItemIsSelectedExecutor.h" />
+    <ClInclude Include="bean\env\native\checkboxmenuitem\CheckBoxMenuItemSetSelectedExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuAddCheckBoxMenuItemExecutor.h" />
+    <ClInclude Include="bean\env\native\menu\MenuAddSeparatorExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameCreateStatusBarExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FramePrintStatusExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FramePackExecutor.h" />
+    <ClInclude Include="bean\env\native\layoutparams\LayoutParamsCenterExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameGetTitleExecutor.h" />
+    <ClInclude Include="bean\env\native\frame\FrameSetTitleExecutor.h" />
+    <ClInclude Include="bean\env\native\component\ComponentRepaintExecutor.h" />
+    <ClInclude Include="bean\wxgui\PaintBox.h" />
+    <ClInclude Include="bean\wxgui\PaintBoxInterface.h" />
+    <ClInclude Include="bean\wxgui\PaintBoxPeer.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxAddPaintListenerExecutor.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxGetPaintListenerCountExecutor.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxNewExecutor.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxRemovePaintListenerAtExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsClearExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawDotExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawEllipseExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawLineExecutor.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxStartExecutor.h" />
+    <ClInclude Include="bean\env\native\paintbox\PaintBoxStopExecutor.h" />
+    <ClInclude Include="bean\wxgui\EventSystem.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawBitmapExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawRectExecutor.h" />
+    <ClInclude Include="bean\env\native\graphics\GraphicsDrawStringExecutor.h" />
+    <ClInclude Include="bean\env\gc\GCStrategy.h" />
+    <ClInclude Include="bean\parser\function\ParserThen.h" />
+    <ClInclude Include="bean\env\ObjectState.h" />
+    <ClInclude Include="bean\env\gc\MarkAndSweepGCStrategy.h" />
+    <ClInclude Include="bean\env\Reference.h" />
+    <ClInclude Include="bean\env\gc\GCLock.h" />
+    <ClInclude Include="bean\env\pointer\FieldPointer.h" />
+    <ClInclude Include="bean\env\pointer\Pointer.h" />
+    <ClInclude Include="bean\env\ClassLoaderTreeLock.h" />
+    <ClInclude Include="bean\env\gc\IncrementalGCStrategy.h" />
+    <ClInclude Include="bean\env\gc\IncrementalMarker.h" />
+    <ClInclude Include="bean\env\gc\Block.h" />
+    <ClInclude Include="bean\env\gc\Page.h" />
+    <ClInclude Include="bean\env\gc\HeapMutexLock.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapGetHeightExecutor.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapGetWidthExecutor.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapLoadExecutor.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapRotateExecutor.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapSaveExecutor.h" />
+    <ClInclude Include="bean\env\native\bitmap\BitmapScaleExecutor.h" />
+    <ClInclude Include="bean\parser\turbo\ParseThen.h" />
+    <ClInclude Include="bean\parser\turbo\ParseMany.h" />
+    <ClInclude Include="bean\parser\turbo\ParseOr.h" />
+    <ClInclude Include="bean\parser\turbo\ParseWith.h" />
+    <ClInclude Include="bean\parser\turbo\ParseOptional.h" />
+    <ClInclude Include="bean\parser\turbo\ParseNotSkip.h" />
+    <ClInclude Include="bean\parser\turbo\ParseSelf.h" />
+    <ClInclude Include="bean\parser\turbo\ParseDelegate.h" />
+    <ClInclude Include="bean\parser\turbo\ParseDelegate2.h" />
+    <ClInclude Include="bean\parser\turbo\ParseData.h" />
+    <ClInclude Include="bean\parser\turbo\ParseRecursive.h" />
+    <ClInclude Include="bean\parser\turbo\ParseDoubleQuote.h" />
+    <ClInclude Include="bean\parser\turbo\ParseSingleQuote.h" />
+    <ClInclude Include="bean\parser\turbo\FutureAction.h" />
+    <ClInclude Include="bean\parser\turbo\ParseRecursiveGuard.h" />
+    <ClInclude Include="bean\parser\turbo\ParseCase.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="bean\env\TNumeric.h" />
+    <ClInclude Include="bean\env\String.h" />
+    <ClInclude Include="bean\parser\pattern\StringParser.h" />
+    <ClInclude Include="bean\env\native\string\StringToStringExecutor.h" />
+    <ClInclude Include="bean\env\user\UserObject.h" />
+    <ClInclude Include="bean\env\native\string\StringOpAddExecutor.h" />
+    <ClInclude Include="bean\parser\pattern\SuperParser.h" />
+    <ClInclude Include="bean\env\user\UserDelegate.h" />
+    <ClInclude Include="bean\env\user\UserArray.h" />
+    <ClInclude Include="bean\parser\pattern\LCurlyBracketParser.h" />
+    <ClInclude Include="bean\parser\pattern\TryParser.h" />
+    <ClInclude Include="bean\parser\pattern\ThrowParser.h" />
+    <ClInclude Include="bean\env\native\TypedNativeMethodExecutor.h" />
+    <ClInclude Include="bean\util\STL.h" />
+    <ClInclude Include="bean\scanner\SequenceOutOfRangeException.h" />
+    <ClInclude Include="bean\env\SetMethod.h" />
+    <ClInclude Include="bean\env\native\string\StringEndsWithExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringIndexOf2Executor.h" />
+    <ClInclude Include="bean\env\native\string\StringIndexOfExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringLastIndexOf2Executor.h" />
+    <ClInclude Include="bean\env\native\string\StringLastIndexOfExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringStartsWithExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringSubstringExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringInsertExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringRemoveExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringLengthExecutor.h" />
+    <ClInclude Include="bean\env\native\string\StringEncodeExecutor.h" />
+    <ClInclude Include="bean\ast\iterator\predicate\TagPredicateBlack.h" />
+    <ClInclude Include="bean\ast\iterator\predicate\TagPredicateWhite.h" />
+    <ClInclude Include="bean\threads\Thread.h" />
+    <ClInclude Include="bean\env\user\UserThread.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadNewExecutor.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadStartExecutor.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadSleepExecutor.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadJoinExecutor.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadGetCurrentOwner.h" />
+    <ClInclude Include="bean\env\native\thread\ThreadGetNameExecutor.h" />
+    <ClInclude Include="bean\parser\pattern\ScheduledFactorParser.h" />
+    <ClInclude Include="bean\env\user\UserFilePtr.h" />
+    <ClInclude Include="bean\env\user\UserSystem.h" />
+    <ClInclude Include="bean\env\user\UserMutex.h" />
+    <ClInclude Include="bean\env\user\UserComponent.h" />
+    <ClInclude Include="bean\env\user\UserContainer.h" />
+    <ClInclude Include="bean\env\user\UserWindow.h" />
+    <ClInclude Include="bean\wxgui\WindowInterface.h" />
+    <ClInclude Include="bean\env\user\UserFrame.h" />
+    <ClInclude Include="bean\wxgui\WxButtonEx.h" />
+    <ClInclude Include="bean\env\user\UserButton.h" />
+    <ClInclude Include="bean\wxgui\WxLabelEx.h" />
+    <ClInclude Include="bean\env\user\UserLabel.h" />
+    <ClInclude Include="bean\wxgui\WxPanelEx.h" />
+    <ClInclude Include="bean\env\user\UserPanel.h" />
+    <ClInclude Include="bean\env\user\UserColor.h" />
+    <ClInclude Include="bean\wxgui\TextField.h" />
+    <ClInclude Include="bean\wxgui\TextFieldInterface.h" />
+    <ClInclude Include="bean\wxgui\TextFieldPeer.h" />
+    <ClInclude Include="bean\wxgui\WxTextFieldEx.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldCanRedoExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldCanUndoExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldCopyExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldCutExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldDiscardsAllEditsExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldGetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldNewExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldPasteExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldRedoExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldSelectAllExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldSelectExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldSetTextExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldUndoExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldGetCaretPositionExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldInsertExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldRemoveExecutor.h" />
+    <ClInclude Include="bean\env\native\textfield\TextFieldSetCaretPositionExecutor.h" />
+    <ClInclude Include="bean\env\user\UserTextField.h" />
+    <ClInclude Include="bean\wxgui\ScrollPane.h" />
+    <ClInclude Include="bean\wxgui\ScrollPaneInterface.h" />
+    <ClInclude Include="bean\wxgui\ScrollPanePeer.h" />
+    <ClInclude Include="bean\wxgui\WxScrollPaneEx.h" />
+    <ClInclude Include="bean\env\user\UserScrollPane.h" />
+    <ClInclude Include="bean\env\native\scrollpane\ScrollPaneNewExecutor.h" />
+    <ClInclude Include="bean\wxgui\LayoutManager.h" />
+    <ClInclude Include="bean\env\user\UserLayoutManager.h" />
+    <ClInclude Include="bean\env\user\UserLayoutParams.h" />
+    <ClInclude Include="bean\wxgui\WxMenuBarEx.h" />
+    <ClInclude Include="bean\env\user\UserMenuBar.h" />
+    <ClInclude Include="bean\env\user\UserMenu.h" />
+    <ClInclude Include="bean\env\user\UserMenuElement.h" />
+    <ClInclude Include="bean\env\user\UserMenuItem.h" />
+    <ClInclude Include="bean\wxgui\WxPaintBox.h" />
+    <ClInclude Include="bean\env\user\UserPaintBox.h" />
+    <ClInclude Include="bean\env\user\UserGraphics.h" />
+    <ClInclude Include="bean\util\TimeSpan.h" />
+    <ClInclude Include="bean\env\pointer\VariablePointer.h" />
+    <ClInclude Include="bean\env\WeakReference.h" />
+    <ClInclude Include="bean\env\user\UserBitmap.h" />
+    <ClInclude Include="bean\env\native\wxutilities\WxUtilitiesGetKeyStateExecutor.h" />
+    <ClInclude Include="bean\env\native\wxutilities\WxUtilitiesGetMousePointExecutor.h" />
+    <ClInclude Include="bean\env\native\wxutilities\WxUtilitiesIsLeftClickExecutor.h" />
+    <ClInclude Include="bean\env\native\wxutilities\WxUtilitiesIsMiddleClickExecutor.h" />
+    <ClInclude Include="bean\env\native\wxutilities\WxUtilitiesIsRightClickExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorAddExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorBackExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorGetExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorNewExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorPopExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorPushExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorSetExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorTopExecutor.h" />
+    <ClInclude Include="bean\env\user\UserVector.h" />
+    <ClInclude Include="bean\env\native\vector\VectorSizeExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorRemoveAtExecutor.h" />
+    <ClInclude Include="bean\env\native\vector\VectorRemoveExecutor.h" />
+    <ClInclude Include="bean\parser\turbo\TParser.h" />
+    <ClInclude Include="bean\parser\turbo\TParseFailedException.h" />
+    <ClInclude Include="bean\parser\turbo\TParseResult.h" />
+    <ClInclude Include="bean\parser\turbo\TParserManager.h" />
+    <ClInclude Include="bean\parser\turbo\SemanticAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Bean.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\flex_compile.bat" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Flex Include="bean\parser\bison\bean.l">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Flex>
+  </ItemGroup>
+  <ItemGroup>
+    <Bison Include="bean\parser\bison\bean.y">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Bison>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\..\..\..\..\..\..\..\FlexYACC\win_flex_bison-latest\custom_build_rules\win_flex_bison_custom_build.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,8 @@
+class BugClass3 {
+	if(true) {
+
+	}
+	while(true) {
+
+	}
+}

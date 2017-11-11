@@ -1,0 +1,77 @@
+/**
+ * ネイティブで実装された可変長配列です.
+ */
+class Vector {
+	[public|native]
+	def new();
+	
+	/**
+	 * 末尾に要素を追加します.
+	 * @param element
+	 */
+	[public|native]
+	def add(element);
+	
+	/**
+	 * 指定位置の要素を置き換えます.
+	 * @param index
+	 * @param element
+	 */
+	[public|native]
+	def set(index, element);
+	
+	/**
+	 * 指定位置の要素を削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removeAt(index);
+	
+	/**
+	 * 指定の要素を削除します.
+	 * @param element
+	 */
+	[public|native]
+	def remove(element);
+	
+	/**
+	 * 指定位置の要素を返します.
+	 * @param index
+	 */
+	[public|native]
+	def get(index);
+	
+	/**
+	 * 先頭に要素を追加します.
+	 * @param element
+	 */
+	[public|native]
+	def push(element);
+	
+	/**
+	 * 先頭の要素を返します.
+	 * @return
+	 */
+	[public|native]
+	def top();
+	
+	/**
+	 * 末尾の要素を返します.
+	 * @return
+	 */
+	[public|native]
+	def back();
+	
+	/**
+	 * 先頭の要素を削除します.
+	 */
+	[public|native]
+	def pop(element);
+	
+	/**
+	 * 要素数を返します.
+	 * @return
+	 */
+	[public|native]
+	def size();
+}

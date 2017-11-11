@@ -1,0 +1,7 @@
+use api.Numeric;
+/**
+ * 16ビット整数を扱うクラス.
+ */
+class Short : Numeric {
+
+}

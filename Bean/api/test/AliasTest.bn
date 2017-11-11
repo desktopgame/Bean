@@ -1,0 +1,9 @@
+use api.Console;
+alias CLS = api.Console;
+
+class AliasTest {
+	[public]
+	def hoge() {
+		CLS.writeLine("Test");
+	}
+}

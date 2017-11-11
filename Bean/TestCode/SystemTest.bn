@@ -1,0 +1,12 @@
+use api.System;
+use api.Console;
+
+
+var val = System.getProperty("myprop", "Hoge");
+Console.writeLine(val);
+
+System.setProperty("myprop", "Huga");
+val = System.getProperty("myprop", "Hoge");
+Console.writeLine(val);
+
+System.apply();

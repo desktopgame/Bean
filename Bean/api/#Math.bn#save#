@@ -1,0 +1,103 @@
+/**
+ * 数学関数を提供するユーティリティクラスです.
+ * 処理速度向上のため、このクラスでは全てネイティブで実装されます。
+ */
+class Math {
+	[public|static|final] @PI = 3.14159265359;
+
+	[private]
+	def new() { }
+	
+	/**
+	 * 小さい方を返します.
+	 * @param a
+	 * @param b
+	 */
+	[public|static|native]
+	def min(a, b);
+	
+	/**
+	 * 大きい方を返します.
+	 * @param a
+	 * @param b
+	 */
+	[public|static|native]
+	def max(a, b);
+	
+	/**
+	 * 絶対値を返します.
+	 * @param a
+	 */
+	[public|static|native]
+	def abs(a);
+	
+	/**
+	 * a を b で 累乗した値を返します.
+	 * @param a
+	 * @param b
+	 */
+	[public|static|native]
+	def pow(a, b);
+	
+	/**
+	 * a を切り上げます.
+	 * @param a
+	 */
+	[public|static|native]
+	def floor(a);
+	
+	/**
+	 * a を切り捨てます.
+	 * @param a
+	 */
+	[public|static|native]
+	def ceil(a);
+	
+	/**
+	 * a を四捨五入します.
+	 */
+	[public|static|native]
+	def round(a);
+	
+	/**
+	 * a の平方根を返します.
+	 * @param a
+	 */
+	[public|static|native]
+	def sqrt(a);
+	
+	/**
+	 * 指定された角度の正弦を返します.
+	 * @param a
+	 */
+	[public|static|native]
+	def sin(a);
+	
+	/**
+	 * 指定された角度の余弦を返します.
+	 * @param a
+	 */
+	[public|static|native]
+	def cos(a);
+	
+	/**
+	 * 指定された角度の正接を返します.
+	 * @param a
+	 */
+	[public|static|native]
+	def tan(a);
+	
+	/**
+	 * 度数法を弧度法を変換します.
+	 * @param a
+	 */
+	[public|static|native]
+	def toRadian(a);
+	
+	/**
+	 * 弧度法を度数法へ変換します.
+	 * @param a
+	 */
+	[public|static|native]
+	def toDegree(a);
+}

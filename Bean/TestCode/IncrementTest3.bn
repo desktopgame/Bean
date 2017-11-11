@@ -1,0 +1,33 @@
+use api.Console;
+
+//*
+var a = "Hoge";
+Console.writeLine(a);
+
+for(var i=0; i<10; i++) {
+	Console.writeLine("テストA " + i);
+}
+
+Console.writeLine("");
+
+for(var i=0; i<10; i+=1) {
+	Console.writeLine("テストB " + i);
+}
+
+Console.writeLine("");
+
+for(var i=10; i>=0; --i) {
+	Console.writeLine("テストC " + i);
+}
+
+Console.writeLine("");
+
+for(var i=10; i>=0; i-=1) {
+	Console.writeLine("テストC " + i);
+}
+//*/
+var X = 0;
+X++;
+--X;
+X += 1;
+Console.writeLine("X " + X);

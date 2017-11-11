@@ -1,0 +1,23 @@
+/**
+ * 2D空間上の座標を表すクラスです.
+ */
+class Point {
+	[public]@x(set=setX, get=getX) = 0;
+	[public]@y(set=setY, get=getY) = 0;
+	
+	[public]
+	def new(x, y) {
+		setX(x);
+		setY(y);
+	}
+	
+	[public]
+	def toString() {
+		return (getX() + "/" + getY());
+	}
+	
+	[public]
+	def op_equals(o) {
+		return getX() == o.getX() && getY() == o.getY();
+	}
+}

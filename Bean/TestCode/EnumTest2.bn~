@@ -1,0 +1,15 @@
+use api.Direction;
+use api.Console;
+
+Direction.values().forEach(def(value) -> {
+	Console.writeLine(value);
+});
+
+Console.writeLine("");
+
+Console.writeLine(Direction.valueOf("Left"));
+Console.writeLine(Direction.valueOf("Hoge"));
+Console.writeLine(Direction.Left == Direction.Left);
+Console.writeLine(Direction.Left == Direction.Right);
+Console.writeLine(Direction.Left.getIndex());
+Console.writeLine(Direction.Right.getIndex());

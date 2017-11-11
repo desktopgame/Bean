@@ -1,0 +1,5 @@
+use api.Console;
+use api.Thread;
+
+var i = "Hello";
+Console.writeLine(i + j);

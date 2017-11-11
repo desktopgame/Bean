@@ -1,0 +1,8 @@
+use api.Console;
+class DynTest {
+	[public]
+	def new() {
+		this::name = "Jo";
+		this::write() = lambda() -> { Console.writeLine(name); };
+	}
+}

@@ -1,0 +1,11 @@
+use api.Console;
+class LambdaTest {
+	[public]@name = "Bean";
+
+	[public]
+	def call() {
+		var v = lambda() {
+			Console.writeLine(this.name);
+		};
+	}
+}

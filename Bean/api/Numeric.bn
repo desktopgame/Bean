@@ -1,0 +1,117 @@
+/**
+ * 数値型の基底クラスです.
+ */
+class Numeric {
+	[protected]
+	def new() { }
+
+	/**
+	 * このオブジェクトと別の数値の加算結果を返します.
+	 * 引数が数値型でない場合には null を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_add(o);
+	
+	/**
+	 * このオブジェクトと別の数値の減算結果を返します.
+	 * 引数が数値型でない場合には null を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_sub(o);
+	/**
+	 * このオブジェクトと別の数値の乗算結果を返します.
+	 * 引数が数値型でない場合には null を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_mul(o);
+
+	/**
+	 * このオブジェクトと別の数値の除算結果を返します.
+	 * 引数が数値型でない場合には null を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_div(o);
+	
+	/**
+	 * このオブジェクトと別の数値の余剰結果を返します.
+	 * 引数が数値型でない場合には null を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_mod(o);
+	
+	/**
+	 * このオブジェクトと別の数値の比較結果を返します.
+	 * 引数が数値型でない場合には false を返します。
+	 * @param o
+	 */
+	[public|native]
+	def op_equals(o);
+
+	/**
+	 * 常にfalseを返します.
+	 */
+	[public]
+	def isNaN() {
+		return false;	
+	}
+	
+	/**
+	 * 指定の数値を Short に変換して返します.
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asShort(v);
+	
+	/**
+	 * 指定の数値を Integer に変換して返します.
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asInteger(v);
+	
+	/**
+	 * 指定の数値を Long に変換して返します.
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asLong(v);
+	
+	/**
+	 * 指定の数値を Float に変換して返します.
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asFloat(v);
+	
+	/**
+	 * 指定の数値を Double に変換して返します.
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asDouble(v);
+	
+	/**
+	 * 指定の数値を Character に変換して返します.
+	 * 値が Integer でない場合は一度 Integer への変換を介します。
+	 * @param v
+	 * @return
+	 */
+	[public|static|native]
+	def asCharacter(v);
+	
+	/**
+	 * この数値の文字列表現を返します.
+	 */
+	[public|native]
+	def toString();
+}

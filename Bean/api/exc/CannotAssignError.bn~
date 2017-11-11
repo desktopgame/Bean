@@ -1,0 +1,7 @@
+use api.exc.RuntimeException;
+
+class CannotAssignError : RuntimeException {
+	[public]
+	def new(location) : super(null, location + " ‚Í ’è”‚Æ‚µ‚ÄéŒ¾‚³‚ê‚Ä‚¢‚Ü‚·B") {
+	}
+}

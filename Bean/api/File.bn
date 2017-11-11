@@ -1,0 +1,118 @@
+/**
+ * ファイル入出力のユーティリティクラスです.
+ */
+class File {
+	[public|static|final] @COPY_THROW = 0;
+	[public|static|final] @COPY_OVERWRITE = 1;
+	
+	[private]
+	def new() { }
+
+	/**
+	 * 指定のファイルを作成します.
+	 * @param path
+	 */
+	[public|static|native]
+	def createNewFile(path);
+	
+	/** 
+	 * 指定のディレクトリを作成します.
+	 * @param path
+	 */
+	[public|static|native]
+	def mkdir(path);
+	
+	/**
+	 * 指定のファイルか空のディレクトリを削除します.
+	 * @param path
+	 */
+	[public|static|native]
+	def delete(path);
+	
+	/**
+	 * 指定のパスがファイルならtrue.
+	 * @param path
+	 * @return
+	 */
+	[public|static|native]
+	def isFile(path);
+	
+	/**
+	 * 指定のパスがディレクトリならtrue.
+	 * @param path
+	 * @return
+	 */
+	[public|static|native]
+	def isDirectory(path);
+	
+	/**
+	 * 指定のパスのファイルを文字列として読み込んで返します.
+	 * @param path
+	 * @return
+	 */
+	[public|static|native]
+	def readText(path);
+
+	/**
+	 * 指定のパスのファイルに文字列を上書きで書き込みます.
+	 * @param path
+	 * @param content
+	 * @return
+	 */
+	[public|static|native]
+	def writeText(path, content);
+
+	/**
+	 * 指定のファイルが存在するならtrueを返します.
+	 * @param path
+	 * @return
+	 */
+	[public|static|native]
+	def exists(path);
+
+	/**
+	 * ファイルをコピーします.
+	 * @param src
+	 * @param dst
+	 * @param option
+	 */
+	[public|static|native]
+	def copy(src, dst, option);
+	
+	/**
+	 * 指定のパスの親ディレクトリを返します.
+	 * @param path
+	 */
+	[public|static|native]
+	def getParent(path);
+	
+	/**
+	 * 指定のパスの子ファイル一覧を配列で返します.
+	 * ファイルでない場合や一つも要素が見つからない場合には空の配列を返します。
+	 * @param path
+	 * @param allSubTree
+	 */
+	[public|static|native]
+	def getChildren(path, allSubTree);
+	
+	/**
+	 * 実行時ディレクトリを返します.
+	 * @return
+	 */
+	[public|static|native]
+	def getCurrentPath();
+	
+	/**
+	 * 指定のパスの拡張子を含まない名前を返します.
+	 * @path
+	 */
+	[public|static|native]
+	def getName(path);
+	
+	/**
+	 * OSのディレクトリ区切り文字を返します.
+	 * @return
+	 */
+	[public|static|native]
+	def getPathSeparatorChar();
+}

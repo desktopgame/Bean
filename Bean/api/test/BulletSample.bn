@@ -1,0 +1,34 @@
+use api.Console;
+class BulletSample {
+	[public]@x = 0;
+	[public]@y = 0;
+	[private]@die = false;
+
+	[public]
+	def new(e) {
+		this.x = e.x;
+		this.y = e.y + 20;
+	}
+
+	[public]
+	def move() {
+		if(die) {
+			return;
+		}
+		this.y += 10;
+		if(x < 0 || x > 800 || y < 0 || y > 600) {
+			this.die = true;
+		}
+	}
+
+	[public]
+	def draw() {
+		if(die) {
+			return;
+		}
+		Console.write(x);
+		Console.write(" ");
+		Console.write(y);
+		Console.writeLine("");
+	}
+}

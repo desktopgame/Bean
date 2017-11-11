@@ -1,0 +1,4 @@
+class BugClass7 {
+	[public]
+	def hoge();
+}

@@ -1,0 +1,35 @@
+/**
+ * 標準入力, 標準出力を扱うクラスです.
+ */
+class Console {
+	[private]
+	def new() { }
+	
+	/**
+	 * コンソールから一文字入力します.
+	 * @return
+	 */
+	[public|static|native]
+	def read();
+	
+	/**
+	 * コンソールから一行入力します.
+	 * @return
+	 */
+	[public|static|native]
+	def readLine();
+	
+	/**
+	 * コンソールへ text を出力します.
+	 * @param text
+	 */
+	[public|static|native]
+	def write(text);
+	
+	/**
+	 * コンソールへ text を出力して改行します.
+	 * @param text
+	 */
+	[public|static|native]
+	def writeLine(text);
+}

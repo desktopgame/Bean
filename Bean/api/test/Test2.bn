@@ -1,0 +1,9 @@
+use api.Console;
+use api.exc.NullPointerError;
+class Test2 {
+	[public|static]
+	def throwEx() {
+		Console.writeLine("throw 2 Exception!!!");
+		throw NullPointerError.new(null, "‚±‚Ìƒƒ\ƒbƒh‚ÍÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+	}
+}

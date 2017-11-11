@@ -1,0 +1,7 @@
+use api.Numeric;
+/**
+ * 64ビット整数を扱うクラス.
+ */
+class Long : Numeric {
+
+}

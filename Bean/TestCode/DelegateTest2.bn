@@ -1,0 +1,12 @@
+use api.Console;
+use api.Array;
+
+var arr = Array.new(2);
+arr.set(0, 10);
+arr.set(1, 20);
+
+var x = lambda(a, b) -> {
+	Console.writeLine(a);
+	Console.writeLine(b);
+};
+x.call(arr);

@@ -1,0 +1,39 @@
+use api.wxgui.Frame;
+use api.wxgui.Button;
+use api.wxgui.Label;
+use api.wxgui.Panel;
+use api.wxgui.Color;
+use api.wxgui.TextField;
+use api.wxgui.ScrollPane;
+use api.wxgui.FlowLayout;
+use api.wxgui.LayoutParams;
+use api.wxgui.MenuBar;
+use api.wxgui.Menu;
+use api.wxgui.MenuItem;
+use api.wxgui.PaintBox;
+use api.geom.Size2D;
+use api.geom.Point2D;
+
+var fr = Frame.new("Frame", 800, 600);
+var pb = PaintBox.new(fr);
+var times = 0.0f;
+var startPoint = Point2D.new(0, 0);
+var endPoint = Point2D.new(800, 600);
+pb.setSize(Size2D.new(800, 600));
+pb.addPaintListener(lambda(paintBox, g) -> {
+	var tt = times * times;
+	var x = (endPoint.getX() - startPoint.getX()) * tt;
+	var y = (endPoint.getY() - startPoint.getY()) * tt;
+	g.clear();
+	g.drawLine(400, 0, 400, 600);
+	g.drawLine(0, 300, 800, 300);
+	g.drawEllipse(x, y, 50, 50);
+	if(times > 1.0f) {
+		times = 0.0f;
+	}
+	times += 0.01f;
+});
+pb.repaint();
+pb.start();
+fr.pack();
+fr.mainLoop();

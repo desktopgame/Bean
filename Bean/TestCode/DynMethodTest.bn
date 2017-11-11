@@ -1,0 +1,8 @@
+use api.System;
+
+var x = "Hoge";
+
+System.defineDynMethod(x, "foo", lambda() -> { Console.writeLine("Hello"); });
+System.defineDynMethod(x, "write", lambda(str) -> { Console.writeLine(str); });
+x.foo();
+x.write("Hello");

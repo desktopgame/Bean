@@ -1,0 +1,10 @@
+use api.Console;
+
+var x = "HelloWorld";
+var d = lambda() -> {
+	Console.writeLine(x);
+};
+d.call({});
+
+x = "TestTest";
+d.call({});

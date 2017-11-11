@@ -1,0 +1,7 @@
+use api.Array;
+class BugClass {
+	[public]
+	def Hoge() {
+		var x = new Array(19);
+	}
+}

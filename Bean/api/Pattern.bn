@@ -1,0 +1,23 @@
+/**
+ * 正規表現のパターンを表すクラスです.
+ */
+class Pattern {
+	[private]
+	def new() { }
+
+	/**
+	 * 引数の文字列をパターンへ変換します.
+	 * @param str
+	 */
+	[public|static|native]
+	def compile(str);
+
+	/**
+	 * このパターンのマッチ対象となるソース文字列を指定して、
+	 * マッチャーを作成します。
+	 * @param src
+	 * @return
+	 */
+	[public|native]
+	def matcher(src);
+}

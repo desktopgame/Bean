@@ -1,0 +1,51 @@
+/**
+ * O€‰‰Zq‚Ì‘ã‘Ö‚Å‚·.
+ * If.match(x == y).then(lambda() -> { return 0; }).orElse(lambda() -> { return 1; });
+ */
+class If {
+	[private]@condition;
+	[private]@trueAction;
+	[private]@falseAction;
+	[private]@retVal;
+	
+	[private]
+	def new(condition) {
+		this.condition = condition;
+	}
+	
+	/**
+	 * w’è‚Ì^‹U’l‚ğŠi”[‚·‚éIf‚ğ•Ô‚µ‚Ü‚·.
+	 * @param condition
+	 * @return
+	 */
+	[public|static]
+	def match(condition) {
+		return If.new(condition);
+	}
+	
+	/**
+	 * Ši”[‚³‚ê‚½^‹U’l‚ªtrue‚È‚çtrueAction‚ğÀs‚µ‚ÄA’l‚ğŠi”[‚µ‚Ü‚·.
+	 * @param trueAction
+	 * @return ‚±‚ÌƒCƒ“ƒXƒ^ƒ“ƒX
+	 */
+	[public]
+	def then(trueAction) {
+		if(condition) {
+			this.retVal = trueAction.call({});
+		}
+		return this;
+	}
+	
+	/**
+	 * Ši”[‚³‚ê‚½^‹U’l‚ªfalse‚È‚çfalseAction‚ğÀs‚µ‚ÄA’l‚ğŠi”[‚µ‚Ü‚·.
+	 * @param falseAction
+	 * @return Ši”[‚³‚ê‚½’l
+	 */
+	[public]
+	def orElse(falseAction) {
+		if (!condition) {
+			this.retVal = falseAction.call({});
+		}             
+		return retVal;
+	}
+}

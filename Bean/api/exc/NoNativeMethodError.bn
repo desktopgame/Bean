@@ -1,0 +1,7 @@
+use api.exc.RuntimeException;
+/**
+ * ネイティブメソッドとして定義されているが C++側 にその実態が見つからないときにスローされます。
+ */
+class NoNativeMethodError : RuntimeException {
+	
+}

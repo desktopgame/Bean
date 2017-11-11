@@ -1,0 +1,4 @@
+use api.test.ExBaseTest;
+class ExMTest : ExBaseTest {
+
+}

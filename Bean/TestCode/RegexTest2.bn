@@ -1,0 +1,28 @@
+use api.Console;
+use api.File;
+use api.Pattern;
+use api.Matcher;
+
+//QlURL:https://www.javadrive.jp/regex/ref/index3.html
+var source = "2009year";
+
+check(Pattern.compile("(200(7|8|9))year"), source);
+Console.writeLine("---");
+check(Pattern.compile("(200(?:7|8|9))year"), source);
+
+
+def check(pattern, target) {
+	var matcher = pattern.matcher(target);
+	if(matcher.find()) {
+		var start = matcher.start();
+		var end = matcher.end();
+		Console.writeLine("[‘S‘Ì]" + matcher.group());
+		for(var i=0; i<matcher.groupCount(); i++) {
+			Console.writeLine("[Group" + i + "]" + matcher.group(i));
+		}
+	} else {
+		Console.writeLine("x " + target);
+	}
+}
+
+

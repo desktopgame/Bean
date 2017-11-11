@@ -1,0 +1,24 @@
+/**
+ * 2D‹óŠÔ‚Ì”ÍˆÍ‚ð•\‚µ‚Ü‚·.
+ */
+class Size2D {
+	[public]@w(set=setWidth, get=getWidth) = 0;
+	[public]@h(set=setHeight, get=getHeight) = 0;
+	
+	[public]
+	def new(w, h) {
+		setWidth(w);
+		setHeight(h);
+	}
+	
+	[public]
+	def new() {
+		setWidth(0);
+		setHeight(0);
+	}
+	
+	[public]
+	def op_equals(o) {
+		return getWidth() == o.getWidth() && getHeight() == o.getHeight();
+	}
+}

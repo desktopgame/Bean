@@ -1,0 +1,41 @@
+use api.Console;
+use api.Vector;
+use api.String;
+use api.Array;
+use api.File;
+
+var path = File.getCurrentPath();
+Console.writeLine(path);
+
+var ch = File.getPathSeparatorChar();
+Console.writeLine(ch);
+
+var newPath = path + "HOGEHOGE.text";
+var exi = File.exists(newPath);
+Console.writeLine(newPath + " is exists = " + exi);
+
+var realPath = path + ch + "api" + ch + "exc" + ch + "RuntimeException.bn";
+var newPath = path + ch + "newFile.bn";
+/*
+var srcPath = path + ch + "api" + ch + "exc" + ch + "RuntimeExceptionXXX.bn";
+Console.writeLine(srcPath);
+var content = File.readText(srcPath);
+Console.writeLine(content);
+*/
+
+Console.writeLine(realPath + " is File = " + File.isFile(realPath));
+Console.writeLine(realPath + " is Dir = " + File.isDirectory(realPath));
+if(!File.exists(newPath)) {
+	File.createNewFile(newPath);
+} else {
+//	File.writeText(newPath, "HelloWorld");
+//	File.delete(newPath);
+}
+
+var dirName = path + ch + "newdir";
+if(!File.exists(dirName)) {
+	File.mkdir(dirName);
+} else {
+//	File.delete(dirName);
+}
+

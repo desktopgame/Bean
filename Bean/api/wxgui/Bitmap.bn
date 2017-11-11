@@ -1,0 +1,30 @@
+/**
+ * 画像情報をカプセル化します.
+ */
+class Bitmap {
+	[private]
+	def new() { }
+	
+	/**
+	 * 指定のファイルを読み込んで Imageクラスインスタンスで返します.
+	 * @param filePath
+	 * @param imageFormat
+	 * @return
+	 */
+	[public|static|native]
+	def load(filePath, imageFormat);
+	
+	/**
+	 * 画像の横幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getWidth();
+	
+	/**
+	 * 画像の縦幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getHeight();
+}

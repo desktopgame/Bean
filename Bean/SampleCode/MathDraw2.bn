@@ -1,0 +1,35 @@
+use api.wxgui.Frame;
+use api.wxgui.Button;
+use api.wxgui.Label;
+use api.wxgui.Panel;
+use api.wxgui.Color;
+use api.wxgui.TextField;
+use api.wxgui.ScrollPane;
+use api.wxgui.FlowLayout;
+use api.wxgui.LayoutParams;
+use api.wxgui.MenuBar;
+use api.wxgui.Menu;
+use api.wxgui.MenuItem;
+use api.wxgui.PaintBox;
+use api.geom.Size2D;
+use api.geom.Point2D;
+
+var fr = Frame.new("Frame", 800, 600);
+var pb = PaintBox.new(fr);
+var circleCenter = Point2D.new(400, 300);
+var radianScale = 10;
+var radianOffset = 0;
+pb.setSize(Size2D.new(800, 600));
+pb.addPaintListener(lambda(paintBox, g) -> {
+	var x = (circleCenter.getX() + radianScale) * Math.cos(Math.toRadian(radianOffset));
+	var y = (circleCenter.getY() + radianScale) * Math.sin(Math.toRadian(radianOffset));
+	g.clear();
+	g.drawLine(400, 0, 400, 600);
+	g.drawLine(0, 300, 800, 300);
+	g.drawEllipse(x, y, 50, 50);
+	radianOffset += 0.5f;
+});
+pb.repaint();
+pb.start();
+fr.pack();
+fr.mainLoop();

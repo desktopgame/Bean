@@ -1,0 +1,27 @@
+use api.test.A;
+use api.Console;
+class B {
+	[public] @value;
+	
+	[public]
+	def new() {
+	}
+	
+	[public]
+	def print() {
+		add();
+	}
+	
+	[public]
+	def del() {
+		Console.hoge("B クラスの print メソッドが呼び出されました");
+		var a = 10;
+		var b = 10;
+		var c = (a == b);
+	}
+	
+	[public]
+	def add() {
+		del();
+	}
+}

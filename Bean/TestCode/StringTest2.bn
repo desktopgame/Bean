@@ -1,0 +1,10 @@
+use api.Console;
+use api.String;
+use api.Array;
+use api.geom.Vector2D;
+
+var src = "‚`‚`aaa";
+Console.writeLine(src);
+
+var enc = src.encode("shift-jis");
+Console.writeLine(enc);

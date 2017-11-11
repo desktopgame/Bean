@@ -1,0 +1,11 @@
+use api.Numeric;
+use api.Console;
+use api.Character;
+
+var a = 'a';
+var b = 98;
+Console.writeLine(a);
+Console.writeLine(b);
+Console.writeLine("");
+Console.writeLine(Character.asInteger(a));
+Console.writeLine(Numeric.asCharacter(b));

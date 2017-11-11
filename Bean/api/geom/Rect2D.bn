@@ -1,0 +1,96 @@
+use api.geom.Point2D;
+use api.geom.Size2D;
+/**
+ * 2D空間の位置と範囲を表します.
+ */
+class Rect2D {
+	[public] @size(set=setSize, get=getSize) = Size2D.new(0, 0);
+	[public] @location(set=setLocation, get=getLocation) = Point2D.new(0, 0);
+
+	[public]
+	def new(x, y, w, h) {
+		setLocation(Point2D.new(x, y));
+		setSize(Size2D.new(w, h));
+	}
+	
+	[public]
+	def new(location, size) {
+		setLocation(location);
+		setSize(size);
+	}
+	
+	[public]
+	def new() {
+	}
+	
+	/**
+	 * 指定の点がこの矩形に含まれるならtrue.
+	 * @param point
+	 */
+	[public]
+	def contains(point) {
+		if(point.getX() < getX() || point.getX() > getX() + getWidth()) {
+			return false;
+		}
+		if(point.getY() < getY() || point.getY() > getY() + getHeight()) {
+			return false;
+		}
+		return true;
+	}
+	
+	/**
+	 * この矩形と指定の矩形が交差するならtrue.
+	 * @param rect
+	 */
+	[public]
+	def intersects(rect) {
+		var x =(rect.getRight() < getLeft() || rect.getLeft() > getRight());
+		var y =(rect.getBottom() < getTop() || rect.getTop() > getBottom());
+		return x && y;
+	}
+
+	[public]
+	def getLeft() {
+		return getX();
+	}
+	
+	[public]
+	def getRight() {
+		return getX() + getWidth();
+	}
+	
+	[public]
+	def getTop() {
+		return getY();
+	}
+	
+	[public]
+	def getBottom() {
+		return getY() + getHeight();
+	}
+	
+	[public]
+	def getX() {
+		return getLocation().getX();
+	}
+	
+	[public]
+	def getY() {
+		return getLocation().getY();
+	}
+	
+	[public]
+	def getWidth() {
+		return getSize().getWidth();
+	}
+	
+	[public]
+	def getHeight() {
+		return getSize().getHeight();
+	}
+	
+	[public]
+	def op_equals(o) {
+		return getSize() == o.getSize() && getLocation() == o.getLocation();
+	}
+}

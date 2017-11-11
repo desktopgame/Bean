@@ -1,0 +1,5 @@
+use api.wxgui.Container;
+class Window : Container {
+	[private]
+	def new() { }
+}

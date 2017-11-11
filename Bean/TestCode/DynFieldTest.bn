@@ -1,0 +1,12 @@
+use api.System;
+
+var x = "Hoge";
+System.defineDynField(x, "value", "NULL");
+System.defineDynField(x, "value2", "INT");
+Console.writeLine(x.value);
+Console.writeLine(x.value2);
+
+x.value = 100;
+x.value2 = null;
+Console.writeLine(x.value);
+Console.writeLine(x.value2);

@@ -1,0 +1,43 @@
+use api.Range;
+use api.Console;
+use api.File;
+use api.Thread;
+use api.Mutex;
+
+var th = Thread.new("A");
+var th2 = Thread.new("B");
+                         
+var m = Mutex.new();
+var count = 0;
+
+th.start(lambda() -> {
+	while(true) {
+		m.lock();
+		Console.writeLine("Thread A:" + count);
+		count++;
+		m.unlock();
+		Thread.sleep(10);
+		//*
+		if(count == 30) {
+			break;
+		}
+		//*/
+	}
+});
+
+th2.start(lambda() -> {
+	while(true) {
+		m.lock();
+		Console.writeLine("Thread B: " + count);
+		m.unlock();
+		Thread.sleep(10);
+		//*
+		if(count == 30) {
+			break;
+		}
+		//*/
+	}
+});
+
+th.join();
+th2.join();

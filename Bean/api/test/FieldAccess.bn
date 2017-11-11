@@ -1,0 +1,15 @@
+use api.Console;
+class FieldAccess {
+	[private]@flag = true;
+
+	[public]
+	def new() {
+	}
+
+	[public]
+	def checkFlag() {
+		if(flag) {
+			Console.writeLine("Hello");
+		}
+	}
+}

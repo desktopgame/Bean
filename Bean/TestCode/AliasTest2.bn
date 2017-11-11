@@ -1,0 +1,2 @@
+alias CLS = api.XXX;
+CLS.writeLine("Hello");

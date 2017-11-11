@@ -1,0 +1,5 @@
+use api.File;
+use api.Console;
+
+var name = "XXX";
+var x = 10;//x::name = "Bean";x::toString() = lambda() -> {	return name;	};x::call() = lambda() -> {	Console.writeLine("Hellow");};//Console.writeLine(x.name);Console.writeLine(x);x.call();

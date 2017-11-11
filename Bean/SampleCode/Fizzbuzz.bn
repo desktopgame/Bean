@@ -1,0 +1,17 @@
+use api.Console;
+use api.Range;
+
+Range.new(0, 30).forEach(lambda(i) -> {
+	var mod3 = i % 3;
+	var mod5 = i % 5;
+	Console.write(i + " ");
+	if(mod3 == 0 && mod5 == 0) {
+		Console.writeLine("fizz buzz");
+	} elseif(mod3 == 0) {
+		Console.writeLine("fizz");
+	} elseif(mod5 == 0) {
+		Console.writeLine("buzz");
+	} else {
+		Console.writeLine("");
+	}
+});

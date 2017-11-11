@@ -1,0 +1,48 @@
+use api.Math;
+/**
+ * 2D空間上の座標を表すクラスです.
+ */
+class Point2D {
+	[public]@x(set=setX, get=getX) = 0;
+	[public]@y(set=setY, get=getY) = 0;
+	
+	[public]
+	def new(x, y) {
+		setX(x);
+		setY(y);
+	}
+	
+	[public]
+	def new(point) {
+		setX(point.getX());
+		setY(point.getY());
+	}
+	
+	[public]
+	def new() {
+		setX(0);
+		setY(0);
+	}
+	
+	/**
+	 * 二点間の距離を計測します.
+	 * @param other
+	 * @return 距離
+	 */
+	[public]
+	def distance(other) {
+		var xDiff = other.getX() - getX();
+		var yDiff = other.getY() - getY();
+		return Math.sqrt((xDiff * xDiff) + (yDiff * yDiff));
+	}
+	
+	[public]
+	def toString() {
+		return (getX() + "/" + getY());
+	}
+	
+	[public]
+	def op_equals(o) {
+		return getX() == o.getX() && getY() == o.getY();
+	}
+}

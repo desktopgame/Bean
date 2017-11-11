@@ -1,0 +1,26 @@
+use api.System;
+use api.test.DynTest;
+
+var d = DynTest.new();
+d.write();
+
+var t = Object.new();
+t::name = "Name";
+Console.writeLine(t.name);
+
+Console.writeLine("---");
+
+var x = "Hoge";
+
+x::name = "Name";
+x::age = 10;
+Console.writeLine(x.name + " " + x.age);
+
+x::call() = lambda() -> { Console.writeLine("Hello"); };
+x::call() = lambda(n) -> {
+	for(var i=0; i<n; i++) {
+		Console.writeLine("Hello");	
+	}
+};
+x.call();
+x.call(5);

@@ -1,0 +1,10 @@
+#pragma once
+#ifndef BEAN_THREADS_THREADSTATE_H
+#define BEAN_THREADS_THREADSTATE_H
+enum class ThreadState {
+	RUNNABLE,
+	RUNNING,
+	BLOCKING,
+	TERMINATE,
+};
+#endif // !BEAN_THREADS_THREADSTATE_H

@@ -1,0 +1,6 @@
+class BreakTest {
+	[public]
+	def Hoge() {
+		break;
+	}
+}

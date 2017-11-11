@@ -1,0 +1,47 @@
+use api.Console;
+use api.Array;
+use api.coll.Stack;
+use api.coll.List;
+
+def stack_init(stack) {
+	stack.push("Head");
+	stack.push("Body");
+	stack.push("Hand");
+	stack.push("Tail");
+}
+
+def stack_print(stack) {
+	while(stack.length() > 0) {
+		Console.writeLine(stack.pop());
+	}
+}
+
+def separate() {
+	Console.writeLine("");
+	Console.writeLine("---");
+	Console.writeLine("");
+}
+
+def main() {
+	var stack = Stack.new();
+	stack_init(stack);
+	stack_print(stack);
+	
+	separate();
+
+	stack_init(stack);
+	stack.pop();
+	stack.pop();
+	stack_print(stack);
+
+	separate();
+	
+	stack_init(stack);
+	stack.pop();
+	stack.pop();
+	stack.push("Bean");
+	stack.push("Pror");
+	stack_print(stack);
+}
+
+main();

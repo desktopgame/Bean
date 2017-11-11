@@ -1,0 +1,42 @@
+/**
+ * wxguiのユーティリティクラスです.
+ */
+class WxUtilities {
+	[private]
+	def new() { }
+	
+	/**
+	 * 指定のキーが押されているなら true を返します.
+	 * @param keycode
+	 */
+	[public|static|native]
+	def getKeyState(keycode);
+	
+	/**
+	 * 現在のマウス位置をスクリーン座標系で返します.
+	 * @return
+	 */
+	[public|static|native]
+	def getMousePoint();
+	
+	/**
+	 * 左クリックされているなら true.
+	 * @return
+	 */
+	[public|static|native]
+	def isLeftClick();
+	
+	/**
+	 * 中クリックされているなら true.
+	 * @return
+	 */
+	[public|static|native]
+	def isMiddleClick();
+
+	/**
+	 * 右クリックされているなら true.
+	 * @return
+	 */
+	[public|static|native]
+	def isRightClick();
+}

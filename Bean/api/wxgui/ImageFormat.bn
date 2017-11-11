@@ -1,0 +1,9 @@
+/**
+ * ‰æ‘œ‚ÌŒ`Ž®‚ð•\‚·—ñ‹“Œ^.
+ */
+enum ImageFormat {
+	Bmp,
+	Png,
+	Jpeg,
+	Gif
+}

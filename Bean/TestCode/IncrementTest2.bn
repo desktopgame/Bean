@@ -1,0 +1,28 @@
+use api.Console;
+
+var a = 3;
+var b = 1;
+var c = 1;
+//*
+Console.writeLine(++a + b + c);				//6
+Console.writeLine(++a + b-- + c);			//7
+Console.writeLine(a++ + b + c);				//6
+Console.writeLine(a++ + b -- + c);			//7
+Console.writeLine(a++ + b + c * a-- + c);	//15
+Console.writeLine("");
+Console.writeLine("a=" + a + " b=" + b + " c=" + c);
+Console.writeLine(a++ + b + c * --a + c);	//14
+Console.writeLine(a++ + b + (c * --a) + c);	//14
+//*/
+/*
+
+Console.writeLine(++a + b + c);				//6
+Console.writeLine(++a + b-- + c);			//7
+Console.writeLine(a++ + b + c);				//6
+Console.writeLine(a++ + b -- + c);			//7
+Console.writeLine(a++ + b + c * a-- + c);	//15
+Console.writeLine("");
+Console.writeLine("a=" + a + " b=" + b + " c=" + c);
+Console.writeLine(a++ + b + c * --a + c);	//14
+Console.writeLine(a++ + b + (c * --a) + c);	//14
+*/

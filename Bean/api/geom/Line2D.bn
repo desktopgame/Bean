@@ -1,0 +1,38 @@
+use api.geom.Point2D;
+use api.geom.Vector2D;
+/**
+ * 2D‹óŠÔ‚Ìü•ª‚ğ•\‚·ƒNƒ‰ƒX.
+ */
+class Line2D {
+	[public] @start(set=setStart, get=getStart);
+	[public] @end(set=setEnd, get=getEnd);
+
+	[public]
+	def new(x1, y1, x2, y2) {
+		setStart(Point2D.new(x1, y1));
+		setEnd(Point2D.new(x2, y2));
+	}
+	
+	[public]
+	def new(start, end) {
+		setStart(start);
+		setEnd(end);
+	}
+	
+	/**
+	 * ü•ª‚Ì’·‚³‚ğ•Ô‚µ‚Ü‚·.
+	 */
+	[public]
+	def length() {
+		var v1 = Vector2.new(getStart());
+		var v2 = Vector2.new(getEnd());
+		var diff = v2 - v1;
+		return diff.length();
+	}
+	
+	
+	[public]
+	def op_equals(o) {
+		return getStart() == o.getStart() && getEnd() == o.getEnd();
+	}
+}

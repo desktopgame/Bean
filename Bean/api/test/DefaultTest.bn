@@ -1,0 +1,4 @@
+class DefaultTest {
+	[public] @value = 10;
+	[public] def new() { }
+}

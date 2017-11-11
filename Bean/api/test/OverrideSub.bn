@@ -1,0 +1,12 @@
+use api.Console;
+use api.test.OverrideSuper;
+class OverrideSub : OverrideSuper {
+	[public]
+	def new() {
+	}
+
+	[public|final]
+	def foo() {
+		Console.writeLine("sub");
+	}
+}

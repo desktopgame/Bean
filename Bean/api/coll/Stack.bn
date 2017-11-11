@@ -1,0 +1,89 @@
+use api.Array;
+use api.Console;
+/**
+ * LIFO(後入れ先出し)で管理されるコンテナです.
+ */
+class Stack {
+	[private]@data;
+	[private]@size;
+	[private]@offs;
+	
+	[public]
+	def new() {
+		this.data = Array.new(3);
+		this.size = 0;
+		this.offs = 0;
+	}
+	
+	/**
+	 * 先頭に要素を追加します.
+	 * @param value
+	 */
+	[public]
+	def push(value) {
+		if(size < data.length()) {
+			array_push();
+			data.set(0, value);
+			this.size = size + 1;
+			this.offs = offs + 1;
+		} else {
+			this.size = size + 1;
+			this.data = data.copyOf(0, data.length() + 1);
+			array_push();
+			data.set(0, value);
+			this.offs = offs + 1;
+		}
+	}
+	
+	[private]
+	def array_push() {
+		if(offs <= 0) {
+			return;	
+		}
+		var cur = offs;
+		while(cur > 0) {
+			data.set(cur, data.get(cur - 1));
+			cur = cur - 1;
+		}
+	}
+	/**
+	 * 先頭の要素を削除して返します.
+	 * @return
+	 */
+	[public]
+	def pop() {
+		var retVal = data.get(0);
+		this.data = data.sub(1, size - 1);
+		this.size = size - 1;
+		this.offs = offs - 1;
+		return retVal;
+	}
+	
+	/**
+	 * 先頭の要素を削除せずに返します.
+	 * @return
+	 */
+	[public]
+	def peek() {
+		return data.get(0);	
+	}
+	
+	/**
+	 * 全ての要素を削除します.
+	 */
+	[public]
+	def clear() {
+		this.data = Array.new(3);
+		this.size = 0;
+		this.offs = 0;
+	}
+
+	/**
+	 * 全ての要素の数を返します.
+	 * @return
+	 */
+	[public]
+	def length() {
+		return size;
+	}
+}

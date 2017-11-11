@@ -1,0 +1,17 @@
+/**
+ * 色を表すクラス.
+ */
+class Color {
+	[public|static|final] @RED = Color.new(255, 0, 0);
+	[public|static|final] @GREEN = Color.new(0, 255, 0);
+	[public|static|final] @BLUE = Color.new(0, 0, 255);
+	[public|static|final] @BLACK = Color.new(0, 0, 0);
+	[public|static|final] @WHITE = Color.new(255, 255, 255);
+	[public|static|final] @GREEN = Color.new(92, 164, 0);
+	
+	[public|native]
+	def new(r, g, b, a);
+
+	[public|native]
+	def new(r, g, b);
+}

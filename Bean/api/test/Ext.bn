@@ -1,0 +1,7 @@
+use api.test.Sub;
+class Ext : Sub {
+	[public]
+	def new(val) : super("Ext: " + val) {
+		
+	}
+}

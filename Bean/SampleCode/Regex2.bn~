@@ -1,0 +1,71 @@
+use api.Console;
+use api.Range;
+use api.Pattern;
+use api.Matcher;
+use api.Pair;
+use api.coll.Vector;
+
+var source = "#include \"mylib.h\"\n" 			+
+			 "#include \"mylib2.h\"\n" 			+
+			 "#include \"../mylib3.h\"\n" 		+
+			 "#include \"../../mylib4.h\"\n"	+
+			 "#include \"../../mylib4.h\"\n" 	+
+			 "#include \"../mylib5.h\"\n" 		+
+			 "#include \"../mylib5.h\"\n" 		+
+			 "void main() {\n"					+
+			 "\treturn 0;\n"					+
+			 "}\n"								+
+			 "\n";
+
+Console.writeLine("---");
+Console.writeLine("Source:");
+Console.writeLine(source);
+Console.writeLine("---");
+//インクルードを取り出す
+var patternText = "#include \".+\"";
+var pattern = Pattern.compile(patternText);
+var matcher = pattern.matcher(source);
+var vec = Vector.new();
+Console.writeLine("Extract:");
+while(matcher.find()) {
+	var group = matcher.group();
+	vec.add(group);
+	Console.writeLine(group);
+}
+//インクルードを整列
+vec.sort(lambda(a, b) -> {
+	return getDepth(a) < getDepth(b);
+});
+Console.writeLine("---");
+Console.writeLine("Sort:");
+for(var i=0; i<vec.size(); i++) {
+	Console.writeLine(vec.get(i));
+}
+//インクルードを全て削除
+Console.writeLine("---");
+Console.writeLine("Replace:");
+var newPatternText = patternText + "\n";
+var newPattern = Pattern.compile(newPatternText);
+var newMatcher = newPattern.matcher(source);
+var newSource = newMatcher.replaceAll("");
+var x = sumString(vec) + newSource;
+Console.writeLine(x);
+
+def getDepth(str) {
+	var depth = 0;
+	for(var i=0; i<str.length(); i++) {
+		var ch = str.substring(i, 1);
+		if(ch == "/") {
+			depth++;
+		}
+	}	
+	return depth;
+}
+
+def sumString(vec) {
+	var buff = "";
+	for(var i=0; i<vec.size(); i++) {
+		buff += vec.get(i) + "\n";
+	}
+	return buff;
+}

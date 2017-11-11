@@ -1,0 +1,5 @@
+use api.wxgui.Container;
+class ScrollPane : Container {
+	[public|native]
+	def new(parent) : super(parent);
+}

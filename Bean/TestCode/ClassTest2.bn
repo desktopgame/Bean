@@ -1,0 +1,16 @@
+use api.Console;
+use api.Array;
+
+class SubOfNative : Array{
+	[public]@value(set=setValue, get=getValue);
+	[public]
+	def new(value) : super(4) {
+		this.value = value;
+	}
+}
+
+var hoge = SubOfNative.new(10);
+Console.writeLine(hoge.getValue());
+Console.writeLine(hoge.get(0));
+hoge.set(0, "Hello");
+Console.writeLine(hoge.get(0));

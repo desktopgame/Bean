@@ -1,0 +1,17 @@
+use api.Range;
+use api.Console;
+use api.File;
+use api.Thread;
+use api.Array;
+use api.exc.RuntimeException;
+var arr = { 1, 2, 3 };
+var arr2 = {
+	{ 1, 2 },
+	{ 2, 3 }
+};
+arr.forEach(def(i) -> { Console.writeLine(i); });
+Console.writeLine("");
+Console.writeLine("");
+arr2.forEach(def(subArr) -> {
+	subArr.forEach(def(i) -> { Console.writeLine(i); });
+});

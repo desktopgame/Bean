@@ -1,0 +1,119 @@
+use api.exc.OutOfRangeError;
+use api.Range;
+use api.Console;
+/**
+ * 固定長の領域でメモリ空間連続的に確保するオブジェクトです.
+ * 添え字を通じて内部のオブジェクトを取得/設定できます。
+ */
+class Array {
+	/**
+	 * 指定の長さでこの配列を初期化します.
+	 */
+	[public|native]
+	def new(length);
+	
+	/**
+	 * 指定位置の値を上書きします.
+	 * @param index
+	 * @param value
+	 */
+	[public|native]
+	def set(index, value);
+	
+	/**
+	 * 指定位置の値を返します.
+	 * @param index
+	 * @return
+	 */
+	[public|native]
+	def get(index);
+	
+	/**
+	 * この配列の長さを返します.
+	 * @return
+	 */
+	[public|native]
+	def length();
+	
+	/**
+	 * 指定のデリゲートでこの配列の要素を処理します.
+	 * @param action
+	 */
+	[public]
+	def forEach(action) {
+		for(var i=0; i<length(); i++) {
+			action.call({ get(i) });
+		}
+	}
+	
+	/**
+	 * この配列の指定範囲を切り取って返します.
+	 * @param offset
+	 * @param length
+	 * @return
+	 */
+	[public]
+	def sub(offset, length) {
+		if(offset < 0 || length > length()) {
+			throw OutOfRangeError.new(null, "配列の範囲外です");
+		}
+		if(length == 1) {
+			return { get(offset) };
+		}
+		var ret = Array.new(length);
+		Range.new(offset, length).forEach(def(i) -> {
+			ret.set(i-offset, get(i));
+		});
+		return ret;
+	}
+	
+	/**
+	 * 指定の配列にこの配列の中身をコピーします.
+	 * @param dst
+	 * @param dstOffset
+	 * @param srcOffset
+	 * @param srcLength
+	 */
+	[public]
+	def copyTo(dst, dstOffset, srcOffset, srcLength) {
+		Range.new(srcOffset, srcLength).forEach(def(i) -> {
+			dst.set(dstOffset + (i - srcOffset), get(i));
+		});
+	}
+	
+	/**
+	 * 指定の長さの配列にこの配列の要素を複製します.
+	 * 短すぎる場合には無視され、
+	 * 長すぎる場合にはnullで埋められます。
+	 * @param srcOffset
+	 * @param length
+	 * @return
+	 */
+	[public]
+	def copyOf(srcOffset, length) {
+		var ret = Array.new(length);
+		Range.new(srcOffset, length).forEach(def(i) -> {
+			if(i >= length()) {
+				return;
+			}
+			ret.set(i - srcOffset, get(i));
+		});
+		return ret;
+	}
+	
+	/**
+	 * この配列に引数の配列を連結して返します.
+	 * @param array
+	 */
+	[public]
+	def concat(array) {
+		var ret = Array.new(length() + array.length());
+		Range.new(0, length()).forEach(def(i) -> { ret.set(i, get(i)); });
+		if(array.length() == 1) {
+			ret.set(ret.length() - 1, array.get(0));
+		} else {
+			Range.new(0, array.length()).forEach(def(i) -> { ret.set(length() + i - 1, array.get(i)); });
+		}
+		return ret;
+	}
+}

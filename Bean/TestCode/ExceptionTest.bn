@@ -1,0 +1,34 @@
+use api.Console;
+
+
+def isHoge() {
+	return "Hoge";	
+}
+
+try {
+	if(20) {
+		Console.writeLine("é¿çsÇ≥ÇÍÇ‹ÇπÇÒ");	
+	}
+} catch(e) {
+	Console.writeLine("catch: " + e.getMessage());	
+}
+
+Console.writeLine("---");
+
+try {
+	while(isHoge()) {
+		Console.writeLine("é¿çsÇ≥ÇÍÇ‹ÇπÇÒ");	
+	}
+} catch(e) {
+	Console.writeLine("catch: " + e.getMessage());	
+}
+
+Console.writeLine("---");
+
+try {
+	for(var i=10; isHoge(); i++) {
+		
+	}
+} catch(e) {
+	Console.writeLine("catch: " + e.getMessage());	
+}

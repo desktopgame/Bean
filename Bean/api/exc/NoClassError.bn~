@@ -1,0 +1,7 @@
+use api.exc.RuntimeException;
+class NoClassError : RuntimeException {
+	[public]
+	def new(className) {
+		super.new(null, className + " は見つからないか、インクルードされていません");	
+	}
+}

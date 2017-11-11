@@ -1,0 +1,6 @@
+use api.Numeric;
+/**
+ * 32ビット整数を扱うクラス.
+ */
+class Integer : Numeric {
+}

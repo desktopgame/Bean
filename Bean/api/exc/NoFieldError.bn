@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * 呼び出されたフィールドが見つからなかった場合にスローされます.
+ */
+class NoFieldError : RuntimeException {
+}

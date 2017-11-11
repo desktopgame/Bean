@@ -1,0 +1,21 @@
+use api.Console;
+use api.Math;
+use api.Delegate;
+
+def main() {
+}
+
+var a = 10;
+var b = 20;
+var maxDel = Delegate.newInstance("api.Math", "max", 2, null);
+var minDel = Delegate.newInstance("api.Math", "min", 2, null);
+Console.writeLine(a);
+Console.writeLine(b);
+//Console.writeLine(a + " vs " + b + " max ->" + Math.max(a, b));
+var args = Array.new(2);
+args.set(0, a);
+args.set(1, b);
+var p = maxDel.call(args);
+//Console.writeLine(a + " vs " + b + " max ->" + maxDel.call(args));
+//Console.writeLine(a + " vs " + b + " min ->" + minDel.call(args));
+//Console.writeLine("pow(" + a + ". 2) -> " + Math.pow(a, 2));

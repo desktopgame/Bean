@@ -1,0 +1,7 @@
+class ExBaseTest {
+	[public]@value = "Value";
+	[public]
+	def new(value) {
+		this.value = value;
+	}
+}

@@ -1,0 +1,6 @@
+class BugClass6 {
+	[public|native]
+	def hoge() {
+
+	}
+}

@@ -1,0 +1,11 @@
+use api.Console;
+use api.test.Singleton;
+
+var inst = Singleton.getInstance();
+Console.writeLine(inst.value);
+
+inst.value = "Huga";
+Console.writeLine(inst.value);
+
+Singleton.getInstance().value = "Hoge";
+Console.writeLine(inst.value);

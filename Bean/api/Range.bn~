@@ -1,0 +1,25 @@
+use api.Console;
+/**
+ * 位置と長さで表されるシーク可能な範囲です.
+ */
+class Range {
+	[public] @offset;
+	[public] @length;
+
+	[public]
+	def new(offset, length) {
+		this.offset = offset;
+		this.length = length;
+	}
+	/**
+	 * 位置から位置 + 長さの位置まで増分1で繰り返しを続けて、
+	 * インデックスを blcok に渡しながら処理を実行します.
+	 * @param block
+	 */
+	[public]
+	def forEach(block) {
+		for(var i=offset; i<(offset + length); i++) {
+			block.call({i});
+		}
+	}
+}

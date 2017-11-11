@@ -1,0 +1,9 @@
+use api.exc.RuntimeException;
+/**
+ * 呼び出されたフィールドが見つからなかった場合にスローされます.
+ */
+class NoFieldError : RuntimeException {
+	[public]
+	def new(className, fieldName, argCount) : super(null, className + "#" + fieldName + " は見つかりません") {
+	}
+}

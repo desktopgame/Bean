@@ -1,0 +1,29 @@
+/**
+ * 関数/メソッドをカプセル化します.
+ * このクラスのインスタンスはnew演算子で生成出来ません。
+ * ラムダ式とメソッド参照の二種類を利用出来ます。
+ *
+ * ラムダ式
+ * lambda(a, b, c) -> {  };
+ */
+class Delegate {
+	[private]
+	def new() { }
+
+	/**
+	 * 指定のメソッドを実行するデリゲートを生成します.
+	 * @param className
+	 * @param methodName
+	 * @param argCount
+	 * @param invoker
+	 */
+	[public|static|native]
+	def newInstance(className, methodName, argCount, invoker);
+
+	/**
+	 * 処理を実行します.
+	 * @param args
+	 */
+	[public|native]
+	def call(args);
+}

@@ -1,0 +1,12 @@
+var x = 10;
+x::name = "Bean";
+x::toString() = lambda() -> {
+	return name;	
+};
+x::call() = lambda() -> {
+	Console.writeLine("Hello");
+};
+
+Console.writeLine(x.name);
+Console.writeLine(x);
+x.call();

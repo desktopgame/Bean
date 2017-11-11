@@ -1,0 +1,21 @@
+use api.wxgui.LayoutManager;
+/**
+ * 単一方向にコンポーネントを並べるレイアウト.
+ */
+class FlowLayout : LayoutManager {
+	[private]
+	def new() { }
+
+	/**
+	 * 水平方向に並べるレイアウトを返します.
+	 * @return
+	 */
+	[public|native]
+	def newHorizontal();
+
+	/**
+	 * 垂直方向に並べるレイアウトを返します.
+	 */
+	[public|native]
+	def newVertical();
+}

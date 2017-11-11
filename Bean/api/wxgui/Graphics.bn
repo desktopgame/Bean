@@ -1,0 +1,70 @@
+/**
+ * 画面にオブジェクトを描画するためのグラフィックスコンテキストです.
+ * 単位は整数型です。
+ */
+class Graphics {
+	[private]
+	def new() { }
+
+	/**
+	 * 画面全体を現在のブラシでクリアします.
+	 */
+	[public|native]
+	def clear();
+	
+	/**
+	 * 指定の位置に点を描画します.
+	 * @param x
+	 * @param y
+	 */
+	[public|native]
+	def drawDot(x, y);
+	
+	/**
+	 * 指定の位置から位置へ線分を描画します.
+	 * @param x1
+	 * @param y1
+	 * @param x2
+	 * @param y2
+	 */
+	[public|native]
+	def drawLine(x1, y1, x2, y2);
+	
+	/**
+	 * 指定の位置を中心として円を描画します.
+	 * @param x
+	 * @param y
+	 * @param w
+	 * @param h
+	 */
+	[public|native]
+	def drawEllipse(x, y, w, h);
+	
+	/**
+	 * 矩形を描画します.
+	 * @param x
+	 * @param y
+	 * @param w
+	 * @param h
+	 */
+	[public|native]
+	def drawRect(x, y,  w, h);
+	
+	/**
+	 * 文字列を描画します.
+	 * @param s
+	 * @param x
+	 * @param y
+	 */
+	[public|native]
+	def drawString(s, x, y);
+	
+	/**
+	 * 画像を描画します.
+	 * @param bmp
+	 * @param x
+	 * @param y
+	 */
+	[public|native]
+	def drawBitmap(bmp, x, y);
+}

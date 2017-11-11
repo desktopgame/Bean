@@ -1,0 +1,19 @@
+use api.Console;
+use api.exc.OutOfRangeError;
+use api.test.Test;
+
+//*
+var action = lambda() -> {
+	Console.writeLine("HelloWorld");
+	throw OutOfRangeError.new();
+};
+try {
+	action.call({});
+} catch(ex) {
+	Console.writeLine("catch");
+} finally {
+	Console.writeLine("finally");
+}
+//*/
+
+//Test.throwEx();

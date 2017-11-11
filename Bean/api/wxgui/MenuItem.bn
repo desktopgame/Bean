@@ -1,0 +1,22 @@
+use api.wxgui.Component;
+/**
+ * アクションを実行可能な文字表示可能な項目です.
+ */
+class MenuItem : Component {
+
+	[protected]
+	def new() { }
+
+	/**
+	 * 表示される文字列を設定します.
+	 * @param text
+	 */
+	[public|native]
+	def setText(text);
+
+	/**
+	 * 表示される文字列を返します.
+	 */
+	[public|native]
+	def getText();
+}

@@ -1,0 +1,279 @@
+use api.geom.Point2D;
+use api.geom.Size2D;
+use api.geom.Rect2D;
+/**
+ * wxwidgetをラップするコンポーネントの基底クラスです.
+ */
+class Component {
+	
+	[private]
+	def new() { }
+
+	/**
+	 * このコンポーネントを再描画します.
+	 */
+	[public|native]
+	def repaint();
+	
+	/**
+	 * X座標を設定します.
+	 * @param x
+	 */
+	[public|native]
+	def setX(x);
+
+	/**
+	 * X座標を返します.
+	 * @return
+	 */
+	[public|native]
+	def getX();
+	
+	/**
+	 * Y座標を設定します.
+	 * @param y
+	 */
+	[public|native]
+	def setY(y);
+	
+	/**
+	 * Y座標を返します.
+	 * @return
+	 */
+	[public|native]
+	def getY();
+
+	/**
+	 * 横幅を設定します,
+	 * @param w
+	 */
+	[public|native]
+	def setWidth(w);
+
+	/**
+	 * 横幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getWidth();
+
+	/**
+	 * 縦幅を設定します.
+	 * @param h
+	 */
+	[public|native]
+	def setHeight(h);
+	
+	/**
+	 * 縦幅を返します.
+	 * @return
+	 */
+	[public|native]
+	def getHeight();
+
+	/**
+	 * 位置を設定します.
+	 * @param p
+	 */
+	[public]
+	def setLocation(p) {
+		setX(p.getX());
+		setY(p.getY());
+	}
+	
+	/**
+	 * 位置を返します.
+	 * @return
+	 */
+	[public]
+	def getLocation() {
+		return Point2D.new(getX(), getY());
+	}
+
+	/**
+	 * 大きさを設定します.
+	 * @param s
+	 */
+	[public]
+	def setSize(s) {
+		setWidth(s.getWidth());
+		setHeight(s.getHeight());
+	}
+
+	/**
+	 * 大きさを返します.
+	 * @return
+	 */
+	[public]
+	def getSize() {
+		return Size2D.new(getWidth(), getHeight());
+	}
+
+	/**
+	 * 位置/大きさを設定します.
+	 * @param r
+	 */
+	[public]
+	def setBounds(r) {
+		setLocation(r.getLocation());
+		setSize(r.getSize());
+	}
+
+	/**
+	 * 位置/大きさを返します.
+	 * @return
+	 */
+	[public]
+	def getBounds() {
+		return Rect2D.new(getLocation(), getSize());
+	}
+
+	/**
+	 * 左のX座標を返します.
+	 * @return
+	 */
+	[public]
+	def getLeft() {
+		return getX();
+	}
+
+	/**
+	 * 右のX座標を返します.
+	 * @return
+	 */
+	[public]
+	def getRight() {
+		return getX() + getWidth();
+	}
+	
+	/**
+	 * 上のY座標を返します.
+	 * @return
+	 */
+	[public]
+	def getTop() {
+		return getY();
+	}
+	
+	/**
+	 * 下のY座標を返します.
+	 * @return
+	 */
+	[public]
+	def getBottom() {
+		return getY() + getHeight();
+	}
+	
+	/**
+	 * 最小サイズを設定します.
+	 * @param w
+	 * @param h
+	 */
+	[public|native]
+	def setMinSize(w, h);
+	
+	/**
+	 * 最小サイズを設定します.
+	 * @param size
+	 */
+	[public]
+	def setMinSize(size) {
+		setMinSize(size.getWidth(), size.getHeight());
+	}
+	
+	/**
+	 * 最小サイズを返します.
+	 * @return
+	 */
+	[public|native]
+	def getMinSize();
+	
+	/**
+	 * 推奨サイズを設定します.
+	 * @param w
+	 * @param h
+	 */
+	[public|native]
+	def setFitSize(w, h);
+	
+	/**
+	 * 推奨サイズを設定します.
+	 * @param size
+	 */
+	[public]
+	def setFitSize(size) {
+		setFitSize(size.getWidth(), size.getHeight());
+	}
+	
+	/**
+	 * 推奨サイズを設定します.
+	 * @return
+	 */
+	[public|native]
+	def getFitSize();
+	
+	/**
+	 * 最大サイズを設定します.
+	 * @param w
+	 * @param h
+	 */
+	[public|native]
+	def setMaxSize(w, h);
+	
+	/**
+	 * 最大サイズを設定します.
+	 * @param size
+	 */
+	[public]
+	def setMaxSize(size) {
+		setMaxSize(size.getWidth(), size.getHeight());
+	}
+	
+	/**
+	 * 最大サイズを設定します.
+	 */
+	[public|native]
+	def getMaxSize();
+	
+	/**
+	 * このコンポーネントの親コンテナを設定します.
+	 * @param parent
+	 */
+	[public|native]
+	def setParent(parent);
+	
+	/**
+	 * このコンポーネントの親コンテナを返します.
+	 * @return
+	 */
+	[public|native]
+	def getParent();
+	
+	/**
+	 * コンポーネントの前景色を設定します.
+	 * @param foreColor
+	 */
+	[public|native]
+	def setForeground(foreColor);
+	
+	/**
+	 * コンポーネントの前景色を返します.
+	 * @return
+	 */
+	[public|native]
+	def getForeground();
+	
+	/**
+	 * コンポーネントの背景色を設定します.
+	 * @param backColor
+	 */
+	[public|native]
+	def setBackground(backColor);
+	
+	/**
+	 * コンポーネントの背景色を返します.
+	 * @return
+	 */
+	[public|native]
+	def getBackground();
+}

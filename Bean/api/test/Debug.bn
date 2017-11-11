@@ -1,0 +1,14 @@
+use api.Console;
+use api.File;
+class Debug {
+	[public]
+	def new() {
+		var x = "A";
+		print(x + " " + File.getCurrentPath());
+	}
+	
+	[public]
+	def print(msg) {
+		Console.writeLine(msg);
+	}
+}

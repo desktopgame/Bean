@@ -1,0 +1,72 @@
+use api.Console;
+use api.Range;
+use api.Pattern;
+use api.Matcher;
+
+var source = "public class Iterator { \n"	+ 
+			 "\tprivate int size;\n"		+ 
+			 "\tprivate int offs;\n"		+
+			 "\tpublic Iterator() {\n"		+
+			 "\t\t/* empty */\n"			+
+			 "\t}\n"						+
+			 "\n"							+
+			 "\tpublic next() {\n"			+
+			 "\t\t/* empty */\n"			+
+			 "\t}\n"						+
+			 "\n"							+
+			 "\tpublic hasNext() {\n"		+
+			 "\t\t/* empty */\n"			+
+			 "\t}\n"						+
+			 "}";
+Console.writeLine("---");
+Console.writeLine(source);
+Console.writeLine("---");
+
+var classDecl = "class";
+var modifier = "[public|private|protected|static|final]+";
+var ident = ".+";
+var camma = ",";
+var any = ".*";
+var lrb = "\\(";
+var rrb = "\\)";
+var lcb = "{";
+var rcb = "}";
+var parameterList = "(" + ident + "(" + camma + "?)" + ")*";
+
+Console.writeLine("");
+//フィールド一覧
+var fieldPatternText = (modifier + ident + ident + ";");
+var fieldPattern = Pattern.compile(fieldPatternText);
+var fieldMatcher = fieldPattern.matcher(source);
+Console.writeLine(fieldPatternText);
+matchTest(fieldMatcher);
+Console.writeLine("");
+
+//メソッド一覧
+var methodPatternText = (modifier + ident + lrb + parameterList + rrb);
+var methodPattern = Pattern.compile(methodPatternText);
+var methodMatcher = methodPattern.matcher(source);
+Console.writeLine(methodPatternText);
+matchTest(methodMatcher);
+Console.writeLine("");
+
+//クラス名
+var classPatternText = classDecl + "(" + ident + ")";
+var classPattern = Pattern.compile(classPatternText);
+var classMatcher = classPattern.matcher(source);
+Console.writeLine(classPatternText);
+matchTest(classMatcher, 1);
+Console.writeLine("");
+
+def matchTest(matcher) {
+	matchTest(matcher, 0);
+}
+
+def matchTest(matcher, index) {
+	while(matcher.find()) {
+		var start = matcher.start(index);
+		var end = matcher.end(index);
+		var group = matcher.group(index);
+		Console.writeLine("start=" + start + " end=" + end + " group=" + group);
+	}
+}

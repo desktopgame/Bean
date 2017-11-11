@@ -1,0 +1,56 @@
+use api.coll.Vector;
+use api.test.Bullet;
+class Enemy {
+	[public]@x = 0;
+	[public]@y = 0;
+	[private]@offset = 0;
+	[private]@right = true;
+	[private]@rate = 0.0f;
+	[private]@bullets;
+	
+	[public]
+	def new() {
+		this.bullets = Vector.new();
+	}
+	
+	[public]
+	def update() {
+		if(right) {
+			this.x += 20;
+			this.offset += 20;
+			if(offset > 200) {
+				this.right = false;
+			}
+		} else {
+			this.x -= 20;
+			this.offset -= 20;
+			if(offset < 0) {
+				this.right = true;
+			}
+		}
+		for(var i=0; i<bullets.size(); i++) {
+			var bul = bullets.get(i);
+			bul.update();
+		}
+		fire();
+	}
+	
+	[private]
+	def fire() {
+		this.rate += 0.1f;
+		if(rate < 2.0f) {
+			return;
+		}
+		bullets.add(Bullet.new(this));
+		this.rate = 0.0f;
+	}
+	
+	[public]
+	def draw(g) {
+		g.drawRect(x, y, 50, 50);
+		for(var i=0; i<bullets.size(); i++) {
+			var bul = bullets.get(i);
+			bul.draw(g);
+		}
+	}
+}

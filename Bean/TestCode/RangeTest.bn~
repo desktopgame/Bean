@@ -1,0 +1,4 @@
+use api.Range;
+use api.Console;
+
+Range.new(0, 10).forEach(def(i) -> { Console.writeLine(i); });

@@ -1,0 +1,4 @@
+use api.test.AliasTest;
+
+var x = AliasTest.new();
+x.hoge();

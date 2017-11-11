@@ -1,0 +1,10 @@
+use api.Console;
+use api.test.A;
+use api.test.B;
+
+var a = A.new();
+var b = B.new();
+
+a.value = b;
+b.value = a;
+Console.writeLine("loop ref");

@@ -1,0 +1,13 @@
+/**
+ * 変数が何もさしていないことを示すオブジェクトです.
+ * 予約語 null で参照出来ます。
+ */
+class Null {
+	[private]
+	def Null() { }
+	
+	[public]
+	def toString() {
+		return "null";
+	}
+}

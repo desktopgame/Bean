@@ -1,0 +1,11 @@
+use api.Console;
+class OverrideSuper {
+	[public]
+	def new() {
+	}
+
+	[public|final]
+	def foo() {
+		Console.writeLine("super");
+	}
+}

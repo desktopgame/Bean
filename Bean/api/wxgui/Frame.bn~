@@ -1,0 +1,63 @@
+use api.wxgui.Window;
+/**
+ * 最上位のコンポーネントです.
+ * 内部に空のパネルを持っていて、このコンポーネントへの追加はそれへ委譲されます。
+ */
+class Frame : Window {
+	[public|native]
+	def new(title, width, height) : super();
+	
+	/**
+	 * タイトルテキストを設定します.
+	 * @param text
+	 */
+	[public|native]
+	def setTitle(text);
+	
+	/**
+	 * タイトルテキストを返します,
+	 */
+	[public|native]
+	def getTitle();
+	
+	/**
+	 * イベントループを開始します.
+	 */
+	[public|native]
+	def mainLoop();
+
+	/**
+	 * ウィンドウサイズを内側のコンポーネントに対して最適なサイズにします.
+	 */
+	[public|native]
+	def pack();
+	
+	/**
+	 * メニューバーを設定します.
+	 * @param menuBar
+	 */
+	[public|native]
+	def setMenuBar(menuBar);
+	
+	/**
+	 * メニューバーを返します.
+	 * @return
+	 */
+	[public|native]
+	def getMenuBar();
+	
+	/** 
+	 * ステータスバーを作成します.
+	 * @param length 項目の数.
+	 */
+	[public|native]
+	def createStatusBar(length);
+	
+	/**
+	 * 指定位置の項目のステータスを更新します.
+	 * @param index
+	 * @param text
+	 */
+	[public|native]
+	def printStatus(index, text);
+}

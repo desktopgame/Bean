@@ -1,0 +1,21 @@
+use api.Console;
+use api.File;
+use api.Pattern;
+use api.Matcher;
+
+//参考URL:https://www.javadrive.jp/regex/ref/index4.html
+var patternText = "<(div|span)>.*?<\\/\\1>";
+var pattern = Pattern.compile(patternText);
+Console.writeLine("パターン " + patternText);
+check(pattern, "Today is <div>Tuesday</div>");
+check(pattern, "Border Color is <span>red</span>");
+check(pattern, "<span>Hello</div>");
+
+def check(pattern, target) {
+	var matcher = pattern.matcher(target);
+	if(matcher.find()) {
+		Console.writeLine("o " + target);
+	} else {
+		Console.writeLine("x " + target);
+	}
+}

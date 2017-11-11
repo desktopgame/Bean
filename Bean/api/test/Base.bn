@@ -1,0 +1,8 @@
+class Base {
+	[public]@value(set=setValue, get=getValue) = 0;
+	
+	[public]
+	def new(v) {
+		this.value = v;
+	}
+}

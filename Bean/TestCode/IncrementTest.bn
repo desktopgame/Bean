@@ -1,0 +1,17 @@
+//*
+use api.Range;
+use api.Console;
+use api.File;
+use api.Thread;
+use api.exc.RuntimeException;
+
+var x = 0;
+Console.writeLine(x);
+
+Console.writeLine(++x);
+x = 0;
+
+Console.writeLine(x++);
+Console.writeLine(x);
+x = 0;
+//*/

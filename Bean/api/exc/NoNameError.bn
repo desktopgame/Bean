@@ -1,0 +1,6 @@
+use api.exc.RuntimeException;
+/**
+ * ŒÄ‚Ño‚³‚ê‚½•Ï”‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚ÉƒXƒ[‚³‚ê‚Ü‚·.
+ */
+class NoNameError : RuntimeException {
+}

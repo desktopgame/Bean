@@ -1,0 +1,51 @@
+use api.wxgui.MenuItem;
+/**
+ * 他の項目を包含出来る項目です.
+ */
+class Menu : MenuItem {
+	[protected]
+	def new() { }
+	
+	/**
+	 * 子要素を追加します.
+	 * @param menu
+	 * @return 追加された要素.
+	 */
+	[public|native]
+	def addMenu(menu);
+	
+	/**
+	 * 子要素を追加します.
+	 * @param text
+	 * @return 追加された要素
+	 */
+	[public|native]
+	def addCheckBoxMenuItem(text);
+	
+	/**
+	 * 子要素を追加します.
+	 * @param text
+	 * @return 追加された要素
+	 */
+	[public|native]
+	def addMenuItem(text);
+	
+	/**
+	 * 区切り線を追加します
+	 */
+	[public|native]
+	def addSeparator();
+	
+	/**
+	 * 指定位置の要素を削除します.
+	 * @param index
+	 */
+	[public|native]
+	def removeSubElementAt(index);
+	
+	/**
+	 * 子要素の数を返します.
+	 */
+	[public|native]
+	def getSubElementCount();
+}

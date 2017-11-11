@@ -1,0 +1,57 @@
+/**
+ * 並列実行されるプログラムの単位です.
+ */
+class Thread {
+	[private] @action;
+	
+	/**
+	 * スレッドを作成します.
+	 * @param name
+	 */
+	[public|native]
+	def new(name);
+
+	/**
+	 * スレッドを開始します.
+	 * @param action
+	 */
+	[public|native]
+	def start(action);
+	
+	/**
+	 * 現在のスレッドで指定のミリ秒停止します.
+	 * @param millSec
+	 */
+	[public|static|native]
+	def sleep(millSec);
+	
+	/**
+	 * このスレッドが終了するまで呼び出し側を待機させます.
+	 */
+	[public|native]
+	def join();
+	
+	/**
+	 * このメソッドが呼び出されたスレッドを返します.
+	 * @return
+	 */
+	[public|static|native]
+	def getCurrent();
+	
+	/**
+	 * このスレッドの名前を返します.
+	 * @return
+	 */
+	[public|native]
+	def getName();
+/*	
+	[public|native]
+	def interrupt();
+	
+	[public|native]
+	def wait();
+	
+	[public|static|native]
+	def interrupted();
+*/
+}

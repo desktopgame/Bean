@@ -1,0 +1,25 @@
+use api.Console;
+
+def print() {
+	Console.writeLine("Short: " + sh);
+	Console.writeLine("Integer: " + in);
+	Console.writeLine("Long: " + lo);
+	Console.writeLine("Float: " + fl);
+	Console.writeLine("Double: " + do);
+}
+
+var sh = 10s;
+var in = 10i;
+var lo = 10l;
+var fl = 10f;
+var do = 10d;
+print();
+
+Console.writeLine("");
+
+sh = Numeric.asInteger(sh);
+in = Numeric.asFloat(in);
+lo = Numeric.asFloat(lo);
+fl = Numeric.asInteger(fl);
+do = Numeric.asFloat(do);
+print();

@@ -1,0 +1,7 @@
+/**
+ * true/false ‚ğˆµ‚¤ƒNƒ‰ƒX
+ */
+class Boolean {
+	[public|native]
+	def toString();
+}

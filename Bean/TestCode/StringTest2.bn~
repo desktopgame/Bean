@@ -1,0 +1,10 @@
+use api.Console;
+use api.Vector;
+use api.String;
+use api.Array;
+
+var src = "‚`‚`aaa";
+Console.writeLine(src);
+
+var enc = src.encode("shift-jis");
+Console.writeLine(enc);

@@ -1,0 +1,42 @@
+/**
+ * 例外の基底クラスです.
+ * throw文 でスローすることが出来るのはこのクラス及びそのサブクラスのみです。
+ *
+ * throwされると例外はそれがスローされた関数の中のcatchへジャンプします。
+ * 関数の中にcatch節がない場合には、その関数を呼び出した関数でcatch節を検索します。
+ * トップレベルまで遡ってもcatch節が見つからない場合には、スタックトレースを出力してプログラムを終了します。
+ */
+class Exception {
+	[private]@cause;
+	[private]@message;
+	
+	[public]
+	def new() {
+		this.cause = null;
+		this.message = null;
+	}
+	
+	[public]
+	def new(cause, message) {
+		this.cause = cause;
+		this.message = message;
+	}
+
+	/**
+	 * この例外が別の例外が原因となってスローされた場合、
+	 * ( throw new HogeException(hugaException) のような場合 )に、内側の例外を返します。
+	 * 原因がない場合には null を返します。
+	 */
+	[public]
+	def getCause() {
+		return cause;
+	}
+	
+	/**
+	 * 例外の詳細を出力します.
+	 */
+	[public]
+	def getMessage() {
+		return message;
+	}
+}

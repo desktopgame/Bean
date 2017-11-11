@@ -1,0 +1,5 @@
+class OuterClass {
+	class InnerClass {
+	
+	}
+}

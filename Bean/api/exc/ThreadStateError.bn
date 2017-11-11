@@ -1,0 +1,8 @@
+use api.exc.RuntimeException;
+/**
+ * 既に開始しているスレッドを開始しようとした場合、
+ * もしくは終了しているスレッドを開始しようとした場合スローされます。
+ */
+class ThreadStateError : RuntimeException {
+
+}

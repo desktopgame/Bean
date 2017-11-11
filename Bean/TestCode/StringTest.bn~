@@ -1,0 +1,48 @@
+use api.Console;
+use api.String;
+use api.Array;
+use api.geom.Vector2D;
+
+//var x = Array.new("");
+
+var src = "RubyJavaC++Python";
+var pos = src.indexOf("C++");
+Console.writeLine(pos);
+
+var len = src.length();
+Console.writeLine("len " + len);
+
+var spl = src.split("Java");
+//Console.writeLine("[0]=" + spl.get(0) + "   [1]=" + spl.get(1));
+
+spl = src.split("JAVA");
+//var p = spl.get(1);
+Console.writeLine("[0]=" + spl.get(1));
+
+pos = src.indexOf("y", 10);
+Console.writeLine(pos);
+
+pos = src.lastIndexOf("y");
+Console.writeLine(pos);
+
+pos = src.lastIndexOf("y", 6);
+Console.writeLine(pos);
+
+pos = src.indexOf("OOO");
+Console.writeLine("OOO " + pos);
+
+var newSrc = src.insert(0, "Hoge");
+//src.insert("", 0);
+Console.writeLine(newSrc);
+
+var t = src.remove(0, 4);
+Console.writeLine(t);
+
+var b= src.startsWith("Ruby");
+Console.writeLine(b);
+
+b = src.endsWith("Python");
+Console.writeLine(b);
+
+
+

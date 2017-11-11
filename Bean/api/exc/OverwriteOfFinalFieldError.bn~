@@ -1,0 +1,8 @@
+use api.exc.RuntimeException;
+
+class OverwriteOfFinalFieldError : RuntimeException {
+	[public]
+	def new(className, fieldName) {
+		super.new(null, className + "#" + fieldName + " ‚Í final ‚Å’è‹`‚³‚ê‚Ä‚¢‚é‚Ì‚ÅAã‘‚«‚Å‚«‚Ü‚¹‚ñ");
+	}
+}

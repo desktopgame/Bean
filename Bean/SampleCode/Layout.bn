@@ -1,0 +1,67 @@
+use api.wxgui.Frame;
+use api.wxgui.Button;
+use api.wxgui.Label;
+use api.wxgui.Panel;
+use api.wxgui.Color;
+use api.wxgui.TextField;
+use api.wxgui.ScrollPane;
+use api.wxgui.FlowLayout;
+use api.wxgui.LayoutParams;
+use api.wxgui.MenuBar;
+use api.wxgui.Menu;
+use api.wxgui.MenuItem;
+
+var fr = Frame.new("Frame", 800, 600);
+var vPanel = Panel.new(fr);
+var vPanel2 = Panel.new(fr);
+var button = Button.new(vPanel2, "Button1");
+button.addPushListener(lambda() -> {
+	Console.writeLine("PUSH");	
+});
+//**[TextSample1]**
+var hlayout = FlowLayout.newHorizontal();
+hlayout
+	.addSpace(65)
+	.addComponent(Label.new(vPanel, "TextSample"), LayoutParams.new().center())
+	.addSpace(35)
+	;	
+//**[Button1]**
+var hlayout2 = FlowLayout.newHorizontal();
+hlayout2
+	.addSpace(50)
+	.addComponent(button, LayoutParams.new())
+	.addSpace(50)
+	;	
+//**
+//**[TextSample]**
+//**[Button1]**
+//**
+var vlayout = FlowLayout.newVertical();
+vlayout
+	.addSpace(10)
+	.addComponent(vPanel, LayoutParams.new())
+	.addSpace(10)
+	.addComponent(vPanel2, LayoutParams.new())
+	.addSpace(10)
+	;
+vPanel.setLayout(hlayout);
+vPanel2.setLayout(hlayout2);
+//[SampleMenu]
+//	-[SubMenu1]
+//		-[Sub Sub Menu1]
+//		-[Sub Sub Menu2]
+//	-[SubMenu2]
+//	-[SubMenu3]
+var menuBar = MenuBar.new();
+var sampleMenu = menuBar.addMenu("SampleMenu");
+var subMenu1 = sampleMenu.addMenu("Sub Menu1");
+subMenu1.addMenuItem("Sub Sub Menu1");
+subMenu1.addMenuItem("Sub Sub Menu2");
+sampleMenu.addMenuItem("Sub Menu2");
+sampleMenu.addCheckBoxMenuItem("Sub Menu3");
+fr.setMenuBar(menuBar);
+fr.createStatusBar(1);
+fr.printStatus(0, "welcom to bean gui");
+fr.setLayout(vlayout);
+fr.pack();
+fr.mainLoop();

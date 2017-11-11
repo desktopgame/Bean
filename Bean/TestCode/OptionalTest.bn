@@ -1,0 +1,10 @@
+use api.Console;
+use api.Math;
+use api.Delegate;
+use api.Optional;
+
+var x = null;
+Optional
+	.ofNullable(x)
+	.ifPresent(lambda(nox) -> { Console.writeLine(nox); })
+	.orElse(lambda(nox) -> { Console.writeLine("null‚Å‚·"); });

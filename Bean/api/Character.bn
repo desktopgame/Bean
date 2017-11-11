@@ -1,0 +1,21 @@
+/**
+ * •¶š‚ğˆµ‚¤ƒNƒ‰ƒX.
+ */
+class Character {
+	[private]
+	def new() { }
+	
+	[public|native]
+	def op_add(o);
+	
+	[public|native]
+	def toString();
+	
+	/**
+	 * ®”Œ^‚É•ÏŠ·‚µ‚Ü‚·.
+	 * @param v
+	 * @return 
+	 */
+	[public|static|native]
+	def asInteger(v);
+}

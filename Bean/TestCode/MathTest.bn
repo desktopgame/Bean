@@ -1,0 +1,8 @@
+use api.Console;
+use api.Math;
+var a = 10;
+var b = 20;
+Console.writeLine(a);
+Console.writeLine(a + " vs " + b + " max ->" + Math.max(a, b));
+Console.writeLine(a + " vs " + b + " min ->" + Math.min(a, b));
+Console.writeLine("pow(" + a + ". 2) -> " + Math.pow(2, 2));

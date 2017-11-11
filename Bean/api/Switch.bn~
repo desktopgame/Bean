@@ -1,0 +1,56 @@
+/**
+ * switch文の代替です.
+ * フォールスルーはサポートされません。
+ * var x = Switch.by(n)
+ *		 .case(0, def() -> { return "A"; });
+ *		 .case(1, def() -> { return "B"; });
+ *		 .case(2, def() -> { return "C"; });
+ *		 .caseDefault(def() -> { return "Default"; });
+ */
+class Switch {
+	[private]@obj;
+	[private]@ret;
+	[private]@matchAny;
+	
+	[private]
+	def new(obj) {
+		this.obj = obj;
+		this.ret = null;
+		this.matchAny = false;
+	}
+	
+	[public|static]
+	def by(obj) {
+		return Switch.new(obj);
+	}
+	
+	/**
+	 * label を評価してマッチするなら action を実行して値を格納します.
+	 * 既に値が格納されている場合には何もしません。
+	 * @param label
+	 * @param action
+	 * @return
+	 */
+	[public]
+	def case(label, action) {
+		if(obj == label && !matchAny) {
+			this.ret = action.call({});
+			this.matchAny = true;
+		}
+		return this;
+	}
+	
+	/**
+	 * まだ値が格納されていなければ action を実行して値を格納します.
+	 * どちらの場合でも格納された値を返して終了します。
+	 * @param action
+	 * @return
+	 */
+	[public]
+	def caseDefault(action) {
+		if(!matchAny) {
+			this.ret = action.call({});
+		}
+		return ret;
+	}
+}

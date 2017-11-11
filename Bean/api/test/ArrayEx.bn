@@ -1,0 +1,20 @@
+use api.Array;
+use api.Console;
+class ArrayEx : Array {
+	[public]
+	def new(len) : super(len) {
+	}
+	
+	[public]
+	def new() : this(3) {
+	}
+	
+	[public]
+	def hoge() {
+		var self = ArrayEx.new();
+		for(var i=0; i<self.length(); i++) {
+				self.set(i, (i * 10) + " : Hoge");	
+			}
+		self.forEach(lambda(elem) -> { Console.writeLine(elem); });
+	}
+}

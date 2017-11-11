@@ -1,0 +1,4 @@
+class BugClass5 {
+	[public]
+	def Hoge();
+}

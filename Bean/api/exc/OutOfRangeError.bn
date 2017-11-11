@@ -1,0 +1,6 @@
+use api.exc.ArgumentException;
+/**
+ * ˆø”‚Ì’l‚ªŠú‘Ò‚·‚é”ÍˆÍ‚ÌŠO‘¤‚É‚ ‚é‚±‚Æ‚ğ•ñ‚·‚é—áŠO‚Å‚·.
+ */
+class OutOfRangeError : ArgumentException {
+}

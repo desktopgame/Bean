@@ -1,0 +1,38 @@
+use api.Console;
+use api.Range;
+
+//‚È‚µ
+var x = 1;
+if(x == 0) {
+	Console.writeLine("WRITE 0");
+}
+
+//WRITE 0
+x = 0;
+if(x == 0) {
+	Console.writeLine("WRITE 0");
+} else {
+	Console.writeLine("NON WRITE");
+}
+
+//NON WRITE
+x = 1;
+if(x == 0) {
+	Console.writeLine("WRITE 0");
+} elseif(x == 10) {
+	Console.writeLine("WRITE 10");
+} else {
+	Console.writeLine("NON WRITE");
+}
+
+//WRITE 20
+x = 20;
+if(x == 0) {
+	Console.writeLine("WRITE 0");
+} elseif(x == 10) {
+	Console.writeLine("WRITE 10");
+} elseif(x == 20) {
+	Console.writeLine("WRITE 20");
+} else {
+	Console.writeLine("NON WRITE");
+}

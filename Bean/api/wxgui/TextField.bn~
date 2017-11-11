@@ -1,0 +1,107 @@
+use api.wxgui.Component;
+class TextField : Component {
+	[public|native]
+	def new(parent) : super(parent);
+
+	/** 
+	 * 指定の範囲の文字列を選択状態にします.
+	 * @param start
+	 * @param end
+	 */
+	[public|native]
+	def select(start, end);
+
+	/**
+	 * 全ての範囲の文字列を選択状態にします.
+	 */
+	[public|native]
+	def selectAll();
+
+	/**
+	 * 表示する文字列を設定します.
+	 * @param text
+	 */
+	[public|native]
+	def setText(text);
+
+	/**
+	 * 現在表示している文字列を返します.
+	 * @return
+	 */
+	[public|native]
+	def getText();
+
+	/**
+	 * 指定位置に文字列を挿入します.
+	 * @param offset
+	 * @param text
+	 */
+	[public|native]
+	def insert(offset, text);
+
+	/**
+	 * 指定範囲の文字列を削除します.
+	 * @param offset
+	 * @param length
+	 */
+	[public|native]
+	def remove(offset, length);
+
+	/**
+	 * カレット位置を設定します.
+	 * @param position
+	 */
+	[public|native]
+	def setCaretPosition(position);
+	
+	/**
+	 * カレット位置を返します.
+	 * @return
+	 */
+	[public|native]
+	def getCaretPosition();
+
+	/**
+	 * Undo可能なら true を返します.
+	 * @return
+	 */
+	[public|native]
+	def canUndo();
+
+	/**
+	 * Undoを実行します.
+	 */
+	[public|native]
+	def undo();
+
+	/**
+	 * Redo可能なら true を返します.
+	 * @return
+	 */
+	[public|native]
+	def canRedo();
+
+	/**
+	 * Redoを実行します.
+	 */
+	[public|native]
+	def redo();
+
+	/**
+	 * 現在選択されているテキストを切り取ります.
+	 */
+	[public|native]
+	def cut();
+
+	/**
+	 * 現在選択されているテキストをコピーします.
+	 */
+	[public|native]
+	def copy();
+
+	/**
+	 * 現在クリップボードにコピーされている文字列を貼り付けます.
+	 */
+	[public|native]
+	def paste();
+}

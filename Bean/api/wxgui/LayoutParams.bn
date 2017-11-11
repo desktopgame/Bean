@@ -1,0 +1,55 @@
+/**
+ * レイアウトマネージャが視覚効果を適用するためのパラメータです.
+ */
+class LayoutParams {
+	[public|native]
+	def new();
+	
+	/** 
+	 * 上寄せを適用します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def top();
+	
+	/**
+	 * 下寄せを適用します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def bottom();
+	
+	/**
+	 * 左寄せを適用します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def left();
+	
+	/** 
+	 * 右寄せを適用します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def right();
+	
+	/**
+	 * 中央寄せを適用します.
+	 * @return このインスタンス
+	 */
+	[public|native]
+	def center();
+	
+	/**
+	 * コンポーネントが可能な限り使用出来る領域を埋め尽くすように描画します.
+	 */
+	[public|native]
+	def fill();
+	
+	/**
+	 * 指定の太さのボーダーを設定します.
+	 * @param thick
+	 */
+	[public|native]
+	def border(thick);
+}

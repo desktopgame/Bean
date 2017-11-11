@@ -1,0 +1,24 @@
+/**
+ * 列挙型のスーパークラスです.
+ * enum で定義されたクラスは自動的にこれのサブクラスになります。
+ */
+class Enum {
+	[private]
+	def new() { }
+
+	/**
+	 * この列挙の列挙子一覧を配列で返します.
+	 * @return
+	 */
+	[public|static|native]
+	def values();
+
+	/**
+	 * 指定の名前の列挙子を返します.
+	 * 見つからなければ null を返します。
+	 * @param name
+	 * @return
+	 */
+	[public|static|native]
+	def valueOf(name);
+}

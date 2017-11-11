@@ -1,0 +1,9 @@
+use api.Console;
+use api.Test2;
+class Test {
+	[public|static]
+	def throwEx() {
+		Console.writeLine("throw Exception!!!");
+		Test2.throwEx();
+	}
+}

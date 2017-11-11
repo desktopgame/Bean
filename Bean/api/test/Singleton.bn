@@ -1,0 +1,16 @@
+class Singleton {
+	[private|static] @instance;
+	[public] @value = "Message";
+	
+	[private]
+	def new() {
+	}
+	
+	[public|static]
+	def getInstance() {
+		if(instance == null) {
+			instance = Singleton.new();
+		}
+		return instance;
+	}
+}

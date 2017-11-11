@@ -1,0 +1,20 @@
+use api.Console;
+use api.String;
+use api.test.ArrayEx;
+use api.File;
+use api.Range;
+use api.geom.Vector2D;
+
+var ex = ArrayEx.new();
+for(var i=0; i<ex.length(); i++) {
+	ex.set(i, i * 10);	
+}
+ex.forEach(lambda(elem) -> { Console.writeLine(elem); });
+
+ex.hoge();
+
+ex = ArrayEx.new(5);
+for(var i=0; i<ex.length(); i++) {
+	ex.set(i, i * 10);	
+}
+ex.forEach(lambda(elem) -> { Console.writeLine(elem); });

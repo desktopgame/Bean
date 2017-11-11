@@ -1,0 +1,46 @@
+use api.Console;
+use api.String;
+use api.Array;
+use api.File;
+use api.Range;
+use api.geom.Vector2D;
+
+var arr = Array.new(5);
+Range.new(0, 5).forEach(def(i) -> { arr.set(i, i * 10); });
+Range.new(0, 5).forEach(def(i) -> { Console.writeLine(arr.get(i)); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+arr = arr.sub(2, 2);
+Range.new(0, 2).forEach(def(i) -> { Console.writeLine(arr.get(i)); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+var arr2 = { 100, 200, 300, 400, 500 };
+var empty = Array.new(3);
+arr2.copyTo(empty, 0, 2, 2);
+Range.new(0, 2).forEach(def(i) -> { Console.writeLine(empty.get(i)); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+var arr3 = { 100, 200, 300, 400, 500 };
+var clone = arr3.copyOf(0, arr3.length() + 3);
+Range.new(0, clone.length()).forEach(def(i) -> { Console.writeLine(clone.get(i)); });
+
+Console.writeLine("");
+Console.writeLine("---");
+Console.writeLine("");
+
+//Console.readLine();
+/*
+var arrA = { 1, 2, 3 };
+var arrB = { 5, 6, 7, 8 };
+var arrC = arrA.concat(arrB);
+Range.new(0, arrC.length()).forEach((i) -> { Console.writeLine(arrC.get(i)); });
+//*/

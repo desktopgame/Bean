@@ -1,0 +1,10 @@
+use api.Vector;
+/**
+ * super‚ÌŽ¸”s—á.
+ */
+class SuperTest : Vector {
+	[public]
+	def new() {
+		super(0, 0);
+	}
+}

@@ -1,0 +1,20 @@
+use api.test.B;
+use api.Console;
+
+class A {
+	[public] @value;
+	
+	[public]
+	def new() {
+	}
+
+	[public]
+	def print() {
+		Console.hoge("A クラスの print メソッドが呼び出されました");
+	}
+	
+	[public]
+	def newB() {
+		return B.new();
+	}
+}

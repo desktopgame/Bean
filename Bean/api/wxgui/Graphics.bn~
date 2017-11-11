@@ -1,0 +1,4 @@
+class Graphics {
+	[private]
+	def Graphics() { }
+}

@@ -1,0 +1,8 @@
+use api.geom.Vector2D;
+
+var v = Vector2D.new(5, 1);
+var v2 = Vector2D.new(1, 2);
+
+Console.writeLine(v);
+Console.writeLine(v2);
+Console.writeLine(v + v2);

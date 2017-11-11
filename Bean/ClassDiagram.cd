@@ -1,0 +1,2559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ASTEnumItemDeclaration" Collapsed="true">
+    <Position X="28" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAACAAAAIAAAAAIAAEACBAAAAEAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEnumItemDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEnumBuilder" Collapsed="true">
+    <Position X="31.75" Y="28.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAgAAAAAAAAAIEAAAAAAABAAAACABAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTEnumBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEnumDeclaration" Collapsed="true">
+    <Position X="37" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQCEAgAAAAAAAAAICAEAAAAEAADAAAAEAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEnumDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTCamma" Collapsed="true">
+    <Position X="122.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTCamma.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTScheduledFactor" Collapsed="true">
+    <Position X="112.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAChQGAAAAAAAIAECABAAAAigAIACAAAgBAAAAI=</HashCode>
+      <FileName>bean\ast\ASTScheduledFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTDecrement" Collapsed="true">
+    <Position X="111.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAgAAAAAAACAAAAAAAAAAAAAAAABAAAAE=</HashCode>
+      <FileName>bean\ast\ASTDecrement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIncrement" Collapsed="true">
+    <Position X="113.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAJAAAAA=</HashCode>
+      <FileName>bean\ast\ASTIncrement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEOF" Collapsed="true">
+    <Position X="140.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAACAAAAAAAAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEOF.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTComparator" Collapsed="true">
+    <Position X="279.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAIACAAAIABAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\iterator\ASTComparator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTPredicate" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAgAgAAAAAA=</HashCode>
+      <FileName>bean\ast\iterator\ASTPredicate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIterator" Collapsed="true">
+    <Position X="283.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAMgAADAAAAgAgAAAgAAAAAABAMAgAAEAAAA=</HashCode>
+      <FileName>bean\ast\iterator\ASTIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTFilteredVisitor" Collapsed="true">
+    <Position X="29.5" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABgAAAAAAAEABAACACABAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTFilteredVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTCharacter" Collapsed="true">
+    <Position X="79.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIhAEAAACAAACAAAIAAAAAAAAAQACAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTCharacter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bean" Collapsed="true">
+    <Position X="286.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgQCAAAAAAAAABAAAAAUgAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>bean\Bean.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTTypeBuilder" Collapsed="true">
+    <Position X="30.75" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAABAAAAgAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTTypeBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTClassBuilder" Collapsed="true">
+    <Position X="29.5" Y="28.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAEEAAAgBAAAAAAAgAAAAAAAAABAAAACAAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTClassBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNullVisitor" Collapsed="true">
+    <Position X="37" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAABQAAACAAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTNullVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTThrow" Collapsed="true">
+    <Position X="21.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAAQAAAAAAACAAAAAAABFABAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTThrow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTCatchStatement" Collapsed="true">
+    <Position X="23.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQAAAAAEQAABAAQAACABAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTCatchStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTTryStatement" Collapsed="true">
+    <Position X="25.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAAAEUACQCAAAACAAAAQAEAQAAAgAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTTryStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTOperator" Collapsed="true">
+    <Position X="82" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEIAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAABAAA=</HashCode>
+      <FileName>bean\ast\ASTOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTUnaryOperator" Collapsed="true">
+    <Position X="59.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAAAAAAAAAAAABAAAQAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTUnaryOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTBoolean" Collapsed="true">
+    <Position X="106.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAEAAAAAAAAAAAIAACAAAAAAAAAAAAQABAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTBoolean.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNotEqualsOperator" Collapsed="true">
+    <Position X="93.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAUAAAAAAAAAAAAAACAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTNotEqualsOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNotOperator" Collapsed="true">
+    <Position X="59.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAMAAAAAAAAAAAIAACAAAAABEAAAAAAAAAAABAAA=</HashCode>
+      <FileName>bean\ast\ASTNotOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTArrayInitializer" Collapsed="true">
+    <Position X="115.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAACAAAAAAAAIAACAoAAoAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTArrayInitializer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodReference" Collapsed="true">
+    <Position X="285" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTMethodReference.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNullFactor" Collapsed="true">
+    <Position X="120.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAEAAAAAAAAAAAIAACAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTNullFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArrayLengthExecutor" Collapsed="true">
+    <Position X="210.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\array\ArrayLengthExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArrayNewExecutor" Collapsed="true">
+    <Position X="271" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAQAAEAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\array\ArrayNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArrayGetExecutor" Collapsed="true">
+    <Position X="230.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEBAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\array\ArrayGetExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySetExecutor" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAACAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\array\ArraySetExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTLambdaDeclaration" Collapsed="true">
+    <Position X="48.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAECAAAEQIoAAAIIACAAAAQAAAAAAAAAAABCAAAA=</HashCode>
+      <FileName>bean\ast\ASTLambdaDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSuperFactor" Collapsed="true">
+    <Position X="50.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAACAIAAAAAAAAAAAAAAAAAAAAAgABA=</HashCode>
+      <FileName>bean\ast\ASTSuperFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTFieldAccess" Collapsed="true">
+    <Position X="55" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAEAAAAAAAABAEIAAiAAAAAAEAABAAAgEAABAAAA=</HashCode>
+      <FileName>bean\ast\ASTFieldAccess.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTPointer" Collapsed="true">
+    <Position X="56.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTPointer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTAddAssignOperator" Collapsed="true">
+    <Position X="95.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTAddAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTDivAssignOperator" Collapsed="true">
+    <Position X="97.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAA=</HashCode>
+      <FileName>bean\ast\ASTDivAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMulAssignOperator" Collapsed="true">
+    <Position X="100" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTMulAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSubAssignOperator" Collapsed="true">
+    <Position X="102.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTSubAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSurAssignOperator" Collapsed="true">
+    <Position X="104.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTSurAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIfCauseStatement" Collapsed="true">
+    <Position X="31.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAEQQAAAAAAAAAAAAQAABFAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTIfCauseStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTString" Collapsed="true">
+    <Position X="76.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgBEAAAAAAACAAAIIBCAAAAAAAAiAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIncludeVisitor" Collapsed="true">
+    <Position X="34" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABBAACAAABAAABAAAAAABAAAACAAAAE=</HashCode>
+      <FileName>bean\ast\visitor\ASTIncludeVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTInterpretVisitor" Collapsed="true">
+    <Position X="37" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAAAAAAAAAgAAAAAECIAAAAABAAAICDAQAACQAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTInterpretVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTThisFactor" Collapsed="true">
+    <Position X="118" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAEAAAAAIAECAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTThisFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMemberDeclaration" Collapsed="true">
+    <Position X="135" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAQAAAAAAEACBAAAAEAAAEAAQ=</HashCode>
+      <FileName>bean\ast\ASTMemberDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTAssignOperator" Collapsed="true">
+    <Position X="100" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAkgAAgACQACAAAAACAAAAAAABEAAAAAAAAAIAAA=</HashCode>
+      <FileName>bean\ast\ASTAssignOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTFieldDeclaration" Collapsed="true">
+    <Position X="136" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAEAEAAAAAACACAAAAAAAIgQAAAABIAAAg=</HashCode>
+      <FileName>bean\ast\ASTFieldDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTScopeBegin" Collapsed="true">
+    <Position X="149.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACgAAAAAAAAQAAAAgAAAAAIA=</HashCode>
+      <FileName>bean\ast\ASTScopeBegin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTScopeEnd" Collapsed="true">
+    <Position X="151.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAEAACAAAAAAAAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTScopeEnd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodInvocation" Collapsed="true">
+    <Position X="40.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAECAcgAEAAAAAIAACAAAAEEkAAVAAAAEAgkQABA=</HashCode>
+      <FileName>bean\ast\ASTMethodInvocation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodInvocationByMessage" Collapsed="true">
+    <Position X="39.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAACBQgAAAAAAAAAACAAAABgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTMethodInvocationByMessage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodInvocationBySelf" Collapsed="true">
+    <Position X="41.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQAAIAAAAAAAADAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>bean\ast\ASTMethodInvocationBySelf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEmptyFactor" Collapsed="true">
+    <Position X="52.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAIAACAAAAAAAAAAEAAAAAAAAEAA=</HashCode>
+      <FileName>bean\ast\ASTEmptyFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEmptyBody" Collapsed="true">
+    <Position X="19" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAACAABAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEmptyBody.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTContext" Collapsed="true">
+    <Position X="281.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAQAAAEAAAAAgAAABIAAQAAAAAQAACSIABAAAAA=</HashCode>
+      <FileName>bean\ast\ASTContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTVariable" Collapsed="true">
+    <Position X="57.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAEAAAAAAAAAAAIAAiAAAEAAEAAAAAAAEgAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTVariable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTBiggestOperator" Collapsed="true">
+    <Position X="75.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAQCAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTBiggestOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEBiggestOperator" Collapsed="true">
+    <Position X="79.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAEAAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEBiggestOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTEqualOperator" Collapsed="true">
+    <Position X="84.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAgAAAAAAAACAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTEqualOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTESmallestOperator" Collapsed="true">
+    <Position X="88.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>bean\ast\ASTESmallestOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSmallestOperator" Collapsed="true">
+    <Position X="91" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAQA=</HashCode>
+      <FileName>bean\ast\ASTSmallestOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTBreakStatement" Collapsed="true">
+    <Position X="124.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAgCAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTBreakStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTContinueStatement" Collapsed="true">
+    <Position X="127" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAABACAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTContinueStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTForStatement" Collapsed="true">
+    <Position X="129.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAgEQQQAQBAEACAAAQQAABEAAAAAAAAAEAAA=</HashCode>
+      <FileName>bean\ast\ASTForStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTReturnStatement" Collapsed="true">
+    <Position X="138.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAAQAAAAAAACAAAAAAAREAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\ast\ASTReturnStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTWhileStatement" Collapsed="true">
+    <Position X="142.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAgEQQAAAAAAACAAAARAABEAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTWhileStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNewStatement" Collapsed="true">
+    <Position X="122.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAMCBABAAAAAAAIAACAAgAAAgAAEAAAAAAggAAAA=</HashCode>
+      <FileName>bean\ast\ASTNewStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNumeric" Collapsed="true">
+    <Position X="79.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIggGAAAAAAACIAAIIAiAAAAAAAAAACEAABAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTNumeric.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTLeftBrace" Collapsed="true">
+    <Position X="127" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAIACCAAAAAAAAAQAAAIgAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTLeftBrace.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTRightBrace" Collapsed="true">
+    <Position X="43.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABgAEAAAAAAAAAAAIAACAAAAAAAAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTRightBrace.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTAddOperator" Collapsed="true">
+    <Position X="61.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAgAAAAACAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTAddOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTAndAndOperator" Collapsed="true">
+    <Position X="64" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAUIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTAndAndOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTAndOperator" Collapsed="true">
+    <Position X="66.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAEAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTAndOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTDivOperator" Collapsed="true">
+    <Position X="68.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>bean\ast\ASTDivOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMulOperator" Collapsed="true">
+    <Position X="70.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAgAAAAAAAAACAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTMulOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTOrOperator" Collapsed="true">
+    <Position X="73" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAgg=</HashCode>
+      <FileName>bean\ast\ASTOrOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTOrOrOperator" Collapsed="true">
+    <Position X="77.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAQAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTOrOrOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSubOperator" Collapsed="true">
+    <Position X="82" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>bean\ast\ASTSubOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTSurOperator" Collapsed="true">
+    <Position X="86.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAIAAAACAAAAA=</HashCode>
+      <FileName>bean\ast\ASTSurOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTVariableDeclaration" Collapsed="true">
+    <Position X="34.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAGAAgAAQAAEAAAACAAAAAAEBEBAAAAEAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTVariableDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTFactor" Collapsed="true">
+    <Position X="79.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAghECDIGCAQAAAAIAAAAAQEAAAAAQAAAAAggAiAAA=</HashCode>
+      <FileName>bean\ast\ASTFactor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTBinaryOperator" Collapsed="true">
+    <Position X="83.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAhAAIAAAAAAAAAIAACAAIAAAAAAAAACAAgAA=</HashCode>
+      <FileName>bean\ast\ASTBinaryOperator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTElseIfStatement" Collapsed="true">
+    <Position X="30.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTElseIfStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTElseStatement" Collapsed="true">
+    <Position X="131.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAEQEAAAAAAACAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTElseStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIfStatement" Collapsed="true">
+    <Position X="32.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiCAAgAAAAAAABAACAAAAAAAAQAFAEAAAASAAAA=</HashCode>
+      <FileName>bean\ast\ASTIfStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTBody" Collapsed="true">
+    <Position X="145" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAAAAAAAAAAACAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTBody.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTIncludeStatement" Collapsed="true">
+    <Position X="147.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAgAACCAogAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTIncludeStatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTPrintVisitor" Collapsed="true">
+    <Position X="39.25" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAAAAAAAAAAAAAAABAAAAAAABAAAKCAAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTPrintVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTModifier" Collapsed="true">
+    <Position X="154" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAQAAADAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>bean\ast\ASTModifier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTParameter" Collapsed="true">
+    <Position X="12.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAACAAAAAAEAAAAAAAGABAAAAA=</HashCode>
+      <FileName>bean\ast\ASTParameter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodDeclaration" Collapsed="true">
+    <Position X="133.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgACAAAEQAgIAAAIADAAEAQAAAAAAAAAEABCAAAA=</HashCode>
+      <FileName>bean\ast\ASTMethodDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTName" Collapsed="true">
+    <Position X="14.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAIAAACAAAAAAAAAAAAADAAAQACAA=</HashCode>
+      <FileName>bean\ast\ASTName.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTClassDeclaration" Collapsed="true">
+    <Position X="16.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAKAiAgBAABAAAAgAACQAAAAQEAABAAAAEQAAIAAA=</HashCode>
+      <FileName>bean\ast\ASTClassDeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTVisitor" Collapsed="true">
+    <Position X="30.75" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAABAAAABAAAACAAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTInitializer" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAUAAAAAAAAAAAAACAAAAAAAAAAAAAAgBAAAgABAA=</HashCode>
+      <FileName>bean\ast\ASTInitializer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTFactory" Collapsed="true">
+    <Position X="35" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAwCAgAAAAAAAAAAAAAAEAAAiAwAAAABAAgQCEAI=</HashCode>
+      <FileName>bean\ast\ASTFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTNode" Collapsed="true">
+    <Position X="83.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAEBCYAhBAABWEAAAECAAABQhCAAAAAIAABAAGABQ=</HashCode>
+      <FileName>bean\ast\ASTNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IO" Collapsed="true">
+    <Position X="281.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQIAAAAAAGAgIUAQAAAggAAAABACAAIAgEAgAAAICAA=</HashCode>
+      <FileName>bean\util\IO.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence" Collapsed="true">
+    <Position X="279.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAgBQACACEAAIAAGAAAAAAAAAIAAAAAAQQAAEAgAA=</HashCode>
+      <FileName>bean\scanner\Sequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Text" Collapsed="true">
+    <Position X="285" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAMCAGDABEEMBkACAEAEgCABARAAAAQAgAHCSAQYE=</HashCode>
+      <FileName>bean\util\Text.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Runtime" Collapsed="true">
+    <Position X="288.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAACCACAAAAgAAgAAAAAAAAAAQAAABggA=</HashCode>
+      <FileName>bean\env\Runtime.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scanner" Collapsed="true">
+    <Position X="278" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAYAAABACAABAQAAEEAAACAAAAIBIABQBAAACEAAQ=</HashCode>
+      <FileName>bean\scanner\Scanner.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Token" Collapsed="true">
+    <Position X="288.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkDAAABAAAAIAAAIACAAAAABAAAAAAAAAAAARAAQ=</HashCode>
+      <FileName>bean\scanner\Token.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TokenList" Collapsed="true">
+    <Position X="278" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAIQAGQCAEAIAAAAAIAAAAAAAAAABAABQAAIAAAA=</HashCode>
+      <FileName>bean\scanner\TokenList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassFactory" Collapsed="true">
+    <Position X="47.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAABAAAAAAAAAAABQAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ClassFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UseFactory" Collapsed="true">
+    <Position X="51.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\UseFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PeriodFactory" Collapsed="true">
+    <Position X="54" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\PeriodFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdentFactory" Collapsed="true">
+    <Position X="60.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAABAAAABAAA=</HashCode>
+      <FileName>bean\ast\pattern\IdentFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modifier" Collapsed="true">
+    <Position X="288.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBEBAAEEAAEAABAQAAAgAEAEAQADBAxAAAAAAAAgAA=</HashCode>
+      <FileName>bean\env\Modifier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DefFactory" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAABAQAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\DefFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IfFactory" Collapsed="true">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAABBAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\IfFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VarFactory" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\VarFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object_" Collapsed="true">
+    <Position X="21.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEIAhAgJICDoAkCBAAEMxACAAQpQAAQIEAEAUgJiAAA=</HashCode>
+      <FileName>bean\env\Object_.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateFactory" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAABAAAAAACA=</HashCode>
+      <FileName>bean\ast\pattern\DelegateFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewFactory" Collapsed="true">
+    <Position X="15.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\NewFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhileFactory" Collapsed="true">
+    <Position X="22.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAABIAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\WhileFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForFactory" Collapsed="true">
+    <Position X="24.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ForFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakFactory" Collapsed="true">
+    <Position X="27" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\BreakFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContinueFactory" Collapsed="true">
+    <Position X="29.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ContinueFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReturnFactory" Collapsed="true">
+    <Position X="31.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAIAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ReturnFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FieldFactory" Collapsed="true">
+    <Position X="36" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAEAAAAAAAAAAQABAgQAAQAA=</HashCode>
+      <FileName>bean\ast\pattern\FieldFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeftArrayFactory" Collapsed="true">
+    <Position X="38.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAgAAAAAAAAAAAAAACAAAAAAAABAAAAAABA=</HashCode>
+      <FileName>bean\ast\pattern\LeftArrayFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThisFactory" Collapsed="true">
+    <Position X="42.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAACAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ThisFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Class" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgCAIAgAXBAR1AEAlAIACQACACQUEAAAAAQMxECIBAA=</HashCode>
+      <FileName>bean\env\Class.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLoader" Collapsed="true">
+    <Position X="281.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAASAElgAABfFCAQvSEYgBQCAQAMBqiwAAAEAJAA=</HashCode>
+      <FileName>bean\env\ClassLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Field" Collapsed="true">
+    <Position X="2.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgAACAAGAGAACAIAAAAAAgAAAAIAQAAAAAACgAA=</HashCode>
+      <FileName>bean\env\Field.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Method" Collapsed="true">
+    <Position X="10" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAgAAQAIkQAAAAAAAAAAAAAAAABCgAAA=</HashCode>
+      <FileName>bean\env\Method.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Package" Collapsed="true">
+    <Position X="283.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgACAAABACIEXBAAIcgEAgABDWAEAIAAQEAABQIAA=</HashCode>
+      <FileName>bean\env\Package.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GCSystem" Collapsed="true">
+    <Position X="288.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAmIIgEAAAISCFCAEBAIAAAgAABAQIIgAwAAAiIgQ=</HashCode>
+      <FileName>bean\env\GCSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reference" Collapsed="true">
+    <Position X="73.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BkIghECDaSCFECJBBAIQgASSQAoRACcAAAAACgBGgAA=</HashCode>
+      <FileName>bean\env\Reference.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Member" Collapsed="true">
+    <Position X="9" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAIAAAAAAAMAAAAAABEAAAEAAQ=</HashCode>
+      <FileName>bean\env\Member.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parameter" Collapsed="true">
+    <Position X="285" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAEEAAAAEA=</HashCode>
+      <FileName>bean\env\Parameter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Constructor_" Collapsed="true">
+    <Position X="6.75" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAIAAAAgAAAIEAAAAAAAAAAAAAAAAAAAggAA=</HashCode>
+      <FileName>bean\env\Constructor_.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeOptimizer" Collapsed="true">
+    <Position X="285" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>bean\ast\CodeOptimizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Null" Collapsed="true">
+    <Position X="5.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAABICCAAACAAAAAAAAAAAgAAAQEAAIgEgACAAA=</HashCode>
+      <FileName>bean\env\Null.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Numeric" Collapsed="true">
+    <Position X="7.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQEtB0NISCVpgIAAiLSFwBKAWIAEAQEoBQ2NpgCMAg=</HashCode>
+      <FileName>bean\env\Numeric.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Boolean" Collapsed="true">
+    <Position X="12.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhCABISDAAECAAAgEQAAAACgBIAQgAAAAEgACAAA=</HashCode>
+      <FileName>bean\env\Boolean.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Character" Collapsed="true">
+    <Position X="14.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABhAABICCAAkAAAAAAAAAAAAJAAAQAAAgAEgACKAA=</HashCode>
+      <FileName>bean\env\Character.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeMethodExecutor" Collapsed="true">
+    <Position X="145" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIBQAAEAAAAAAAAAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>bean\env\native\NativeMethodExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeMethodRegistry" Collapsed="true">
+    <Position X="279.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAAAAAAAAEAAAAQACAAAAAAAQAAAAgAAACAIA=</HashCode>
+      <FileName>bean\env\native\NativeMethodRegistry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeMethod" Collapsed="true">
+    <Position X="13.5" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABCBwAAEAAgAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>bean\env\NativeMethod.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeBlock" Collapsed="true">
+    <Position X="283.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FIBAEAWASAQIJCrkAAASEEEJCAAgkQIABETQMSAcAAA=</HashCode>
+      <FileName>bean\env\CodeBlock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Function" Collapsed="true">
+    <Position X="285" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEIAAAAAAAAAAAIAAABAAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>bean\env\Function.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectHashCodeExecutor" Collapsed="true">
+    <Position X="262" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectHashCodeExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectToStringExecutor" Collapsed="true">
+    <Position X="264.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectToStringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericToStringExecutor" Collapsed="true">
+    <Position X="266.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAEAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericToStringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IncludeManager" Collapsed="true">
+    <Position X="278" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAIAAAMAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\IncludeManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleWriteExecutor" Collapsed="true">
+    <Position X="273.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAAg=</HashCode>
+      <FileName>bean\env\native\console\ConsoleWriteExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleWriteLineExecutor" Collapsed="true">
+    <Position X="275.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAEAAAAAAAAAACIAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\console\ConsoleWriteLineExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstanceMethod" Collapsed="true">
+    <Position X="4.5" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAQAAAAAAAAAAAEAAAAAABAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>bean\env\InstanceMethod.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASTMethodVisitor" Collapsed="true">
+    <Position X="26.5" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BASIAAAgFgAgAAhAAgAAAAAAAAAAEEICJIAAAAcAAAA=</HashCode>
+      <FileName>bean\ast\visitor\ASTMethodVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BooleanToString" Collapsed="true">
+    <Position X="239.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAEAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\boolean\BooleanToString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectObserver" Collapsed="true">
+    <Position X="76.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\ObjectObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FunctionManager" Collapsed="true">
+    <Position X="286.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIAAAgAAEAAAAAAAAAAAAAAAAAAAAEgAAAAAAMA=</HashCode>
+      <FileName>bean\env\FunctionManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpAddExecutor" Collapsed="true">
+    <Position X="241.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpAddExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpDivExecutor" Collapsed="true">
+    <Position X="244" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIQAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpDivExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpMulExecutor" Collapsed="true">
+    <Position X="246.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAIEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpMulExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpSubExecutor" Collapsed="true">
+    <Position X="248.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpSubExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpSurExecutor" Collapsed="true">
+    <Position X="250.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpSurExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectOpEqualsExecutor" Collapsed="true">
+    <Position X="253" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\object\ObjectOpEqualsExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpAddExecutor" Collapsed="true">
+    <Position X="255.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpAddExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpDivExecutor" Collapsed="true">
+    <Position X="151.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpDivExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpEqualsExecutor" Collapsed="true">
+    <Position X="163" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpEqualsExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpMulExecutor" Collapsed="true">
+    <Position X="178.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpMulExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpSubExecutor" Collapsed="true">
+    <Position X="190" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpSubExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericOpSurExecutor" Collapsed="true">
+    <Position X="201.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericOpSurExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeftBraceFactory" Collapsed="true">
+    <Position X="56.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\LeftBraceFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Delegate" Collapsed="true">
+    <Position X="2.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAEAAAAgAAAAAAAAAAAAAAAAEAAAAAAAgAAA=</HashCode>
+      <FileName>bean\env\Delegate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LambdaDelegate" Collapsed="true">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAEAAAAgAAAAAAAAAAwAAAAAAAAAAABAgAgA=</HashCode>
+      <FileName>bean\env\LambdaDelegate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateCallExecutor" Collapsed="true">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\delegate\DelegateCallExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MethodDelegate" Collapsed="true">
+    <Position X="1.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAkAAACgAAAAAAAAAAAAAgAAAAAAAIAAAAAA=</HashCode>
+      <FileName>bean\env\MethodDelegate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateNewInstanceExecutor" Collapsed="true">
+    <Position X="34.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\delegate\DelegateNewInstanceExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Buffer" Collapsed="true">
+    <Position X="278" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEFACACCAYAIQBAUAIQkAACQYEAAAMQAAEAiAQISQkQ=</HashCode>
+      <FileName>bean\env\Buffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Memory" Collapsed="true">
+    <Position X="283.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAABAAAAAAAAAAAQAAgAACAAAAAA=</HashCode>
+      <FileName>bean\util\Memory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReferenceObserver" Collapsed="true">
+    <Position X="286.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAABAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\ReferenceObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeSyntaxException" Collapsed="true">
+    <Position X="286.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEQAAAAAAAAAAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>bean\ast\CodeSyntaxException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassFormatException" Collapsed="true">
+    <Position X="279.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>bean\env\ClassFormatException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterpretExitException" Collapsed="true">
+    <Position X="279.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\InterpretExitException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewMethod" Collapsed="true">
+    <Position X="11.25" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEQAAAAACAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>bean\env\NewMethod.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeCastException" Collapsed="true">
+    <Position X="278" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAFAAAA=</HashCode>
+      <FileName>bean\env\native\NativeCastException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GetMethod" Collapsed="true">
+    <Position X="15.75" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAACAAAAAAAAEAAAAAAAAAAJAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\GetMethod.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterFactory" Collapsed="true">
+    <Position X="40.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\CharacterFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterOpAddExecutor" Collapsed="true">
+    <Position X="165.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAACAAABAAAAAAA=</HashCode>
+      <FileName>bean\env\native\character\CharacterOpAddExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterToStringExecutor" Collapsed="true">
+    <Position X="181" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\character\CharacterToStringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileGetCurrentPathExecutor" Collapsed="true">
+    <Position X="192.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAgAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileGetCurrentPathExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileGetPathSeparatorCharExecutor" Collapsed="true">
+    <Position X="203.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAEAAAAACAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileGetPathSeparatorCharExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileExistsExecutor" Collapsed="true">
+    <Position X="212.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAQAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileExistsExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileReadTextExecutor" Collapsed="true">
+    <Position X="223.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileReadTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileWriteTextExecutor" Collapsed="true">
+    <Position X="232.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAACAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileWriteTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileCreateNewFileExecutor" Collapsed="true">
+    <Position X="19" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileCreateNewFileExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileDeleteExecutor" Collapsed="true">
+    <Position X="28" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAQAIAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileDeleteExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileIsDirectoryExecutor" Collapsed="true">
+    <Position X="37" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>bean\env\native\file\FileIsDirectoryExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileIsFileExecutor" Collapsed="true">
+    <Position X="48.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileIsFileExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileMkdirExecutor" Collapsed="true">
+    <Position X="61.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileMkdirExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleReadExecutor" Collapsed="true">
+    <Position X="77.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\console\ConsoleReadExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleReadLineExecutor" Collapsed="true">
+    <Position X="88.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACACAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\console\ConsoleReadLineExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeTypePredicateBlack" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAACAAAAAAAAABAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>bean\ast\iterator\predicate\NodeTypePredicateBlack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeTypePredicateWhite" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAEAAAAAAAAAABAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>bean\ast\iterator\predicate\NodeTypePredicateWhite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileCopyExecutor" Collapsed="true">
+    <Position X="122.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAABAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileCopyExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileMoveExecutor" Collapsed="true">
+    <Position X="283.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileMoveExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileGetParentExecutor" Collapsed="true">
+    <Position X="140.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAQAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileGetParentExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exception" Collapsed="true">
+    <Position X="281.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAIAAAADACABAAAAAAAA=</HashCode>
+      <FileName>bean\env\Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileGetChildrenExecutor" Collapsed="true">
+    <Position X="167.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAADAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\file\FileGetChildrenExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MessageQueue" Collapsed="true">
+    <Position X="286.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAABAAAIgCABAAAAQAAAAIAAAAAAA=</HashCode>
+      <FileName>bean\env\MessageQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MessageInfo" Collapsed="true">
+    <Position X="285" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAEAAAAiAIAAAKAgggAAAAEAEAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\MessageInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExceptionHandle" Collapsed="true">
+    <Position X="26.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAIAAAAAIAAAAAACBAAAACQAABA=</HashCode>
+      <FileName>bean\ast\visitor\ExceptionHandle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Debug" Collapsed="true">
+    <Position X="278" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIAAAAAQAAIEAACAASAIBCgAAABQAAAgCAAAAAAA=</HashCode>
+      <FileName>bean\Debug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BitFlags" Collapsed="true">
+    <Position X="288.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAALIACAIACAAAABQAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\util\BitFlags.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentPosition" Collapsed="true">
+    <Position X="279.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABQAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAQA=</HashCode>
+      <FileName>bean\scanner\DocumentPosition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecrementFactory" Collapsed="true">
+    <Position X="18" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAAA=</HashCode>
+      <FileName>bean\ast\pattern\DecrementFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IncrementFactory" Collapsed="true">
+    <Position X="20.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>bean\ast\pattern\IncrementFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilePtrCloseExecutor" Collapsed="true">
+    <Position X="39.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACgAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\fileptr\FilePtrCloseExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilePtrOpenExecutor" Collapsed="true">
+    <Position X="50.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAABBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\fileptr\FilePtrOpenExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilePtrReadExecutor" Collapsed="true">
+    <Position X="64" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\fileptr\FilePtrReadExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsDoubleExecutor" Collapsed="true">
+    <Position X="79.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsDoubleExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsFloatExecutor" Collapsed="true">
+    <Position X="91" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAACAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsFloatExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsIntegerExecutor" Collapsed="true">
+    <Position X="102.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsIntegerExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsLongExecutor" Collapsed="true">
+    <Position X="113.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAACAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsLongExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsShortExecutor" Collapsed="true">
+    <Position X="124.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsShortExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Number" Collapsed="true">
+    <Position X="281.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABBCAAAAkBQAAEUABSiAAoAIAAEAAAAAAAEAAAA=</HashCode>
+      <FileName>bean\util\Number.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaN" Collapsed="true">
+    <Position X="30.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAARIKCAAEAAAAAAAAAAAAgAAAQAAAAgEgACAAA=</HashCode>
+      <FileName>bean\env\NaN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NumericAsCharacterExecutor" Collapsed="true">
+    <Position X="154" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\numeric\NumericAsCharacterExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterAsInteger" Collapsed="true">
+    <Position X="169.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAACAAAACAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\character\CharacterAsInteger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enum" Collapsed="true">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAAAAgAAQAAAAAAAAAAAAAgAAAAAAAAAAAgA=</HashCode>
+      <FileName>bean\env\Enum.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumFactory" Collapsed="true">
+    <Position X="49.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAEAA=</HashCode>
+      <FileName>bean\ast\pattern\EnumFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumItemToStringExecutor" Collapsed="true">
+    <Position X="205.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAACAAAAAAAAEAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\enumitem\EnumItemToStringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumValueOfExecutor" Collapsed="true">
+    <Position X="214.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\enum\EnumValueOfExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumValuesExecutor" Collapsed="true">
+    <Position X="226" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAABAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\enum\EnumValuesExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumItem" Collapsed="true">
+    <Position X="9" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAQAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>bean\env\EnumItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumItemGetIndexExecutor" Collapsed="true">
+    <Position X="21.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEBAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\enumitem\EnumItemGetIndexExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Console" Collapsed="true">
+    <Position X="288.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\util\Console.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAbsExecutor" Collapsed="true">
+    <Position X="41.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAACAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathAbsExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathMaxExecutor" Collapsed="true">
+    <Position X="52.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAEAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathMaxExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathMinExecutor" Collapsed="true">
+    <Position X="66.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAACEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathMinExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathPowExecutor" Collapsed="true">
+    <Position X="82" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\env\native\math\MathPowExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathCeilExecutor" Collapsed="true">
+    <Position X="93.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathCeilExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathCosExecutor" Collapsed="true">
+    <Position X="104.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAACAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\env\native\math\MathCosExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathFloorExecutor" Collapsed="true">
+    <Position X="115.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathFloorExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathRoundExecutor" Collapsed="true">
+    <Position X="127" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathRoundExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathSinExecutor" Collapsed="true">
+    <Position X="133.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAIAA=</HashCode>
+      <FileName>bean\env\native\math\MathSinExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathSqrtExecutor" Collapsed="true">
+    <Position X="142.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>bean\env\native\math\MathSqrtExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathTanExecutor" Collapsed="true">
+    <Position X="156.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAEAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathTanExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathToDegreeExecutor" Collapsed="true">
+    <Position X="172" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>bean\env\native\math\MathToDegreeExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathToRadianExecutor" Collapsed="true">
+    <Position X="183.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\math\MathToRadianExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MutexLockExecutor" Collapsed="true">
+    <Position X="194.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>bean\env\native\mutex\MutexLockExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MutexNewExecutor" Collapsed="true">
+    <Position X="268.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>bean\env\native\mutex\MutexNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MutexUnlockExecutor" Collapsed="true">
+    <Position X="217" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAACAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\env\native\mutex\MutexUnlockExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationContext" Collapsed="true">
+    <Position X="278" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAAAAAAAAAAAAAAAQABAAAAQAAAAA=</HashCode>
+      <FileName>bean\wxgui\ApplicationContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Component&lt;WxWidgetPeer&gt;" Collapsed="true">
+    <Position X="6.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAgBAAAAAAAAAAAICAGAAIAAAAAQAAEAABAAGAAAgI=</HashCode>
+      <FileName>bean\wxgui\Component.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentPeer&lt;WxWidget&gt;" Collapsed="true">
+    <Position X="23.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZAAAJCAAAIAAAAhAJCAGAAICAAAAQIAEAAAAAGBAAgA=</HashCode>
+      <FileName>bean\wxgui\ComponentPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Container&lt;WxWidgetContainerPeer&gt;" Collapsed="true">
+    <Position X="6.5" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\Container.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContainerPeer&lt;WxWidgetContainer&gt;" Collapsed="true">
+    <Position X="21.25" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\ContainerPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Frame" Collapsed="true">
+    <Position X="6.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAEEAIAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>bean\wxgui\Frame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FramePeer" Collapsed="true">
+    <Position X="21.25" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAQAAEAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\FramePeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window&lt;WxWidgetWindowPeer&gt;" Collapsed="true">
+    <Position X="6.5" Y="28.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABEAAAABAAAAAAQAAAAAAAAAACIAAAAA=</HashCode>
+      <FileName>bean\wxgui\Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowPeer&lt;WxWidgetWindow&gt;" Collapsed="true">
+    <Position X="21.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABEAAAAhAAAAAAAAAAAAAAEAAAIAAAAA=</HashCode>
+      <FileName>bean\wxgui\WindowPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WxFrameEx" Collapsed="true">
+    <Position X="283.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAACAAAAAAAAEEAAAAAAABAIAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\WxFrameEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button" Collapsed="true">
+    <Position X="3.5" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAABAAAAAAAAAAACACABAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>bean\wxgui\Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonPeer" Collapsed="true">
+    <Position X="25.75" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAICICABAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\wxgui\ButtonPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnumItemGetValueExecutor" Collapsed="true">
+    <Position X="145" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgACAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\enumitem\EnumItemGetValueExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetXExecutor" Collapsed="true">
+    <Position X="158.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAACAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetXExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetYExecutor" Collapsed="true">
+    <Position X="174.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAACAAAAIAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetYExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetXExecutor" Collapsed="true">
+    <Position X="185.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetXExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetYExecutor" Collapsed="true">
+    <Position X="196.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetYExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentInterface" Collapsed="true">
+    <Position X="6.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAABAAAAAAEAAAAACAGAAIAAAAAQAAEAAAAAGAAAgA=</HashCode>
+      <FileName>bean\wxgui\ComponentInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetHeightExecutor" Collapsed="true">
+    <Position X="219.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetHeightExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetWidthExecutor" Collapsed="true">
+    <Position X="228.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAACAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetWidthExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetHeightExecutor" Collapsed="true">
+    <Position X="235" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAACAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetHeightExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetWidthExecutor" Collapsed="true">
+    <Position X="23.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetWidthExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContainerInterface" Collapsed="true">
+    <Position X="9.5" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAABAA=</HashCode>
+      <FileName>bean\wxgui\ContainerInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameInterface" Collapsed="true">
+    <Position X="9.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAEEIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\FrameInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameMainLoopExecutor" Collapsed="true">
+    <Position X="55" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>bean\env\native\frame\FrameMainLoopExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameNewExecutor" Collapsed="true">
+    <Position X="68.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAQAAAAAAAAAAQACAAAIAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>bean\env\native\frame\FrameNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonInterface" Collapsed="true">
+    <Position X="3.5" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQABAAAEAAAAAAACACABAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>bean\wxgui\ButtonInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonGetTextExecutor" Collapsed="true">
+    <Position X="95.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonGetTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonNewExecutor" Collapsed="true">
+    <Position X="106.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQCCgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonSetTextExecutor" Collapsed="true">
+    <Position X="118" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAIAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonSetTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonAddPushListenerExecutor" Collapsed="true">
+    <Position X="129.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonAddPushListenerExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonRemovePushListenerAtExecutor" Collapsed="true">
+    <Position X="136" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonRemovePushListenerAtExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonGetPushListenerCountExecutor" Collapsed="true">
+    <Position X="147.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAACAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\button\ButtonGetPushListenerCountExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Label" Collapsed="true">
+    <Position X="9.5" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEAAAAAAAAAAACACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\Label.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelInterface" Collapsed="true">
+    <Position X="12.5" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACADAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\LabelInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelPeer" Collapsed="true">
+    <Position X="28" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAACACAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\LabelPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelGetTextExecutor" Collapsed="true">
+    <Position X="199" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAARAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\label\LabelGetTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelNewExecutor" Collapsed="true">
+    <Position X="208" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAQQACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\label\LabelNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelSetTextExecutor" Collapsed="true">
+    <Position X="221.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\label\LabelSetTextExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Panel" Collapsed="true">
+    <Position X="3.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\Panel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelInterface" Collapsed="true">
+    <Position X="0.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\PanelInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelPeer" Collapsed="true">
+    <Position X="19" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\PanelPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelNewExecutor" Collapsed="true">
+    <Position X="30.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAQACAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>bean\env\native\panel\PanelNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColorNewAExecutor" Collapsed="true">
+    <Position X="43.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAQACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\color\ColorNewAExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ColorNewExecutor" Collapsed="true">
+    <Position X="57.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQACAAAAAAAAAgAAAAAIAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\color\ColorNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetBackgroundExecutor" Collapsed="true">
+    <Position X="70.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAACAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetBackgroundExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentGetForegroundExecutor" Collapsed="true">
+    <Position X="84.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>bean\env\native\component\ComponentGetForegroundExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetBackgroundExecutor" Collapsed="true">
+    <Position X="97.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetBackgroundExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentSetForegroundExecutor" Collapsed="true">
+    <Position X="109" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>bean\env\native\component\ComponentSetForegroundExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNumeric&lt;T&gt;" Collapsed="true">
+    <Position X="7.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQEtAQBYSDFpmKAAiLSFwBIASAAECQMoBQ2NpgCMAk=</HashCode>
+      <FileName>bean\env\TNumeric.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="String" Collapsed="true">
+    <Position X="19" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAxEEBICDQIFDEZEAIAACAAAAEAIYAAAjAEgBKgAA=</HashCode>
+      <FileName>bean\env\String.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringFactory" Collapsed="true">
+    <Position X="33.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\StringFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringToStringExecutor" Collapsed="true">
+    <Position X="257.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEIAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringToStringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserObject" Collapsed="true">
+    <Position X="32.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAhAABYCCAAACAAAEAAAAAIAAAAAQAAAAAEgACAAA=</HashCode>
+      <FileName>bean\env\UserObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringOpAddExecutor" Collapsed="true">
+    <Position X="259.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAEAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringOpAddExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SuperFactory" Collapsed="true">
+    <Position X="45" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEIBAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\SuperFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserDelegate" Collapsed="true">
+    <Position X="34.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAQBMGCQAAAAAAAABEAAAAAAAAQEAAAQEgAiAAA=</HashCode>
+      <FileName>bean\env\UserDelegate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserArray" Collapsed="true">
+    <Position X="37" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAxAABICCEAAABCEQAQACAAgAAAAQAAAAAEgAiAAA=</HashCode>
+      <FileName>bean\env\UserArray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScopeBeginFactory" Collapsed="true">
+    <Position X="58.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAIAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ScopeBeginFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TryFactory" Collapsed="true">
+    <Position X="63" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\TryFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThrowFactory" Collapsed="true">
+    <Position X="65.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEBAAAAAAAA=</HashCode>
+      <FileName>bean\ast\pattern\ThrowFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypedNativeMethodExecutor" Collapsed="true">
+    <Position X="126" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAgAACEAEAAAIAAAAQAAAAAAAAAAEA=</HashCode>
+      <FileName>bean\env\native\TypedNativeMethodExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STL" Collapsed="true">
+    <Position X="283.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAACAAAAAAAAAEAAAAACAAAAAAACAAAAAAAAAAIAA=</HashCode>
+      <FileName>bean\util\STL.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SequenceOutOfRangeException" Collapsed="true">
+    <Position X="281.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\scanner\SequenceOutOfRangeException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetMethod" Collapsed="true">
+    <Position X="9" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAgAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAEA=</HashCode>
+      <FileName>bean\env\SetMethod.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringEndsWithExecutor" Collapsed="true">
+    <Position X="73" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACQAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringEndsWithExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringIndexOf2Executor" Collapsed="true">
+    <Position X="86.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAABAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringIndexOf2Executor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringIndexOfExecutor" Collapsed="true">
+    <Position X="100" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringIndexOfExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringLastIndexOf2Executor" Collapsed="true">
+    <Position X="111.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAACAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringLastIndexOf2Executor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringLastIndexOfExecutor" Collapsed="true">
+    <Position X="120.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAIAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringLastIndexOfExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringStartsWithExecutor" Collapsed="true">
+    <Position X="131.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringStartsWithExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringSubstringExecutor" Collapsed="true">
+    <Position X="138.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAIAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringSubstringExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringInsertExecutor" Collapsed="true">
+    <Position X="149.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACABAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringInsertExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringRemoveExecutor" Collapsed="true">
+    <Position X="160.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>bean\env\native\string\StringRemoveExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringLengthExecutor" Collapsed="true">
+    <Position X="176.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>bean\env\native\string\StringLengthExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StringEncodeExecutor" Collapsed="true">
+    <Position X="187.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAACBAAAA=</HashCode>
+      <FileName>bean\env\native\string\StringEncodeExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TagPredicateBlack" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAAoAAAAEAAA=</HashCode>
+      <FileName>bean\ast\iterator\predicate\TagPredicateBlack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TagPredicateWhite" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAIAAgAAgAEAAA=</HashCode>
+      <FileName>bean\ast\iterator\predicate\TagPredicateWhite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thread" Collapsed="true">
+    <Position X="286.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgCgAiABQAgpAFgAgRKAAgAAMCEgEAlwABEKAEkhQE=</HashCode>
+      <FileName>bean\threads\Thread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserThread" Collapsed="true">
+    <Position X="39.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAABICCBAEEAAAGAAAAAAAAAAAQAAAAAEgACgAg=</HashCode>
+      <FileName>bean\env\UserThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadNewExecutor" Collapsed="true">
+    <Position X="237.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAQACAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadNewExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadStartExecutor" Collapsed="true">
+    <Position X="25.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAgAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadStartExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadSleepExecutor" Collapsed="true">
+    <Position X="32.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadSleepExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadJoinExecutor" Collapsed="true">
+    <Position X="46" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadJoinExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadGetCurrentOwner" Collapsed="true">
+    <Position X="59.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadGetCurrentOwner.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThreadGetNameExecutor" Collapsed="true">
+    <Position X="75.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAACAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\native\thread\ThreadGetNameExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScheduledFactorFactory" Collapsed="true">
+    <Position X="19.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAABAAAABAAA=</HashCode>
+      <FileName>bean\ast\pattern\ScheduledFactorFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserFilePtr" Collapsed="true">
+    <Position X="10" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAABICCAAEAAACAAAAgAAAAAANQAAIAAEgACAAA=</HashCode>
+      <FileName>bean\env\UserFilePtr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserSystem" Collapsed="true">
+    <Position X="279.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAIAAIAAAAAEAAUAQACAAACAAAQAAAAwAAAABAA=</HashCode>
+      <FileName>bean\env\UserSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserMutex" Collapsed="true">
+    <Position X="16.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhIABMCCAAEAAAAAAAAIAAAAAAAQAAAAAEgACIAA=</HashCode>
+      <FileName>bean\env\UserMutex.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserComponent" Collapsed="true">
+    <Position X="24.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4EAAhAABICCAQEAAACAGAAIAAAAEQAQEAAgAEmACAgA=</HashCode>
+      <FileName>bean\env\UserComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserContainer" Collapsed="true">
+    <Position X="22.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAEAEAAAAAAAAAAAAAAAEBAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\UserContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserWindow" Collapsed="true">
+    <Position X="21.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAQAACABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\UserWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowInterface" Collapsed="true">
+    <Position X="9.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABEAAAABAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\WindowInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserFrame" Collapsed="true">
+    <Position X="21.25" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAAAAAAAAAAAIAAAEAAABAAAQAAAAA=</HashCode>
+      <FileName>bean\env\UserFrame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WxButtonEx" Collapsed="true">
+    <Position X="281.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQAAAAAAAAAAFAAAEAAAACAAAAACAAA=</HashCode>
+      <FileName>bean\wxgui\WxButtonEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserButton" Collapsed="true">
+    <Position X="25.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIEAAABAAAAEAgAAAACACABAAAAAQBAAAAAAAiAAA=</HashCode>
+      <FileName>bean\env\UserButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WxLabelEx" Collapsed="true">
+    <Position X="285" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAg=</HashCode>
+      <FileName>bean\wxgui\WxLabelEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserLabel" Collapsed="true">
+    <Position X="28" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEgAAEAACACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\env\UserLabel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WxPanelEx" Collapsed="true">
+    <Position X="286.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>bean\wxgui\WxPanelEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserPanel" Collapsed="true">
+    <Position X="23.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>bean\env\UserPanel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserColor" Collapsed="true">
+    <Position X="3.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAABICCAAEAAAAAAAAACAAAAAASAAAAAEgASAQA=</HashCode>
+      <FileName>bean\env\UserColor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextField" Collapsed="true">
+    <Position X="6.5" Y="27.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAEAABAQAAEABEACACCAAAgAANAAQAAMAAAAAQ=</HashCode>
+      <FileName>bean\wxgui\TextField.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextFieldInterface" Collapsed="true">
+    <Position X="12.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEAAAEAABAAAAEABEACACCAAAgAANAAQAAMAAAAAQ=</HashCode>
+      <FileName>bean\wxgui\TextFieldInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextFieldPeer" Collapsed="true">
+    <Position X="23.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAEAABAAAAEABEACACCAAAgCANAAQAIMAAAAAQ=</HashCode>
+      <FileName>bean\wxgui\TextFieldPeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WxTextFieldEx" Collapsed="true">
+    <Position X="288.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\WxTextFieldEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ASTNodeType" Collapsed="true">
+    <Position X="283.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAA=</HashCode>
+      <FileName>bean\ast\ASTNodeType.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ASTPredicateType" Collapsed="true">
+    <Position X="285" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAABAAAAAAAAAAQAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\iterator\ASTPredicateType.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ThreadState" Collapsed="true">
+    <Position X="279.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAAAAAAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\threads\ThreadState.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OperatorLinkDir" Collapsed="true">
+    <Position X="288.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>bean\ast\OperatorLinkDir.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ASTContextKind" Collapsed="true">
+    <Position X="281.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAIBAAAAAAAAAAIAQAAAAIAEAAIAAAAAAAAAA=</HashCode>
+      <FileName>bean\ast\ASTContextKind.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WarningLevel" Collapsed="true">
+    <Position X="281.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAA=</HashCode>
+      <FileName>bean\env\WarningLevel.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FindOption" Collapsed="true">
+    <Position X="286.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAIAAAEAAAAAAAAAAAAEAAAAAAAAQAA=</HashCode>
+      <FileName>bean\env\FindOption.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_027c_1" Collapsed="true">
+    <Position X="278" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\main.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tag" Collapsed="true">
+    <Position X="278" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gTqcMGoAmhBVIEQhrALA5AOhAgCWGHEDhCgACg4UAAg=</HashCode>
+      <FileName>bean\scanner\Tag.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_02b2_1" Collapsed="true">
+    <Position X="279.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bean\wxgui\Frame.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>

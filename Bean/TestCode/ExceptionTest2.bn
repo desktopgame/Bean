@@ -1,0 +1,13 @@
+try {
+	if(10) {
+		Console.writeLine("Hello");	
+	}
+} catch(e) {
+	try {
+		System.setProperty("Key", 1);
+		Console.writeLine("World");	
+	} catch(e2) {
+		throw e2;
+	}
+	Console.writeLine(e.getMessage());
+}

@@ -1,0 +1,6 @@
+use api.test.ExMTest;
+class ExSubTest : ExMTest {
+	[public]
+	def new(value) : super("[" + value + "]"){
+	}
+}

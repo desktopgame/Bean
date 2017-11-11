@@ -1,0 +1,22 @@
+use api.wxgui.Component;
+/**
+ * 文字を表示するだけの単純なコンポーネントです.
+ */
+class Label : Component {
+	[public|native]
+	def new(parent, text);
+
+	/**
+	 * 表示する文字列を設定します.
+	 * @param text
+	 */
+	[public|native]
+	def setText(text);
+
+	/**
+	 * 表示する文字列を返します.
+	 * @return
+	 */
+	[public|native]
+	def getText();
+}

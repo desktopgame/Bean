@@ -1,0 +1,9 @@
+use api.Console;
+use api.Array;
+
+Console.writeLine(100.toString());
+Console.writeLine((100 + 100).toString());
+Console.writeLine({ 10, 20, 30 }.get(0));
+Console.writeLine(null.toString());
+Console.writeLine(true.toString());
+Console.writeLine(false.toString());

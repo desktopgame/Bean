@@ -1,0 +1,29 @@
+/**
+ * 列挙子を表すクラスです.
+ * 列挙に定義される識別子はこれのサブクラスとして定義されます。
+ */
+class EnumItem {
+	[private]
+	def new() { }
+
+	/**
+	 * この列挙子の定義番号を返します.
+	 * @return
+	 */
+	[public|native]
+	def getIndex();
+	
+	/**
+	 * この列挙子を定義したときに値が設定されていたならそれを返します.
+	 * 設定されていなければ null を返します。
+	 */
+	[public|native]
+	def getValue();
+	
+	/**
+	 * 列挙子自体の名前を返すようにオーバライドされます.
+	 * @return
+	 */
+	[public|native]
+	def toString();
+}

@@ -1,0 +1,6 @@
+use api.exc.ArgumentException;
+/**
+ * オブジェクトが null であることが許容されない場合スローされます.
+ */
+class NullPointerError : ArgumentException {
+}

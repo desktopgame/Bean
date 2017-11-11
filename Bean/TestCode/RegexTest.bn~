@@ -1,0 +1,18 @@
+use api.Console;
+use api.File;
+use api.Pattern;
+use api.Matcher;
+
+var source = "public private ‚ ‚¢‚¤‚¦‚¨ 100 999 ooo100 po";
+
+var pattern = Pattern.compile("[a-z]+");
+var matcher = pattern.matcher(source);
+Console.writeLine(source);
+
+
+while(matcher.find()) {
+	var st = matcher.start();
+	var ed = matcher.end();
+	var gr = matcher.group();
+	Console.writeLine("start=" + st + " end=" + ed + " group=" + gr);
+}

@@ -1,0 +1,4 @@
+use api.exc.RuntimeException;
+class InterruptError : RuntimeException {
+	
+}

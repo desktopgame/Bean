@@ -1,0 +1,78 @@
+/**
+ * 全てのオブジェクトの基底クラスです.
+ */
+class Object {
+	[public]
+	def new() { }
+	
+	/**
+	 * このオブジェクトと別のオブジェクトの加算を定義します.
+	 * デフォルトでは null を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_add(o);
+	
+	/**
+	 * このオブジェクトと別のオブジェクトの減算を定義します.
+	 * デフォルトでは null を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_sub(o);
+	
+	/**
+	 * このオブジェクトと別のオブジェクトの乗算を定義します.
+	 * デフォルトでは null を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_mul(o);
+
+	/**
+	 * このオブジェクトと別のオブジェクトの除算を定義します.
+	 * デフォルトでは null を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_div(o);
+	
+	/**
+	 * このオブジェクトと別のオブジェクトの剰余を定義します.
+	 * デフォルトでは null を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_sur(o);
+	
+	/**
+	 * このオブジェクトと別のオブジェクトを比較します.
+	 * デフォルトではポインタを比較するので、
+	 * 例えば二つの座標を持つオブジェクトにおいて、
+	 * 座標が全く同じでも、これがオーバーライドされていない場合には、
+	 * インスタンスが違う場合には false を返します。
+	 * @param o
+	 * @return
+	 */
+	[public|native]
+	def op_equals(o);
+	
+	/**
+	 * このオブジェクトを一意に表すコードを返します.
+	 * @return
+	 */
+	[public|native]
+	def hashCode();
+
+	/**
+	 * このオブジェクトの文字列表現を返します.
+	 * @return
+	 */
+	[public|native]
+	def toString();
+}

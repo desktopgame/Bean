@@ -1,0 +1,7 @@
+use api.Numeric;
+/**
+ * 64ビット浮動小数型を扱うクラス.
+ */
+class Double : Numeric {
+
+}

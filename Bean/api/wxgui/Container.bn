@@ -1,0 +1,22 @@
+use api.wxgui.Component;
+/** 
+ * 他のコンポーネントを包含可能なコンポーネントです.
+ */
+class Container : Component {
+	[protected]
+	def new() : super() { }
+	
+	/**
+	 * 指定のレイアウトを適用します.
+	 * @param layout
+	 */
+	[public|native]
+	def setLayout(layout);
+	
+	/**
+	 * 現在のレイアウトを返します.
+	 * @return
+	 */
+	[public|native]
+	def getLayout();
+}

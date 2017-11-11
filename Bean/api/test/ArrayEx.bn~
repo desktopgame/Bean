@@ -1,0 +1,7 @@
+use api.Array;
+class ArrayEx : Array {
+	[public]
+	def new(len) {
+		super.new(len);	
+	}
+}

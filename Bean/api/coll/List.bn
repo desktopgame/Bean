@@ -1,0 +1,116 @@
+use api.Array;
+use api.Console;
+use api.exc.OutOfRangeError;
+/**
+ * 可変長の配列です.
+ */
+class List {
+	[private]@data;
+	[private]@size;
+	
+	[public]
+	def new() {
+		this.data = Array.new(3);
+		this.size = 0;
+	}
+	
+	/**
+	 * 末尾に要素を追加します.
+	 * @param value
+	 */
+	[public]
+	def add(value) {
+		if(size < data.length()) {
+			this.data.set(size, value);
+			size += 1;
+		} else {
+			size += 1;
+			this.data = data.copyOf(0, data.length() + 1);
+			data.set(data.length() - 1, value);
+		}
+	}
+	
+	/**
+	 * 指定位置の要素を削除します.
+	 * @param index
+	 */
+	[public]
+	def removeAt(index) {
+		if(index == 0) {
+			this.data = data.sub(1, size - 1);
+			this.size = size - 1;
+			return;
+		}
+		if(index == (data.length() - 1)) {
+			this.data = data.sub(0, size - 1);
+			this.size = size - 1;
+			return;
+		}
+		var headOffs = 0;
+		var headLen = index;
+		var tailOffs = index + 1;
+		var tailLen = ((size - index + 1) - (index));
+		var head = data.sub(headOffs, headLen);
+		var tail = data.sub(tailOffs, tailLen);
+		this.data = head.concat(tail);
+		this.size = size - 1;
+	}
+	
+	/**
+	 * 指定位置の要素を置き換えます.
+	 * @param index
+	 * @param value
+	 */
+	[public]
+	def set(index, value) {
+		checkRange(index);
+		this.data.set(index, value);
+	}
+	
+	/**
+	 * 指定位置の要素を返します.
+	 * @param index
+	 * @return
+	 */
+	[public]
+	def get(index) {
+		checkRange(index);
+		return data.get(index);
+	}
+	
+	[private]
+	def checkRange(index) {
+		if(index < 0 || index >= size) {
+			throw OutOfRangeError.new(null, size + " は範囲外です");
+		}
+	}
+	
+	/**
+	 * 全ての要素を破棄します.
+	 */
+	[public]
+	def clear() {
+		this.size = 0;
+		this.data = Array.new(3);
+	}
+	
+	/**
+	 * 全ての要素を指定のアクションで訪問します.
+	 * @param block
+	 */
+	[public]
+	def forEach(block) {
+		for(var i=0; i<size; i++) {
+			block.call({data.get(i)});
+		}
+	}
+	
+	/**
+	 * 要素数を返します.
+	 * @return
+	 */
+	[public]
+	def length() {
+		return size;
+	}
+}

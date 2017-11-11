@@ -1,0 +1,9 @@
+/**
+ * •ûŠp‚ð•\‚·—ñ‹“‚Å‚·.
+ */
+enum Direction {
+	Top = "TopValue",
+	Left = 20.0f,
+	Bottom = 11d,
+	Right = 100
+}

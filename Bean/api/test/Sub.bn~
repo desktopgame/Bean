@@ -1,0 +1,3 @@
+use api.test.Base;
+class Sub {
+}

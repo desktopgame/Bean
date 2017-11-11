@@ -1,0 +1,19 @@
+/**
+ * オブジェクトのペアです.
+ */
+class Pair {
+	[private]@left(set=setLeft, get=getLeft) = null;
+	[private]@right(set=setRight, get=getRight) = null;
+	
+	[public]
+	def new(left, right) {
+		this.left = left;
+		this.right = right;
+	}
+	
+	[public]
+	def new() {
+		this.left = null;
+		this.right = null;
+	}
+}

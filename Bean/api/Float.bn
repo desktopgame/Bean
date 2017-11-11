@@ -1,0 +1,7 @@
+use api.Numeric;
+/**
+ * 32ビット浮動小数型を扱うクラス.
+ */
+class Float : Numeric {
+
+}

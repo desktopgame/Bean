@@ -1,0 +1,21 @@
+use api.coll.Vector;
+
+def printVec() {
+	for(var i=0; i<vec.size(); i++) {
+		Console.writeLine(vec.get(i));	
+	}
+	Console.writeLine("--");
+}
+
+var vec = Vector.new();
+vec.add("ElemA");
+vec.add("ElemB");
+vec.add("ElemC");
+printVec();
+
+vec.removeAt(0);
+printVec();
+
+vec.removeAt(0);
+vec.add(20);
+printVec();

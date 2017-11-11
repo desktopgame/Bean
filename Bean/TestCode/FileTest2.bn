@@ -1,0 +1,15 @@
+use api.Range;
+use api.Console;
+use api.File;
+
+var baseName = File.getCurrentPath() + File.getPathSeparatorChar();
+var srcName = baseName + "newFile.bn";
+var dstName = baseName + "copyFile.bn";
+Console.writeLine(baseName);
+Console.writeLine(srcName);
+Console.writeLine(dstName);
+
+Console.writeLine("---");
+Console.writeLine(File.getParent(baseName));
+Console.writeLine(File.getParent(srcName));
+Console.writeLine(File.getParent(dstName));

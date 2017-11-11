@@ -1,0 +1,4 @@
+class BagClass4 {
+	[public]
+	if(true) { }
+}

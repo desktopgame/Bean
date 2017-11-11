@@ -1,0 +1,9 @@
+use api.exc.RuntimeException;
+/**
+ * 呼び出されたメソッドが見つからなかった場合にスローされます.
+ */
+class NoMethodError : RuntimeException {
+	[public]
+	def new(className, methodName, argCount) : super(null, className + "#" + methodName + "(" + argCount + ") は見つかりません") {
+	}
+}

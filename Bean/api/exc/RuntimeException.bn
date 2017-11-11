@@ -1,0 +1,8 @@
+use api.Exception;
+/**
+ * プログラマのミスによって発生する例外の基底クラスです.
+ * 例えば配列の境界外アクセスや、boolean以外を評価する if, while, for等でスローされます。
+ */
+class RuntimeException : Exception {
+
+}

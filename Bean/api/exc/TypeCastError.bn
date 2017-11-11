@@ -1,0 +1,16 @@
+use api.exc.ArgumentException;
+/**
+ * 引数の型が期待する型と継承関係にない場合を報告します.
+ */
+class TypeCastError : ArgumentException {
+	/**
+	 * 型の相違をメッセージとして出力するこのクラスの新しいインスタンスを生成します.
+	 * @param cause
+	 * @param requireTypeName
+	 * @param realTypeName
+	 */
+	[public|static]
+	def newInstance(cause, requireTypeName, realTypeName) {
+		return TypeCastError.new(cause, requireTypeName + " が要求されましたが、実際の型は " + realTypeName + "でした。");
+	}
+}

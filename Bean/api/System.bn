@@ -1,0 +1,66 @@
+/**
+ * Beanのシステムに関するクラスです.
+ */
+class System {
+	[private]
+	def new() { }
+
+	/**
+	 * Beanで使用されるプロパティを上書きします.
+	 * @param key
+	 * @param value
+	 */
+	[public|static|native]
+	def setProperty(key, value);
+	
+	/**
+	 * Beanで使用されるプロパティを返します.
+	 * 存在しない場合は null.
+	 * @param key
+	 */
+	[public|static|native]
+	def getProperty(key);
+
+	
+	/**
+	 * Beanで使用されるプロパティを返します.
+	 * 含まれない場合はデフォルト値を返します。
+	 * @param key
+	 * @param defVal
+	 */
+	[public|static|native]
+	def getProperty(key, defVal);
+	
+	/**
+	 * 指定のキーに対応するプロパティを削除します。
+	 * 存在しない場合には何もしません。
+	 * @param key
+	 */
+	[public|static|native]
+	def removeProperty(key);
+	
+	
+	/**
+	 * 指定のインスタンスに指定の名前でフィールドを作成します。
+	 * @param inst
+	 * @param name
+	 * @param value;
+	 */
+	[public|static|native]
+	def defineDynField(inst, name, value);
+	
+	/**
+	 * 指定のインスタンスに指定の名前でメソッドを作成します.
+	 * @param inst
+	 * @param name
+	 * @param value
+	 */
+	[public|static|native]
+	def defineDynMethod(inst, name, block);
+	
+	/**
+	 * 現在のプロパティ一覧をファイルへ適用します。
+	 */
+	[public|static|native]
+	def apply();	
+}

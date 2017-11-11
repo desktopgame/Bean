@@ -1,0 +1,12 @@
+use api.Console;
+var i = 10;
+var b = 10;
+
+try {
+
+	if( i && b) {
+		Console.writeLine("é¿çsÇ≥ÇÍÇ‹ÇπÇÒ");
+	}	
+} catch(e) {
+	Console.writeLine(e.getMessage());	
+}

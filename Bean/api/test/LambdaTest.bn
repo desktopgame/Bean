@@ -1,0 +1,30 @@
+use api.Console;
+class LambdaTest {
+	[public]@name = "Bean";
+
+	[public]
+	def call() {
+		var v = lambda() -> {
+			Console.writeLine("this–³‚µ: " + name);
+		};
+		v.call({ });
+		
+		
+		v = lambda() -> {
+			Console.writeLine("this—L‚è: " + this.name);
+		};
+		v.call({ });
+		
+		name = "Value";
+		v = lambda() -> {
+			Console.writeLine("this–³‚µ: " + name);
+		};
+		v.call({ });
+		
+		
+		v = lambda() -> {
+			Console.writeLine("this—L‚è: " + this.name);
+		};
+		v.call({ });
+	}
+}

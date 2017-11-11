@@ -1,0 +1,115 @@
+/**
+ * 不変なキャラクターの配列です.
+ * 戻り値を伴うこのクラスの全てのメソッドは新しいインスタンスを返します。
+ * (このインスタンス自身にreplaceやsubstrが行われるわけではありません。)
+ */
+class String {
+	[public|static|final] @ENC_UTF8 = "utf-8";
+	[public|static|final] @ENC_SHIFTJIS = "shift-jis";
+	
+	[private]
+	def new() { }
+
+	[public|native]
+	def op_add(o);
+
+	[public|native]
+	def toString();
+	
+	/**
+	 * この文字列をエンコードして返します.
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def encode(str);
+	
+	/**
+	 * この文字列を offset から length 分切り取って返します.
+	 * @param offset
+	 * @param length
+	 * @return
+	 */
+	[public|native]
+	def substring(offset, length);
+	
+	/**
+	 * この文字列の offset に str を挿入して返します.
+	 * @param offset
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def insert(offset, str);
+	
+	/**
+	 * この文字列の offset から len 分削除して返します.
+	 * @param offset
+	 * @param len
+	 * @return
+	 */
+	[public|native]
+	def remove(offset, len);
+	
+	/**
+	 * この文字列の最初から+方向に str を検索して最初に見つかった位置を返します.
+	 * 見つからない場合は -1 を返します。
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def indexOf(str);
+	
+	/**
+	 * この文字列の index から+方向に str を検索して最初に見つかった位置を返します.
+	 * 見つからない場合は -1 を返します。
+	 * @param str
+	 * @param index
+	 * @return
+	 */
+	[public|native]
+	def indexOf(str, index);
+	
+	/**
+	 * この文字列の最後から-方向に str を検索して最初に見つかった位置を返します.
+	 * 見つからない場合は -1 を返します。
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def lastIndexOf(str);
+	
+	/**
+	 * この文字列の index から-方向に str を検索して最初に見つかった位置を返します.
+	 * 見つからない場合は -1 を返します。
+	 * @param str
+	 * @param index
+	 * @return
+	 */
+	[public|native]
+	def lastIndexOf(str, index);
+	
+	/**
+	 * この文字列が str から開始するなら true を返します.
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def startsWith(str);
+	
+	/**
+	 * この文字列が str で終了するなら true を返します.
+	 * @param str
+	 * @return
+	 */
+	[public|native]
+	def endsWith(str);
+	
+	/**
+	 * 文字数を返します.
+	 * @return
+	 */
+	[public|native]
+	def length();
+
+}

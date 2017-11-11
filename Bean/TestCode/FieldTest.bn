@@ -1,0 +1,4 @@
+use api.Math;
+use api.Console;
+
+Console.writeLine("Math.PI " + Math.PI);

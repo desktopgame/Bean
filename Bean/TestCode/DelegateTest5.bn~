@@ -1,0 +1,7 @@
+use api.Console;
+
+var x = "HelloWorld";
+var d = def() -> {
+	Console.writeLine(x);
+};
+d.call({});

@@ -1,0 +1,7 @@
+use api.exc.RuntimeException;
+
+class CannotAssignError : RuntimeException {
+	[public]
+	def new(location) : super(null, location + " は 定数として宣言されているか、アクセス出来ません。") {
+	}
+}

@@ -1,0 +1,60 @@
+use api.exc.NullPointerError;
+/**
+ * nullであることが許容されるオブジェクトのコンテナです.
+ */
+class Optional {
+	[private]@value;
+	
+	[private]
+	def new(value) {
+		this.value = value;
+	}
+	
+	/**
+	 * nullが許容される場合に使用されます.
+	 * @param value
+	 * @return
+	 */
+	[public|static]
+	def ofNullable(value) {
+		return Optional.new(value);
+	}
+	
+	/**
+	 * nullが許容されない場合に使用されます.
+	 * nullだった場合例外をスローします.
+	 * @param value
+	 * @return
+	 */
+	[public|static]
+	def nonNull(value) {
+		if(value == null) {
+			throw NullPointerError.new();
+		}
+		return Optional.new(value);
+	}
+	
+	/**
+	 * 値がnull以外のときのみ処理を実行します.
+	 * @param action
+	 * @return このインスタンス
+	 */
+	[public]
+	def ifPresent(action) {
+		if(value != null) {
+			action.call({value});
+		}
+		return this;
+	}
+	
+	/**
+	 * 値がnullのときのみ処理を実行します.
+	 * @param action
+	 */
+	[public]
+	def orElse(action) {
+		if(value == null) {
+			action.call({value});
+		}
+	}
+}

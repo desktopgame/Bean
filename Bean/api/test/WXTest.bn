@@ -1,0 +1,4 @@
+use api.geom.Point2D;
+use api.geom.Size2D;
+use api.geom.Rect2D;
+class WXTest { }

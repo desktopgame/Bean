@@ -1,0 +1,37 @@
+use api.coll.Vector;
+use api.test.BulletSample;
+use api.Console;
+class EnemySample {
+	[public]@x = 0;
+	[public]@y = 0;
+	[private]@bullets;
+
+
+	[public]
+	def new() {
+		this.bullets = Vector.new();
+	}
+	
+	[public]
+	def gen() {
+		bullets.add(BulletSample.new(this));
+	}
+
+	[public]
+	def move() {
+		this.x += 10;
+		for(var i=0; i<bullets.size(); i++) {
+			var bul = bullets.get(i);
+			bul.move();
+		}
+	}
+
+	[public]
+	def draw() {
+		Console.writeLine("[e] x=" + x + " y=" + y);
+		for(var i=0; i<bullets.size(); i++) {
+			var bul = bullets.get(i);
+			bul.draw();
+		}
+	}
+}

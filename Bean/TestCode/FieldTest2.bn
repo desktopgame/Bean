@@ -1,0 +1,8 @@
+use api.test.DefaultTest;
+use api.Console;
+
+var d = DefaultTest.new();
+Console.writeLine(d.value);
+
+d.value = 20;
+Console.writeLine(d.value);
